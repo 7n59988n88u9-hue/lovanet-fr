@@ -23,9 +23,9 @@ const API = `${(import.meta.env.VITE_BACKEND_URL ?? "")}/api`;
 const TIKTOK_HANDLE = "@anime.moments.officiel";
 const TIKTOK_BANNER_VIDEO = "/actualites-banner-2.mp4";
 const PRIME_GHOST_BTN =
-  "inline-flex items-center justify-center gap-2 rounded-full border border-white/25 bg-transparent px-5 py-2.5 text-sm font-semibold text-white transition-all hover:border-cyan-200/80 hover:bg-white/10";
+  "theme-glass-chip inline-flex items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold text-white transition-all hover:border-[var(--theme-border-strong)] hover:bg-white/10";
 const PRIME_GHOST_PANEL_BTN =
-  "inline-flex items-center justify-center gap-2 rounded-full border border-white/20 bg-transparent px-4 py-2 text-xs font-semibold text-white/90 transition-all hover:border-cyan-200/80 hover:bg-white/10";
+  "theme-glass-chip inline-flex items-center justify-center gap-2 rounded-full px-4 py-2 text-xs font-semibold text-white transition-all hover:border-[var(--theme-border-strong)] hover:bg-white/10";
 
 const Tiktok = () => {
   const [list, setList] = useState<TTItem[]>([]);
@@ -214,13 +214,13 @@ const Tiktok = () => {
         className="container mx-auto px-4 lg:px-8 pb-8"
         data-testid="tiktok-pro-scene-section"
       >
-        <div className="overflow-hidden rounded-[30px] border border-white/15 bg-[linear-gradient(145deg,rgba(10,17,35,0.96),rgba(9,16,30,0.9))] shadow-[0_35px_100px_-50px_rgba(56,189,248,0.5)]">
+        <div className="theme-panel-surface overflow-hidden rounded-[2rem] border border-[var(--theme-border-soft)] shadow-[0_24px_90px_rgba(0,0,0,0.3)]">
           <div className="relative z-10 p-6 md:p-8 lg:p-10">
             <div className="mt-1 flex flex-wrap gap-2">
               <button
                 type="button"
                 onClick={() => setHubScene("train")}
-                className={cn(PRIME_GHOST_PANEL_BTN, hubScene === "train" ? "border-cyan-200/80 bg-white/12 text-white" : "")}
+                className={cn(PRIME_GHOST_PANEL_BTN, hubScene === "train" ? "border-[var(--theme-border-strong)] bg-white/12 text-white" : "")}
                 data-testid="tiktok-hub-scene-train"
               >
                 <Building2 className="w-3.5 h-3.5" /> Train Station
@@ -228,7 +228,7 @@ const Tiktok = () => {
               <button
                 type="button"
                 onClick={() => setHubScene("ferry")}
-                className={cn(PRIME_GHOST_PANEL_BTN, hubScene === "ferry" ? "border-cyan-200/80 bg-white/12 text-white" : "")}
+                className={cn(PRIME_GHOST_PANEL_BTN, hubScene === "ferry" ? "border-[var(--theme-border-strong)] bg-white/12 text-white" : "")}
                 data-testid="tiktok-hub-scene-ferry"
               >
                 <Music2 className="w-3.5 h-3.5" /> Ferry Hub
@@ -291,7 +291,7 @@ const Tiktok = () => {
           <div className="space-y-4">
             <div className="flex flex-wrap items-center justify-between gap-3">
               <div className="flex items-center gap-3">
-                <div className="px-3 py-1.5 rounded-full border border-white/20 bg-transparent text-slate-100 text-xs font-bold flex items-center gap-1.5">
+                <div className="theme-glass-chip px-3 py-1.5 rounded-full text-white text-xs font-bold flex items-center gap-1.5">
                   <Music2 className="w-3.5 h-3.5" /> TikTok
                 </div>
                 <div className="text-[11px] uppercase tracking-[0.2em] text-muted-foreground" data-testid="tiktok-feed-mode">
@@ -301,23 +301,23 @@ const Tiktok = () => {
               <div className="flex items-center gap-2">
                 <button
                   onClick={() => setMuted((m) => !m)}
-                  className="px-3 py-2 rounded-full border border-white/20 bg-transparent text-xs font-semibold text-slate-100 hover:border-cyan-200/80 hover:bg-white/10 transition-colors flex items-center gap-1.5"
+                  className="theme-glass-chip px-3 py-2 rounded-full text-xs font-semibold text-white hover:bg-white/10 transition-colors flex items-center gap-1.5"
                   data-testid="tiktok-mute-toggle"
                 >
                   {muted ? <VolumeX className="w-3.5 h-3.5" /> : <Volume2 className="w-3.5 h-3.5" />}
                   {muted ? "Son OFF" : "Son ON"}
                 </button>
-                <div className="inline-flex p-1 rounded-full border border-white/20 bg-transparent">
+                <div className="theme-glass-chip inline-flex p-1 rounded-full">
                   <button
                     onClick={() => setOrientation("vertical")}
-                    className={cn("px-3 py-1.5 text-xs rounded-full font-semibold text-white transition-colors", orientation === "vertical" ? "bg-white/12 border border-cyan-200/70" : "text-white/60")}
+                    className={cn("px-3 py-1.5 text-xs rounded-full font-semibold text-white transition-colors", orientation === "vertical" ? "bg-white/12 border border-[var(--theme-border-strong)]" : "text-white/60")}
                     data-testid="tiktok-orientation-vertical"
                   >
                     ▯ Vertical
                   </button>
                   <button
                     onClick={() => setOrientation("horizontal")}
-                    className={cn("px-3 py-1.5 text-xs rounded-full font-semibold text-white transition-colors", orientation === "horizontal" ? "bg-white/12 border border-cyan-200/70" : "text-white/60")}
+                    className={cn("px-3 py-1.5 text-xs rounded-full font-semibold text-white transition-colors", orientation === "horizontal" ? "bg-white/12 border border-[var(--theme-border-strong)]" : "text-white/60")}
                     data-testid="tiktok-orientation-horizontal"
                   >
                     ▭ Horizontal
@@ -475,7 +475,7 @@ const Tiktok = () => {
             )}
 
             {!loading && !hasSyncedVideos && (
-              <div className="rounded-[28px] border border-white/12 bg-white/[0.04] backdrop-blur-xl p-4 md:p-6 shadow-[0_20px_60px_-30px_rgba(56,189,248,0.55)]" data-testid="tiktok-official-profile-widget">
+              <div className="theme-panel-surface rounded-[1.9rem] border border-[var(--theme-border-soft)] p-4 md:p-6 shadow-[0_24px_90px_rgba(0,0,0,0.3)]" data-testid="tiktok-official-profile-widget">
                 <blockquote
                   className="tiktok-embed"
                   cite="https://www.tiktok.com/@anime.moments.officiel"
@@ -495,7 +495,7 @@ const Tiktok = () => {
           </div>
 
           <aside className="space-y-4" data-testid="tiktok-side-panel">
-            <div className="rounded-[28px] border border-white/12 bg-white/[0.04] backdrop-blur-xl p-5 shadow-[0_20px_60px_-35px_hsl(var(--neon-cyan)/0.5)]">
+            <div className="theme-panel-surface rounded-[1.9rem] border border-[var(--theme-border-soft)] p-5 shadow-[0_24px_90px_rgba(0,0,0,0.3)]">
               <h3 className="font-display text-xl font-bold text-white mb-2">TikTok officiel</h3>
               <a
                 href="https://www.tiktok.com/@anime.moments.officiel"
