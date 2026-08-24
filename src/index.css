@@ -5613,3 +5613,53 @@ html[data-nav-carousel] .quicknav-floating a:hover {
   mix-blend-mode: screen;
   filter: saturate(115%) contrast(105%);
 }
+
+/* ---- Poignées latérales : languette d'attache (plus de "chevron dans un rond") ---- */
+.quicknav-floating[data-collapsed="true"],
+.quicknav-floating[data-collapsed="true"].glass3d-panel,
+.quicknav-floating[data-collapsed="true"].glass3d-surface {
+  background: none !important;
+  background-color: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  padding: 0 !important;
+  width: 22px !important;
+  min-width: 0 !important;
+}
+.quicknav-floating[data-collapsed="true"]::before,
+.quicknav-floating[data-collapsed="true"]::after {
+  display: none !important;
+  content: none !important;
+}
+
+.quicknav-floating__edge-toggle,
+.quicknav-floating__edge-toggle--left,
+.quicknav-floating__edge-toggle--right {
+  width: 18px;
+  height: 62px;
+  border-radius: 3px;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.14), rgba(255, 255, 255, 0.05));
+  box-shadow: none;
+  overflow: hidden;
+}
+.quicknav-floating__edge-toggle--left {
+  border-left: 0;
+  border-radius: 0 4px 4px 0;
+}
+.quicknav-floating__edge-toggle--right {
+  border-right: 0;
+  border-radius: 4px 0 0 4px;
+}
+.quicknav-floating__edge-toggle svg {
+  width: 14px;
+  height: 14px;
+}
+.quicknav-floating__edge-toggle:hover,
+.quicknav-floating__edge-toggle:focus-visible {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0.08));
+  border-color: rgba(255, 255, 255, 0.4);
+}

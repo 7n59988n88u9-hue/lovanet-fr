@@ -126,7 +126,7 @@ const enforceCurrentBuild = async () => {
 
 // Ensure old service workers and caches are unregistered to avoid stale preview assets.
 const LOVANET_RELOAD_FLAG = "lovanet_sw_unregistered";
-const LOVANET_RELOAD_VERSION = "11"; // bump to force a new cleanup cycle and full PWA reinstall
+const LOVANET_RELOAD_VERSION = "12"; // bump to force a new cleanup cycle and full PWA reinstall
 
 const forceLovanetReload = () => {
   if (typeof window === "undefined") return;
