@@ -45,13 +45,13 @@ export default function Leaderboard() {
   }, [user, lovaCoins, achievements, neonColor]);
 
   return (
-    <PageShell>
+    <PageShell className="actualites-monochrome">
       <Helmet>
         <title>Classement Global — Lovanet</title>
       </Helmet>
       
       <section className="container mx-auto px-4 lg:px-8 py-12 md:py-20 max-w-5xl">
-        <div className="mb-8 overflow-hidden rounded-[1.6rem] border border-white/10">
+        <div className="theme-panel-surface mb-8 overflow-hidden rounded-[1.6rem] border border-[var(--theme-border-soft)]">
           <div className="aspect-[21/9] w-full">
             <video
               src={LEADERBOARD_TOP_VIDEO}
@@ -66,20 +66,18 @@ export default function Leaderboard() {
         </div>
 
         <header className="text-center mb-16 space-y-4">
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-amber-500/30 bg-amber-500/10 text-amber-300 text-xs font-bold tracking-widest uppercase mb-4 shadow-[0_0_20px_rgba(251,191,36,0.15)]">
+          <div className="theme-glass-chip mb-4 inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-xs font-bold uppercase tracking-widest text-white">
             <Trophy className="w-3.5 h-3.5" /> Leaderboard Officiel
           </div>
           <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-black text-white drop-shadow-xl">
-            Temple de la <span className="bg-gradient-to-r from-amber-400 via-yellow-300 to-orange-500 bg-clip-text text-transparent">Renommée</span>
+            Temple de la <span className="text-white">Renommée</span>
           </h1>
           <p className="text-white/60 max-w-2xl mx-auto text-sm md:text-base">
             Découvrez les membres les plus actifs de la communauté Lovanet. Accumulez des LovaCoins en complétant des quêtes journalières et débloquez des succès pour gravir les échelons.
           </p>
         </header>
 
-        <div className="relative rounded-[2rem] border border-white/10 bg-black/40 backdrop-blur-xl shadow-2xl overflow-hidden">
-          {/* Decorative gradients */}
-          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[200px] bg-amber-500/10 blur-[100px] pointer-events-none" />
+        <div className="theme-panel-surface relative overflow-hidden rounded-[2rem] border border-[var(--theme-border-soft)] backdrop-blur-xl">
           
           <div className="relative z-10">
             <div className="grid grid-cols-[3rem_1fr_4rem_5rem] md:grid-cols-[4rem_1fr_8rem_8rem] gap-4 p-4 md:p-6 border-b border-white/5 text-[10px] md:text-xs font-bold uppercase tracking-widest text-white/40">
@@ -97,7 +95,7 @@ export default function Leaderboard() {
                 return (
                   <div 
                     key={player.id} 
-                    className={`grid grid-cols-[3rem_1fr_4rem_5rem] md:grid-cols-[4rem_1fr_8rem_8rem] gap-4 p-4 md:p-6 items-center transition-colors hover:bg-white/5 ${player.isCurrentUser ? 'bg-sky-500/10 border-l-4 border-l-sky-400' : ''}`}
+                    className={`grid grid-cols-[3rem_1fr_4rem_5rem] md:grid-cols-[4rem_1fr_8rem_8rem] gap-4 p-4 md:p-6 items-center transition-colors hover:bg-white/5 ${player.isCurrentUser ? 'bg-white/[0.08] border-l-4 border-l-white/60' : ''}`}
                   >
                     <div className="flex justify-center">
                       {rank === 1 ? (
@@ -125,11 +123,11 @@ export default function Leaderboard() {
                         {player.name.charAt(0).toUpperCase()}
                       </div>
                       <span 
-                        className={`font-bold truncate text-sm md:text-base ${player.isCurrentUser ? 'text-sky-300' : 'text-white'}`}
+                        className="truncate text-sm font-bold text-white md:text-base"
                         style={player.color ? { color: '#fff', textShadow: `0 0 8px ${player.color}, 0 0 15px ${player.color}` } : {}}
                       >
                         {player.name}
-                        {player.isCurrentUser && <span className="ml-2 text-[9px] uppercase tracking-wider bg-sky-500/20 text-sky-300 px-2 py-0.5 rounded-full border border-sky-500/40">Vous</span>}
+                        {player.isCurrentUser && <span className="theme-glass-chip ml-2 rounded-full px-2 py-0.5 text-[9px] uppercase tracking-wider text-white">Vous</span>}
                       </span>
                     </div>
 

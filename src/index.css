@@ -5638,6 +5638,12 @@ html[data-nav-carousel] .quicknav-floating a:hover {
 .quicknav-floating__edge-toggle,
 .quicknav-floating__edge-toggle--left,
 .quicknav-floating__edge-toggle--right {
+  position: relative;
+  z-index: 90;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
   width: 18px;
   height: 62px;
   border-radius: 3px;
@@ -5645,6 +5651,14 @@ html[data-nav-carousel] .quicknav-floating a:hover {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.14), rgba(255, 255, 255, 0.05));
   box-shadow: none;
   overflow: hidden;
+  pointer-events: auto;
+  touch-action: manipulation;
+  cursor: pointer;
+}
+.quicknav-floating[data-collapsed="true"] .quicknav-floating__edge-toggle {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .quicknav-floating__edge-toggle--left {
   border-left: 0;

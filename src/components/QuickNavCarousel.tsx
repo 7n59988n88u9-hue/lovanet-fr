@@ -271,6 +271,17 @@ export default function QuickNavCarousel({ items = DEFAULT_ITEMS, onClose }: { i
     onClose?.();
   };
 
+  const toggleLeft = () => {
+    if (leftOpen) {
+      closeLeft();
+      return;
+    }
+    // La languette gauche correspond au menu complet : toujours révéler
+    // immédiatement le carrousel principal, même s'il était mémorisé replié.
+    setMainCollapsed(false);
+    setLeftOpen(true);
+  };
+
   const toggleRight = () => {
     if (!rightOpen) {
       setRightRollPhase(0);
@@ -303,9 +314,10 @@ export default function QuickNavCarousel({ items = DEFAULT_ITEMS, onClose }: { i
     >
       <button
         type="button"
-        onClick={() => (leftOpen ? closeLeft() : setLeftOpen(true))}
+        onClick={toggleLeft}
         className="quicknav-floating__edge-toggle quicknav-floating__edge-toggle--left"
-        aria-label={leftOpen ? "Réduire le menu récent" : "Ouvrir le menu récent"}
+        aria-label={leftOpen ? "Réduire le menu complet" : "Ouvrir le menu complet"}
+        data-testid="quicknav-left-menu-toggle"
       >
         {leftOpen ? <ChevronRight className="h-4 w-4" /> : <ChevronLeft className="h-4 w-4" />}
       </button>

@@ -637,7 +637,7 @@ const RAW_SEO_NEWS = [
 
 export const SEO_NEWS = RAW_SEO_NEWS.map((entry) => ({
   ...entry,
-  url: typeof entry.url === "string" ? entry.url.replace(/^https:\/\/lovanet\.fr/i, SITE_ORIGIN) : entry.url,
+  url: entry.url.replace(/^https:\/\/lovanet\.fr/i, SITE_ORIGIN),
 }));
 
 export type SeoNewsItem = (typeof SEO_NEWS)[number];
