@@ -1179,14 +1179,14 @@ export default function AnimeCatalog() {
         )}
       </Helmet>
 
-      <main className="page-nav-glass catalogue-monochrome min-h-screen overflow-hidden text-foreground" style={{ background: "transparent" }}>
+      <main className="page-nav-glass catalogue-monochrome actualites-monochrome min-h-screen overflow-hidden text-foreground" style={{ background: "transparent" }}>
         <Navbar />
         <div className="h-12" />
 
         <section className="px-4 pb-5 pt-4 md:px-8 xl:px-10" data-testid="catalog-premium-player-section">
           <div className="mx-auto max-w-[1120px] space-y-6">
             <header className="theme-panel-surface glass3d-panel glass3d-surface relative overflow-hidden rounded-[2rem] border border-[var(--theme-border-soft)] p-5 sm:p-6 lg:p-8" data-testid="catalog-premium-hero">
-              <div className="pointer-events-none absolute inset-0 opacity-90" style={{ background: "radial-gradient(circle at 18% 18%, rgba(56,189,248,0.16), transparent 22%), radial-gradient(circle at 82% 16%, rgba(244,114,182,0.12), transparent 24%), linear-gradient(135deg, rgba(255,255,255,0.03), transparent 42%)" }} />
+              <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(135deg,rgba(255,255,255,0.08),transparent_42%)] opacity-90" />
               <div className="absolute right-4 top-4 z-20 flex items-center gap-2">
                 <button
                   type="button"
@@ -1778,8 +1778,8 @@ export default function AnimeCatalog() {
 
             {pagedItems.length ? (
               viewMode === "carousel" ? (
-              <div className="w-full h-[600px] relative mt-10 rounded-[2rem] overflow-hidden border border-white/10 bg-black/40">
-                 <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(56,189,248,0.1),transparent)]" />
+              <div className="theme-panel-surface w-full h-[600px] relative mt-10 rounded-[2rem] overflow-hidden border border-[var(--theme-border-soft)]">
+                 <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(255,255,255,0.08),transparent)]" />
                  <ErrorBoundary fallback={<div className="flex h-full items-center justify-center"><p>Impossible de charger la 3D.</p><Button onClick={() => setViewMode("grid")}>Retour à la grille</Button></div>}>
                    <Canvas camera={{ position: [0, 2, 8], fov: 45 }}>
                       <ambientLight intensity={0.5} />
