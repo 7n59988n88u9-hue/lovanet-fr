@@ -716,6 +716,16 @@ async function handleNewsDetail(slug: string) {
   return json({ item, related, source: item.source_id });
 }
 
+const MAX_IMAGE_BYTES = Number(Deno.env.get("MAX_IMAGE_BYTES") || 5 * 1024 * 1024);
+const IMAGE_FETCH_TIMEOUT_MS = 8000;
+
+async function validateProxyTarget(candidate: URL): Promise<string | null> {
+  if (candidate.username || candidate.password) return "bad-url";
+  if (!["http:", "https:"].includes(candidate.protocol)) return "unsupported-scheme";
+  if (await isPrivateTarget(candidate.hostname)) return "blocked-host";
+  return null;
+}
+
 async function handleImageProxy(url: URL) {
   const target = url.searchParams.get("url");
   if (!target) return json({ error: "missing-url" }, 400);
@@ -727,52 +737,79 @@ async function handleImageProxy(url: URL) {
     return json({ error: "bad-url" }, 400);
   }
 
-  if (parsed.username || parsed.password) return json({ error: "bad-url" }, 400);
-  if (!["http:", "https:"].includes(parsed.protocol)) return json({ error: "unsupported-scheme" }, 400);
-  if (await isPrivateTarget(parsed.hostname)) return json({ error: "blocked-host" }, 403);
+  const initialError = await validateProxyTarget(parsed);
+  if (initialError) return json({ error: initialError }, initialError === "blocked-host" ? 403 : 400);
 
-  const fallback = () => Response.redirect(target, 302);
-  try {
-    const res = await fetch(target, {
-      redirect: "manual",
-      headers: {
-        "User-Agent":
-          "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36",
-        Accept: "image/avif,image/webp,image/apng,image/*,*/*;q=0.8",
-        "Accept-Language": "fr-FR,fr;q=0.9,en;q=0.8",
-        Referer: `${parsed.origin}/`,
-      },
-    });
+  // Follow redirects ourselves so every hop is re-validated against the SSRF rules.
+  let current = parsed;
+  let res: Response | null = null;
+
+  for (let hop = 0; hop < 3; hop++) {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), IMAGE_FETCH_TIMEOUT_MS);
+    try {
+      res = await fetch(current.toString(), {
+        redirect: "manual",
+        signal: controller.signal,
+        headers: {
+          "User-Agent":
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36",
+          Accept: "image/avif,image/webp,image/apng,image/*,*/*;q=0.8",
+          "Accept-Language": "fr-FR,fr;q=0.9,en;q=0.8",
+          Referer: `${current.origin}/`,
+        },
+      });
+    } catch {
+      clearTimeout(timer);
+      return json({ error: "fetch-failed" }, 502);
+    }
+    clearTimeout(timer);
 
     if (res.status >= 300 && res.status < 400 && res.headers.has("location")) {
-      const redirectUrl = res.headers.get("location") || "";
+      let next: URL;
       try {
-        const parsedRedirect = new URL(redirectUrl, target);
-        if (await isPrivateTarget(parsedRedirect.hostname)) {
-          return json({ error: "blocked-host" }, 403);
-        }
+        next = new URL(res.headers.get("location") || "", current);
       } catch {
-        return fallback();
+        return json({ error: "bad-url" }, 400);
       }
-      return Response.redirect(redirectUrl, res.status);
+      const hopError = await validateProxyTarget(next);
+      if (hopError) return json({ error: hopError }, hopError === "blocked-host" ? 403 : 400);
+      await res.body?.cancel();
+      current = next;
+      res = null;
+      continue;
     }
-
-    if (!res.ok) return fallback();
-
-    const contentType = String(res.headers.get("content-type") || "").toLowerCase();
-    if (!contentType.startsWith("image/")) return fallback();
-
-    const body = await res.arrayBuffer();
-    return new Response(body, {
-      headers: {
-        ...corsHeaders,
-        "Content-Type": contentType,
-        "Cache-Control": "public, max-age=86400",
-      },
-    });
-  } catch {
-    return fallback();
+    break;
   }
+
+  if (!res) return json({ error: "too-many-redirects" }, 502);
+  if (!res.ok) {
+    await res.body?.cancel();
+    return json({ error: "upstream-error" }, 502);
+  }
+
+  const contentType = String(res.headers.get("content-type") || "").toLowerCase();
+  if (!contentType.startsWith("image/")) {
+    await res.body?.cancel();
+    return json({ error: "not-an-image" }, 415);
+  }
+
+  const declaredLength = Number(res.headers.get("content-length") || 0);
+  if (declaredLength && declaredLength > MAX_IMAGE_BYTES) {
+    await res.body?.cancel();
+    return json({ error: "image-too-large" }, 413);
+  }
+
+  const body = await res.arrayBuffer();
+  if (body.byteLength > MAX_IMAGE_BYTES) return json({ error: "image-too-large" }, 413);
+
+  return new Response(body, {
+    headers: {
+      ...corsHeaders,
+      "Content-Type": contentType,
+      "Cache-Control": "public, max-age=86400",
+    },
+  });
 }
 
 /* ---------------------------------- router -------------------------------- */
