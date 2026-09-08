@@ -1,12 +1,5 @@
-import React, { useEffect, useMemo, useRef, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { motion } from 'framer-motion';
-
-const BACKGROUND_VIDEO_PLAYLIST = [
-  "/premium-border-1.mp4",
-  "/premium-border-2.mp4",
-  "/premium-border-3.mp4",
-  "/premium-border-4.mp4",
-];
 
 const Leaf = ({ delay, x, duration }) => (
   <motion.div
