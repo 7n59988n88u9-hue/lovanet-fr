@@ -40,17 +40,6 @@ const Cloud = ({ delay, y, duration, scale }) => (
   />
 );
 
-const OVERLAY_BACKGROUND_VIDEOS = [
-  {
-    id: "global-bg",
-    src: "/global-bg-browser.webm",
-  },
-  { id: "global-bg-web", src: "/global-bg-web.mp4" },
-  { id: "global-bg-mobile", src: "/global-bg-mobile.mp4" },
-];
-
-const ORDERED_OVERLAY_VIDEO_IDS = OVERLAY_BACKGROUND_VIDEOS.map((video) => video.id);
-
 export const PremiumBorders = () => {
   const [hidden, setHidden] = useState(() => document.body.hasAttribute("data-hide-decors"));
   const [customDecors, setCustomDecors] = useState(() => {
@@ -61,47 +50,6 @@ export const PremiumBorders = () => {
       return false;
     }
   });
-  const [overlayQueue, setOverlayQueue] = useState([]);
-  const [activeOverlayVideoId, setActiveOverlayVideoId] = useState(OVERLAY_BACKGROUND_VIDEOS[0]?.id || "");
-  const overlayVideoRef = useRef(null);
-  const [bgIndex, setBgIndex] = useState(0);
-  const bgVideoRef = useRef(null);
-
-  useEffect(() => {
-    const video = bgVideoRef.current;
-    if (!video) return undefined;
-    video.muted = true;
-    const p = video.play();
-    if (p && typeof p.catch === "function") p.catch(() => {});
-    return undefined;
-  }, [bgIndex]);
-
-  const activeOverlayVideo = OVERLAY_BACKGROUND_VIDEOS.find((video) => video.id === activeOverlayVideoId) || OVERLAY_BACKGROUND_VIDEOS[0];
-
-  useEffect(() => {
-    setOverlayQueue(ORDERED_OVERLAY_VIDEO_IDS);
-    setActiveOverlayVideoId(ORDERED_OVERLAY_VIDEO_IDS[0] || OVERLAY_BACKGROUND_VIDEOS[0].id);
-  }, []);
-
-  useEffect(() => {
-    if (!overlayQueue.length) return undefined;
-    const video = overlayVideoRef.current;
-    if (!video) return undefined;
-
-    const playCurrentVideo = () => {
-      video.pause();
-      video.currentTime = 0;
-      video.muted = true;
-      video.load();
-      const playPromise = video.play();
-      if (playPromise && typeof playPromise.catch === "function") {
-        playPromise.catch(() => {});
-      }
-    };
-
-    playCurrentVideo();
-    return undefined;
-  }, [activeOverlayVideoId, overlayQueue.length]);
 
   // React to toggle changes via body attribute mutations
   useEffect(() => {
@@ -129,31 +77,8 @@ export const PremiumBorders = () => {
     color: i % 2 === 0 ? 'bg-cyan-300' : 'bg-fuchsia-300'
   })), []);
 
-  // Always render the global background video so users can choose the full-page
-  // video overlay independently from custom 3D decors. When `customDecors` is
-  // active we avoid rendering the duplicated decorative particles/leaves.
   return (
     <div className="fixed inset-0 pointer-events-none z-[0] overflow-hidden" data-testid="global-video-background">
-      {/* Global animated background (video) */}
-      <video
-        ref={bgVideoRef}
-        key={BACKGROUND_VIDEO_PLAYLIST[bgIndex]}
-        src={BACKGROUND_VIDEO_PLAYLIST[bgIndex]}
-        aria-hidden="true"
-        autoPlay
-        muted
-        playsInline
-        preload="auto"
-        decoding="async"
-        disablePictureInPicture
-        onEnded={() => setBgIndex((i) => (i + 1) % BACKGROUND_VIDEO_PLAYLIST.length)}
-        onError={() => setBgIndex((i) => (i + 1) % BACKGROUND_VIDEO_PLAYLIST.length)}
-        className="absolute inset-0 z-0 h-full w-full object-cover opacity-60"
-        style={{ pointerEvents: 'none' }}
-        data-bg-decor
-        data-bg-video
-      />
-
       {/* All animated décors hidden when toggle is active or when custom decors are used elsewhere */}
       {!hidden && !customDecors && (<div className="absolute inset-0 z-10" data-3d-decor data-animated-bg>
       {/* Ciel & Nuages (Haut) */}
