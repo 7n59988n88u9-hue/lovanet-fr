@@ -224,11 +224,6 @@ export default function GlassMusicPlayer({ className = "" }: { className?: strin
           src={AI_HUB_PLAYER_BOTTOM_IMAGE}
           alt=""
         />
-        <img
-          className="absolute left-1/2 top-1/2 h-[44%] w-[72%] -translate-x-1/2 -translate-y-1/2 rounded-2xl object-cover opacity-80 shadow-[0_24px_60px_rgba(2,6,23,0.5)]"
-          src={AI_HUB_PLAYER_TOP_GIF}
-          alt=""
-        />
       </div>
 
       <header className="relative flex flex-wrap items-center justify-between gap-3">
