@@ -457,49 +457,6 @@ export default function RootLandingPage() {
             <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(6,14,26,0.1)_0%,rgba(6,14,26,0.85)_100%)]" />
             <div className="pointer-events-none absolute inset-0 z-0 border border-white/10 bg-[rgba(6,12,22,0.34)] backdrop-blur-[6px]" />
             <div className="relative">
-              {/* Zone vidéo verre translucide : vidéo 2 en fond, vidéo 1 par-dessus — placée AU-DESSUS des boutons */}
-              <div className="portal-hero-coffre mx-auto mb-6 w-[36%] max-w-sm" data-testid="home-platforms-glass-coffre">
-              <div
-                className={`glass3d-panel portal-hero-stage portal-hero-fx portal-hero-fx-${heroFxVariant} relative w-full overflow-hidden rounded-[1.25rem] border border-white/20 aspect-video`}
-                data-testid="home-platforms-glass-video-zone"
-              >
-                <video
-                  className="pointer-events-none absolute inset-0 h-full w-full object-contain opacity-60"
-                  src={portalGlassVideo2Source}
-                  onLoadedData={() => setPortalGlassVideo2Ready(true)}
-                  onError={() => {
-                    if (portalGlassVideo2Source !== PORTAL_BACKGROUND_VIDEO_FALLBACK) {
-                      setPortalGlassVideo2Source(PORTAL_BACKGROUND_VIDEO_FALLBACK);
-                    }
-                  }}
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                  preload="auto"
-                  aria-hidden="true"
-                  data-testid="home-platforms-bg-video-2"
-                />
-                <video
-                  className="pointer-events-none absolute inset-0 h-full w-full object-contain opacity-85 mix-blend-screen"
-                  src={portalGlassVideo1Source}
-                  onLoadedData={() => setPortalGlassVideo1Ready(true)}
-                  onError={() => {
-                    if (portalGlassVideo1Source !== PORTAL_CARD_VIDEO_FALLBACK) {
-                      setPortalGlassVideo1Source(PORTAL_CARD_VIDEO_FALLBACK);
-                    }
-                  }}
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                  preload="auto"
-                  aria-hidden="true"
-                  data-testid="home-platforms-bg-video-1"
-                />
-                <div className="pointer-events-none absolute inset-0 bg-[rgba(6,12,22,0.10)] backdrop-blur-[1px]" />
-              </div>
-              </div>
 
               <div className="mb-4 grid grid-cols-2 gap-3 lg:grid-cols-4" data-testid="home-platforms-pill-row">
                 {platformEntries.map((card, index) => {
