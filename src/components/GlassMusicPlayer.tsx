@@ -9,7 +9,6 @@ import {
   MUSIC_GENRES, MusicTrack, fetchGenreTracks, fetchCloudTracks, makeLocalTrack, uploadCloudTrack,
 } from "@/lib/musicLibrary";
 
-const AI_HUB_PLAYER_TOP_GIF = "/images/aihub-player-top.gif";
 const AI_HUB_PLAYER_BOTTOM_IMAGE = "/images/aihub-player-bottom.png";
 
 function formatTime(sec: number) {
