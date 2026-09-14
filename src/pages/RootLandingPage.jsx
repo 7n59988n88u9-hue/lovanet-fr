@@ -44,7 +44,7 @@ const portalCards = [
     to: "/shop",
   },
   {
-    title: "Prime & vidéos",
+    title: "Cinéma & vidéos",
     subtitle: "",
     description: "Lecture premium, extraits et navigation multi-plateforme.",
     image: "",

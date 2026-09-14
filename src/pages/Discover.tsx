@@ -9,7 +9,7 @@ import { ShoppingBag, Youtube, Music2, Play, Film, Calendar, Sparkles, ArrowRigh
 import { getSiteOrigin } from "@/lib/siteOrigin";
 
 /**
- * /univers — Univers landing page.
+ * /univers — Page Monde (accès rapides).
  * Purpose: give Google / Bing / image & video search a single,
  * crawlable index of everything Lovanet offers — products with real
  * <img> thumbnails, video previews with VideoObject JSON-LD, and
