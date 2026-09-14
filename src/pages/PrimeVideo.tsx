@@ -4,7 +4,6 @@ import { PageShell } from "@/components/PageShell";
 import { CalendarRange, Clapperboard, ExternalLink, Heart, Play, PlayCircle, Search, Info, SkipForward, Sparkles, Volume2, VolumeX, Maximize, PictureInPicture2, Pause, Star, Globe, Loader2, Captions } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { HoverPreview } from "@/components/HoverPreview";
-import { ManualSyncButton } from "@/components/ManualSyncButton";
 import YouTubeEmbed from "@/components/YouTubeEmbed";
 import { TranslateCardButton } from "@/components/TranslateCardButton";
 import { AudioLanguageSwitcher } from "@/components/AudioLanguageSwitcher";
@@ -577,7 +576,6 @@ const PrimeVideo = () => {
 
   return (
     <PageShell className="page-nav-glass">
-      <ManualSyncButton platform="prime" label="Sync Prime" onDone={() => window.location.reload()} />
 
       {selectedPrime && (
         <section className="w-full pb-8 pt-4" data-testid="prime-main-player-section">
