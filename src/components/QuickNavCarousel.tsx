@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { Link } from "react-router-dom";
-import { ChevronLeft, ChevronRight, Home, BookOpen, Sparkles, Youtube, ShoppingBag, Video, Newspaper, Trophy, User, LogIn, LucideIcon } from "lucide-react";
+import { ChevronLeft, ChevronRight, Home, BookOpen, Sparkles, ShoppingBag, Video, Newspaper, Trophy, User, LogIn, LucideIcon } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { supabase } from "@/integrations/supabase/client";
 import DragScroller from "@/components/DragScroller";
@@ -22,9 +22,7 @@ const DEFAULT_ITEMS: QuickNavItem[] = [
   { id: "home", title: "Portail", to: "/anime-moments", color: "linear-gradient(45deg, #22d3ee, #6366f1)" },
   { id: "catalog", title: "Catalogue", to: "/anime-catalog", color: "linear-gradient(45deg, #fbbf24, #ef4444)" },
   { id: "ai", title: "AI", to: "/ai-hub", color: "linear-gradient(45deg, #00ff9d, #22d3ee)" },
-  { id: "youtube", title: "YouTube", to: "/chaine-youtube", color: "linear-gradient(45deg, #4ade80, #059669)" },
   { id: "shop", title: "Magasin", to: "/shop", color: "linear-gradient(45deg, #f472b6, #9333ea)" },
-  { id: "tiktok", title: "TikTok", to: "/tiktok", color: "linear-gradient(45deg, #38bdf8, #2563eb)" },
   { id: "prime", title: "Prime Vidéo", to: "/prime-video", color: "linear-gradient(45deg, #60a5fa, #1d4ed8)" },
   { id: "news", title: "Actualités", to: "/actualites", color: "linear-gradient(45deg, #a78bfa, #6d28d9)" },
   { id: "leader", title: "Classement", to: "/leaderboard", color: "linear-gradient(45deg, #e879f9, #e11d48)" },
@@ -48,7 +46,6 @@ const MINI_ICON_BY_ID: Record<string, LucideIcon> = {
   home: Home,
   catalog: BookOpen,
   ai: Sparkles,
-  youtube: Youtube,
   shop: ShoppingBag,
   prime: Video,
   news: Newspaper,
@@ -61,7 +58,6 @@ const MINI_TINT_BY_ID: Record<string, string> = {
   home: "from-cyan-400/45 to-indigo-500/45",
   catalog: "from-amber-400/45 to-rose-500/45",
   ai: "from-emerald-400/45 to-sky-400/45",
-  youtube: "from-green-400/45 to-emerald-600/45",
   shop: "from-pink-400/45 to-violet-500/45",
   prime: "from-sky-400/45 to-blue-700/45",
   news: "from-violet-400/45 to-purple-700/45",

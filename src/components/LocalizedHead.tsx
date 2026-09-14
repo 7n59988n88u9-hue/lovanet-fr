@@ -56,10 +56,7 @@ function breadcrumbFor(route: string, canonical: string) {
     "/shop": "Magasin",
     "/anime-catalog": "Catalogue Anime",
     "/anime-countdown": "Anime à venir",
-    "/chaine-youtube": "YouTube",
-    "/lecteurs-video": "Lecteur vidéo",
     "/prime-video": "Prime Video",
-    "/tiktok": "TikTok",
     "/actualites": "Actualités",
     "/leaderboard": "Classement",
     "/profile": "Espace client",
@@ -86,17 +83,14 @@ export function LocalizedHead() {
   const route = normalizeRoute(location.pathname);
   const seoParams = new URLSearchParams(location.search);
   const isShopPage = location.pathname.includes("/shop");
-  const isVideoPage = location.pathname.includes("/lecteurs-video");
   const isCatalogPage = location.pathname.includes("/anime-catalog");
   const isActualitesPage = location.pathname.includes("/actualites");
   const deepSeoParam = isShopPage
     ? seoParams.get("product")
-    : isVideoPage
-      ? seoParams.get("video")
-      : isCatalogPage
+    : isCatalogPage
         ? seoParams.get("anime")
         : null;
-  const deepSeoKey = isShopPage ? "product" : isVideoPage ? "video" : isCatalogPage ? "anime" : null;
+  const deepSeoKey = isShopPage ? "product" : isCatalogPage ? "anime" : null;
   const deepSeoQuery = deepSeoParam && deepSeoKey ? `?${deepSeoKey}=${encodeURIComponent(deepSeoParam)}` : "";
   const { title, description } = metaFor(locale, route);
   const canonicalPath = localizedPath(route, locale);
@@ -108,9 +102,6 @@ export function LocalizedHead() {
     { name: "Magasin", url: `${PRIMARY_SITE}/shop` },
     { name: "Catalogue Anime", url: `${PRIMARY_SITE}/anime-catalog` },
     { name: "Prime Video", url: `${PRIMARY_SITE}/prime-video` },
-    { name: "TikTok", url: `${PRIMARY_SITE}/tiktok` },
-    { name: "YouTube", url: `${PRIMARY_SITE}/chaine-youtube` },
-    { name: "Lecteur vidéo", url: `${PRIMARY_SITE}/lecteurs-video` },
     { name: "Actualités", url: `${PRIMARY_SITE}/actualites` },
     { name: "Classement", url: `${PRIMARY_SITE}/leaderboard` },
     { name: "Espace client", url: `${PRIMARY_SITE}/profile` },
@@ -166,7 +157,6 @@ export function LocalizedHead() {
           itemListElement: [
             { "@type": "Offer", name: "Magasin anime manga", url: `${PRIMARY_SITE}/shop` },
             { "@type": "Offer", name: "Catalogue anime", url: `${PRIMARY_SITE}/anime-catalog` },
-            { "@type": "Offer", name: "Lecteur video", url: `${PRIMARY_SITE}/lecteurs-video` },
             { "@type": "Offer", name: "Espace client", url: `${PRIMARY_SITE}/profile` },
           ],
         },

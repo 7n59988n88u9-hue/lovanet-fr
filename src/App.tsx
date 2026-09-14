@@ -10,11 +10,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { PerformanceProvider } from "@/contexts/PerformanceContext";
 import Index from "./pages/Index";
 import RootLandingPage from "./pages/RootLandingPage";
-import ChaineYoutube from "./pages/ChaineYoutube";
-import ChaineYoutubeManga from "./pages/ChaineYoutubeManga";
-import LecteursVideo from "./pages/LecteursVideo";
 import PrimeVideo from "./pages/PrimeVideo";
-import Tiktok from "./pages/Tiktok";
 import Shop from "./pages/Shop";
 import Contact from "./pages/Contact";
 import Legals from "./pages/Legals";
@@ -66,11 +62,7 @@ const LOCALE_PREFIXES = SUPPORTED_LOCALES.filter((l) => l !== DEFAULT_LOCALE);
 const APP_ROUTES: Array<{ path: string; element: JSX.Element }> = [
   { path: "/", element: <RootLandingPage /> },
   { path: "/anime-moments", element: <Index /> },
-  { path: "/chaine-youtube", element: <ChaineYoutube /> },
-  { path: "/chaine-youtube/manga", element: <ChaineYoutubeManga /> },
-  { path: "/lecteurs-video", element: <LecteursVideo /> },
   { path: "/prime-video", element: <PrimeVideo /> },
-  { path: "/tiktok", element: <Tiktok /> },
   { path: "/shop", element: <Shop /> },
   { path: "/contact", element: <Contact /> },
   { path: "/profile", element: <Profile /> },
@@ -89,15 +81,19 @@ const APP_ROUTES: Array<{ path: string; element: JSX.Element }> = [
 const REDIRECTS: Array<{ from: string; to: string }> = [
   { from: "/home", to: "/anime-moments" },
   { from: "/accueil", to: "/anime-moments" },
-  { from: "/youtube", to: "/chaine-youtube" },
-  { from: "/anime-moments-youtube", to: "/chaine-youtube" },
-  { from: "/animemoments", to: "/chaine-youtube" },
-  { from: "/animemomentsanimeofficiel", to: "/chaine-youtube" },
+  { from: "/chaine-youtube", to: "/" },
+  { from: "/chaine-youtube/manga", to: "/" },
+  { from: "/lecteurs-video", to: "/" },
+  { from: "/tiktok", to: "/" },
+  { from: "/youtube", to: "/" },
+  { from: "/anime-moments-youtube", to: "/" },
+  { from: "/animemoments", to: "/" },
+  { from: "/animemomentsanimeofficiel", to: "/" },
   { from: "/decouvrir", to: "/univers" },
   { from: "/discover", to: "/univers" },
   { from: "/prime", to: "/prime-video" },
   { from: "/amazon-prime", to: "/prime-video" },
-  { from: "/tik-tok", to: "/tiktok" },
+  { from: "/tik-tok", to: "/" },
   { from: "/classement", to: "/leaderboard" },
   { from: "/boutique", to: "/shop" },
   { from: "/catalogue", to: "/anime-catalog" },
@@ -156,7 +152,7 @@ const AppShell = () => {
   const isHubPreviewRoute = pathname.startsWith("/hub/") || LOCALE_PREFIXES.some((lang) => pathname.startsWith(`/${lang}/hub/`));
   const rootPaths = new Set(["/", ...LOCALE_PREFIXES.map((lang) => `/${lang}`)]);
   const isRootLandingRoute = rootPaths.has(pathname);
-  const isCatalogLikeRoute = pathname.startsWith("/anime-catalog") || pathname.startsWith("/tiktok") || pathname.startsWith("/anime-countdown") || LOCALE_PREFIXES.some((lang) => pathname.startsWith(`/${lang}/anime-catalog`) || pathname.startsWith(`/${lang}/tiktok`) || pathname.startsWith(`/${lang}/anime-countdown`));
+  const isCatalogLikeRoute = pathname.startsWith("/anime-catalog") || pathname.startsWith("/anime-countdown") || LOCALE_PREFIXES.some((lang) => pathname.startsWith(`/${lang}/anime-catalog`) || pathname.startsWith(`/${lang}/anime-countdown`));
 
   return (
     <PiPProvider>
