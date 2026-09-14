@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Youtube, ShoppingBag, Newspaper, Compass, Film, PlayCircle, Home, Music2, Clapperboard, Clock } from "lucide-react";
+import { Bot, Compass, Film, Home, Mail, Newspaper, Play, ShoppingBag, Trophy } from "lucide-react";
 import footerBannerBackground from "@/assets/footer-banner-background.mp4.asset.json";
 import footerMenuVideo from "@/assets/footer-menu-video.mp4.asset.json";
 
@@ -8,16 +8,17 @@ const FOOTER_MENU_VIDEO = footerMenuVideo.url;
 
 // Unique destinations — no duplicates between nav and content
 const allDestinations = [
-  { to: "/", label: "Accueil", icon: Home, color: "#a78bfa" },
-  { to: "/anime-moments", label: "Moments Anime", icon: Film, color: "#f472b6" },
-  { to: "/univers", label: "Monde", icon: Compass, color: "#22d3ee" },
-  { to: "/chaine-youtube", label: "YouTube", icon: Youtube, color: "#ef4444" },
-  { to: "/tiktok", label: "TikTok", icon: Music2, color: "#ec4899" },
-  { to: "/prime-video", label: "Cinéma", icon: PlayCircle, color: "#3b82f6" },
-  { to: "/lecteurs-video", label: "Lecteurs Vidéo", icon: Clapperboard, color: "#8b5cf6" },
-  { to: "/anime-countdown", label: "Prochainement", icon: Clock, color: "#f59e0b" },
-  { to: "/actualites", label: "Actus", icon: Newspaper, color: "#10b981" },
-  { to: "/shop", label: "Magasin", icon: ShoppingBag, color: "#f97316" },
+  { to: "/", label: "Accueil", icon: Home },
+  { to: "/anime-moments", label: "Moments Anime", icon: Film },
+  { to: "/prime-video", label: "Cinéma", icon: Play },
+  { to: "/anime-countdown", label: "Prochainement", icon: Play },
+  { to: "/anime-catalog", label: "Sélection", icon: Film },
+  { to: "/ai-hub", label: "Studio IA", icon: Bot },
+  { to: "/univers", label: "Monde", icon: Compass },
+  { to: "/actualites", label: "News", icon: Newspaper },
+  { to: "/shop", label: "Magasin", icon: ShoppingBag },
+  { to: "/contact", label: "Contact", icon: Mail },
+  { to: "/leaderboard", label: "Podium", icon: Trophy },
 ];
 
 const footerPanel =
@@ -43,18 +44,18 @@ export const Footer = () => {
         <div className="relative z-10 border-b border-[var(--theme-border-soft)] px-5 py-8 sm:px-7 lg:px-8 lg:py-10">
           {/* Premium unified navigation hub — no duplicates */}
           <div className="flex flex-col gap-3">
-            <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-5">
+            <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-6">
               {allDestinations.map((item) => (
                 <Link
                   key={item.to}
                   to={item.to}
-                  className="glass3d-btn group flex items-center gap-2.5 rounded-xl px-3 py-2.5 text-sm font-bold text-white transition-all hover:scale-[1.02]"
+                  className="glass3d-btn group flex min-h-11 items-center gap-2.5 rounded-xl px-3 py-2 text-xs font-bold transition-all hover:scale-[1.02]"
                   data-testid={`footer-nav-${item.label.toLowerCase().replace(/\s+/g, "-")}`}
                 >
                   <span className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-lg border border-white/25 bg-white/10 text-white shadow-inner">
                     <item.icon className="h-3.5 w-3.5" />
                   </span>
-                  <span className="text-xs font-bold text-white drop-shadow-sm">{item.label}</span>
+                  <span className="neon-rgb-text-mini text-[11px] font-bold">{item.label}</span>
                 </Link>
               ))}
             </div>

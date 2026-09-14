@@ -12,8 +12,12 @@ const InternalSitelinks: Array<[RegExp, string]> = [
   [/^Monde$/i, "/univers"],
   [/^Cinéma$/i, "/prime-video"],
   [/^Prochainement$/i, "/anime-countdown"],
-  [/^Actus$/i, "/actualites"],
+  [/^Sélection$/i, "/anime-catalog"],
+  [/^Studio IA$/i, "/ai-hub"],
+  [/^News$/i, "/actualites"],
   [/^Magasin$/i, "/shop"],
+  [/^Contact$/i, "/contact"],
+  [/^Podium$/i, "/leaderboard"],
 ];
 
 function AppUnderTest({ path }: { path: string }) {
@@ -27,6 +31,10 @@ function AppUnderTest({ path }: { path: string }) {
         <Route path="/anime-moments" element={<div><h1>route:/anime-moments</h1><Footer /></div>} />
         <Route path="/prime-video" element={<div><h1>route:/prime-video</h1><Footer /></div>} />
         <Route path="/actualites" element={<div><h1>route:/actualites</h1><Footer /></div>} />
+        <Route path="/anime-catalog" element={<div><h1>route:/anime-catalog</h1><Footer /></div>} />
+        <Route path="/ai-hub" element={<div><h1>route:/ai-hub</h1><Footer /></div>} />
+        <Route path="/contact" element={<div><h1>route:/contact</h1><Footer /></div>} />
+        <Route path="/leaderboard" element={<div><h1>route:/leaderboard</h1><Footer /></div>} />
       </Routes>
     </MemoryRouter>
   );
