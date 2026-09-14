@@ -24,7 +24,7 @@ const contextualChips: Record<string, TrendingTopic[]> = {
   default: [
     { id: "catalog", label: "Sélection", emoji: "📺", to: "/anime-catalog", color: "from-purple-500/20 to-pink-600/20" },
     { id: "trending", label: "Top 10", emoji: "🏆", to: "/leaderboard", color: "from-amber-500/20 to-orange-600/20" },
-    { id: "breaking", label: "News", emoji: "📰", to: "/actualites", color: "from-blue-500/20 to-cyan-600/20" },
+    { id: "breaking", label: "Actus", emoji: "📰", to: "/actualites", color: "from-blue-500/20 to-cyan-600/20" },
   ],
   "/anime-moments": [
     { id: "related", label: "Sélection", emoji: "📺", to: "/anime-catalog" },
@@ -33,7 +33,7 @@ const contextualChips: Record<string, TrendingTopic[]> = {
   ],
   "/anime-catalog": [
     { id: "watch", label: "Regarder", emoji: "🎬", to: "/prime-video" },
-    { id: "news", label: "News", emoji: "📰", to: "/actualites" },
+    { id: "news", label: "Actus", emoji: "📰", to: "/actualites" },
     { id: "shop", label: "Shop", emoji: "🛍️", to: "/shop" },
   ],
   "/shop": [

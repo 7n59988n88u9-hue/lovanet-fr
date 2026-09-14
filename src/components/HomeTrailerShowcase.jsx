@@ -26,7 +26,7 @@ const rotatingPortalDestinations = [
   { to: "/anime-catalog", label: "Sélection", icon: Star },
   { to: "/anime-countdown", label: "Prochainement", icon: Play },
   { to: "/lecteurs-video", label: "Lecteurs vidéo", icon: Film },
-  { to: "/contact", label: "Contact", icon: Newspaper },
+  { to: "/contact", label: "Nous écrire", icon: Newspaper },
 ];
 
 
