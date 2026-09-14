@@ -4,6 +4,7 @@ import { API_BASE as API } from "@/lib/apiBase";
 import { Palette, ChevronDown, Sparkles, Award, Zap, Heart, Play, Loader2, X, Languages } from "lucide-react";
 import { motion } from "framer-motion";
 import NeonFooterBar from "@/components/NeonFooterBar";
+import { Navbar } from "@/components/Navbar";
 import YoutubeBrandCover from "@/components/YoutubeBrandCover";
 import TopVideoBanner from "@/components/TopVideoBanner";
 
@@ -349,6 +350,8 @@ export default function AnimeCountdown() {
       <span className="nav-cloud nav-cloud-1" aria-hidden="true" />
       <span className="nav-cloud nav-cloud-2" aria-hidden="true" />
       <span className="nav-cloud nav-cloud-3" aria-hidden="true" />
+      <Navbar />
+      <div className="h-12" />
 
       {/* Premium Animated Banner with Videos & Decorations */}
       <div 
