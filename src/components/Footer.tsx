@@ -3,7 +3,6 @@ import { Youtube, ShoppingBag, Newspaper, Compass, Film, PlayCircle, Home, Music
 import footerBannerBackground from "@/assets/footer-banner-background.mp4.asset.json";
 import footerMenuVideo from "@/assets/footer-menu-video.mp4.asset.json";
 
-const FOOTER_SQUARE_VIDEO = "/portal-bottom-square.mp4";
 const FOOTER_BACKDROP_VIDEO = footerBannerBackground.url;
 const FOOTER_MENU_VIDEO = footerMenuVideo.url;
 
@@ -29,7 +28,7 @@ export const Footer = () => {
     <footer className="mt-24 px-4 pb-10 sm:px-6 lg:px-8">
       <div className={`relative mx-auto w-full max-w-6xl overflow-hidden ${footerPanel}`} data-testid="site-footer-shell">
         <video
-          className="pointer-events-none absolute inset-0 z-0 h-full w-full object-cover opacity-100"
+          className="pointer-events-none absolute inset-0 z-0 h-full w-full object-contain object-center opacity-100"
           src={FOOTER_BACKDROP_VIDEO}
           autoPlay
           muted
@@ -62,26 +61,10 @@ export const Footer = () => {
           </div>
 
           <div className="mt-7 flex justify-end pr-1 sm:pr-4" data-testid="footer-video-cluster">
-            <div className="relative w-full max-w-[500px] pb-3 pl-5 sm:pl-10">
-              <div
-                className="theme-footer-video-shell glass3d-panel relative z-20 aspect-video w-[64%] overflow-hidden rounded-xl border border-white/35 bg-white/10 shadow-2xl"
-                data-testid="footer-lovanet-video-shell"
-              >
+            <div className="w-full max-w-[500px]">
+              <div className="glass3d-panel ml-auto aspect-video w-[64%] overflow-hidden rounded-xl border border-white/30 bg-white/10 shadow-xl">
                 <video
-                  className="h-full w-full bg-transparent object-cover object-center"
-                  src={FOOTER_SQUARE_VIDEO}
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                  preload="auto"
-                  data-testid="footer-lovanet-video"
-                  data-bg-video
-                />
-              </div>
-              <div className="glass3d-panel absolute bottom-0 right-0 z-10 aspect-video w-[64%] overflow-hidden rounded-xl border border-white/30 bg-white/10 shadow-xl">
-                <video
-                  className="h-full w-full bg-transparent object-cover object-center"
+                  className="h-full w-full bg-transparent object-contain object-center"
                   src={FOOTER_MENU_VIDEO}
                   autoPlay
                   muted
