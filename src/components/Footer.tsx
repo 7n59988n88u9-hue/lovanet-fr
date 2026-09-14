@@ -27,6 +27,11 @@ const footerPanel =
 export const Footer = () => {
   return (
     <footer className="mt-24 px-4 pb-10 sm:px-6 lg:px-8">
+      <div className="mx-auto mb-2 flex w-full max-w-6xl justify-end px-3 sm:px-5 lg:px-7">
+        <span className="neon-rgb-text-mini text-[11px] font-bold" data-testid="footer-copyright">
+          2026 ree3franc
+        </span>
+      </div>
       <div className={`relative mx-auto w-full max-w-6xl overflow-hidden ${footerPanel}`} data-testid="site-footer-shell">
         <video
           className="pointer-events-none absolute inset-0 z-0 h-full w-full object-contain object-center opacity-100"
@@ -80,11 +85,6 @@ export const Footer = () => {
           </div>
         </div>
 
-        <div className="absolute bottom-3 right-3 z-20 rounded-full glass3d-panel px-4 py-1.5 border border-white/30 shadow-lg">
-          <span className="neon-rgb-text-mini text-[11px] font-bold" data-testid="footer-copyright">
-            © {new Date().getFullYear()} ree3franc
-          </span>
-        </div>
       </div>
     </footer>
   );
