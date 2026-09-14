@@ -237,38 +237,13 @@ export const Navbar = () => {
               <span className="nav-cloud nav-cloud-1" aria-hidden="true" />
               <span className="nav-cloud nav-cloud-2" aria-hidden="true" />
               <span className="nav-cloud nav-cloud-3" aria-hidden="true" />
-              <div className="flex items-center gap-2" onMouseEnter={cancelClose}>
+              <div className="flex items-center gap-2">
                 {renderLogo()}
               </div>
 
               {/* Dynamic suggestions bar — fills the empty space between logo and cart on mobile */}
               <NavSuggestionsBar />
               <QuickNavCarousel />
-
-              <div className="hidden items-center gap-2 md:flex" onMouseEnter={cancelClose}>
-                <button
-                  type="button"
-                  aria-haspopup="true"
-                  aria-expanded={megaOpen}
-                  aria-controls="mega-menu-panel"
-                  onClick={() => {
-                    cancelClose();
-                    setMegaOpen(true);
-                  }}
-                  onMouseEnter={() => {
-                    cancelClose();
-                    setMegaOpen(true);
-                  }}
-                  className={cn(
-                    "nav-theme-chip ml-auto inline-flex h-11 w-11 items-center justify-center rounded-full",
-                    megaOpen && "nav-theme-chip-active",
-                  )}
-                  aria-label="Ouvrir le menu"
-                  data-testid="desktop-mega-menu-button"
-                >
-                  <Menu className="h-5 w-5" strokeWidth={2} />
-                </button>
-              </div>
 
 
 
