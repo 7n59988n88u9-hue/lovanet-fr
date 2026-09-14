@@ -112,6 +112,17 @@ export default function QuickNavCarousel({ items = DEFAULT_ITEMS, onClose }: { i
   }, []);
 
   useEffect(() => {
+    if (!leftOpen && !rightOpen) return;
+    const timer = window.setTimeout(() => {
+      setLeftOpen(false);
+      setRightOpen(false);
+      setRightRollPhase(0);
+      onClose?.();
+    }, 10_000);
+    return () => window.clearTimeout(timer);
+  }, [leftOpen, rightOpen, onClose]);
+
+  useEffect(() => {
     let alive = true;
     supabase.auth.getSession().then(({ data }) => {
       if (alive) setSignedIn(Boolean(data.session));

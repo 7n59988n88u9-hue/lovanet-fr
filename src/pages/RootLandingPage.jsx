@@ -54,13 +54,6 @@ const portalCards = [
   },
 ];
 
-const platformCards = [
-  { title: "Cinéma", testId: "home-platform-card-prime", to: "/prime-video" },
-  { title: "", testId: "home-platform-card-tiktok", to: "/tiktok" },
-  { title: "Sélection", testId: "home-platform-card-catalogue", to: "/anime-catalog" },
-  { title: "Prochainement", testId: "home-platform-card-upcoming", to: "/anime-countdown" },
-];
-
 const TRAILER_VERSION_LABEL = {
   vostfr: "VOSTFR",
   vf: "VF (Doublage)",
@@ -224,14 +217,6 @@ export default function RootLandingPage() {
   const heroPrimary = useMemo(() => getPortalDestination(0, rotationIndex), [rotationIndex]);
   const heroSecondary = useMemo(() => getPortalDestination(1, rotationIndex), [rotationIndex]);
   const portalEntries = useMemo(() => portalCards.map((card, index) => ({ ...card, action: getPortalDestination(index, rotationIndex) })), [rotationIndex]);
-  const platformEntries = useMemo(
-    () =>
-      platformCards.map((card) => ({
-        ...card,
-        action: rotatingPortalDestinations.find((entry) => entry.to === card.to) || { to: card.to, label: card.title, icon: Play },
-      })),
-    [],
-  );
   const activeCatalogCards = useMemo(() => {
     if (!catalogPreviewPool.length) return [];
     if (catalogPreviewPool.length <= catalogBatchSize) return catalogPreviewPool;
@@ -423,39 +408,9 @@ export default function RootLandingPage() {
             <div className="pointer-events-none absolute inset-0 z-0 border border-white/10 bg-[rgba(6,12,22,0.34)] backdrop-blur-[6px]" />
             <div className="relative">
 
-              <div className="mb-4 grid grid-cols-2 gap-3 lg:grid-cols-4" data-testid="home-platforms-pill-row">
-                {platformEntries.map((card, index) => {
-                  const Icon = card.action.icon;
-                  return (
-                    <Link key={`${card.testId}-${card.to}-${index}`} to={card.to} className="group block min-w-0" data-testid={card.testId}>
-                      <div className="portal-platform-chip group relative overflow-hidden rounded-full border border-white/15 backdrop-blur-md p-2 sm:p-2.5 flex items-center gap-2.5 transition-all duration-300 hover:border-white/30 hover:-translate-y-0.5 hover:shadow-[0_8px_24px_-12px_rgba(34,211,238,0.3)]">
-                        <motion.div 
-                          whileHover={{ rotateY: 180, rotateZ: 10, scale: 1.2 }}
-                          transition={{ type: "spring", stiffness: 300, damping: 10 }}
-                          className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-white/10 bg-black/40"
-                          style={{ perspective: "500px", transformStyle: "preserve-3d" }}
-                        >
-                          <Icon className="h-3.5 w-3.5 text-white group-hover:text-fuchsia-300 transition-colors drop-shadow-[0_0_5px_currentColor]" />
-                        </motion.div>
-                        {card.title && <p className="text-[11px] sm:text-xs font-semibold text-white truncate">{card.title}</p>}
-                      </div>
-                    </Link>
-                  );
-                })}
-              </div>
-
-              {/* Séparateur épais + boutons Sélection & Son centrés en dessous */}
-              <div className="mt-10 flex flex-col items-center gap-8">
+              <div className="mt-4 flex flex-col items-center gap-5">
                 <div className="h-1.5 w-full max-w-md rounded-full bg-[linear-gradient(90deg,transparent,var(--theme-accent,#00ff9d),transparent)] opacity-60" />
-                <div className="flex items-center justify-center gap-3">
-                  <Button asChild size="sm" className="h-11 rounded-full px-6 text-sm font-semibold bg-[rgba(255,255,255,0.08)] text-[rgba(255,255,255,0.95)] backdrop-blur-md border-[rgba(255,255,255,0.25)] hover:bg-[rgba(255,255,255,0.18)] hover:border-[rgba(255,255,255,0.40)] hover:text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.12),0_12px_28px_-18px_rgba(0,0,0,0.5)]" data-testid="home-platforms-button">
-                    <Link to="/anime-catalog">
-                      <span className="inline-flex items-center gap-2 animate-in fade-in zoom-in-95 duration-500">
-                        Sélection
-                        <ArrowRight className="h-4 w-4 text-white drop-shadow-[0_0_5px_rgba(255,255,255,0.55)]" />
-                      </span>
-                    </Link>
-                  </Button>
+                <div className="flex items-center justify-center">
                   <button
                     type="button"
                     onClick={togglePreviewSound}
