@@ -8,6 +8,7 @@ import { buildYouTubeEmbedUrl } from "@/lib/youtubeEmbed";
 import crystalCity from "@/assets/crystal-city.jpg.asset.json";
 import animeMomentsTop from "@/assets/anime-moments-top-v15.mp4.asset.json";
 import { safeLovableVideoSource } from "@/lib/lovableVideoSources";
+import HomeTrailerShowcase from "@/components/HomeTrailerShowcase";
 
 
 import NeonFooterBar from "@/components/NeonFooterBar";
@@ -308,6 +309,8 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      <HomeTrailerShowcase />
 
     </PageShell>
   );
