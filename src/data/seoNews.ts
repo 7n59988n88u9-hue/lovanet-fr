@@ -17,12 +17,12 @@ const RAW_SEO_NEWS = [
       "video anime",
       "YouTube",
       "AnimeMoments",
-      "Lovanet",
+      "ree3franc",
       "anime",
       "AnimemomentsAnimeofficiel"
     ],
     "sourcePath": "/chaine-youtube",
-    "author": "Rédaction Lovanet"
+    "author": "Rédaction ree3franc"
   },
   {
     "id": "video-demon-slayer-kimetsu-no-yaiba-2",
@@ -38,12 +38,12 @@ const RAW_SEO_NEWS = [
       "video anime",
       "YouTube",
       "AnimeMoments",
-      "Lovanet",
+      "ree3franc",
       "anime",
       "AnimemomentsAnimeofficiel"
     ],
     "sourcePath": "/chaine-youtube",
-    "author": "Rédaction Lovanet"
+    "author": "Rédaction ree3franc"
   },
   {
     "id": "video-jujutsu-kaisen-3",
@@ -59,12 +59,12 @@ const RAW_SEO_NEWS = [
       "video anime",
       "YouTube",
       "AnimeMoments",
-      "Lovanet",
+      "ree3franc",
       "anime",
       "AnimemomentsAnimeofficiel"
     ],
     "sourcePath": "/chaine-youtube",
-    "author": "Rédaction Lovanet"
+    "author": "Rédaction ree3franc"
   },
   {
     "id": "video-death-note-4",
@@ -80,12 +80,12 @@ const RAW_SEO_NEWS = [
       "video anime",
       "YouTube",
       "AnimeMoments",
-      "Lovanet",
+      "ree3franc",
       "anime",
       "AnimemomentsAnimeofficiel"
     ],
     "sourcePath": "/chaine-youtube",
-    "author": "Rédaction Lovanet"
+    "author": "Rédaction ree3franc"
   },
   {
     "id": "video-my-hero-academia-5",
@@ -101,12 +101,12 @@ const RAW_SEO_NEWS = [
       "video anime",
       "YouTube",
       "AnimeMoments",
-      "Lovanet",
+      "ree3franc",
       "anime",
       "AnimemomentsAnimeofficiel"
     ],
     "sourcePath": "/chaine-youtube",
-    "author": "Rédaction Lovanet"
+    "author": "Rédaction ree3franc"
   },
   {
     "id": "video-hunter-x-hunter-2011-6",
@@ -122,12 +122,12 @@ const RAW_SEO_NEWS = [
       "video anime",
       "YouTube",
       "AnimeMoments",
-      "Lovanet",
+      "ree3franc",
       "anime",
       "AnimemomentsAnimeofficiel"
     ],
     "sourcePath": "/chaine-youtube",
-    "author": "Rédaction Lovanet"
+    "author": "Rédaction ree3franc"
   },
   {
     "id": "video-one-punch-man-7",
@@ -143,12 +143,12 @@ const RAW_SEO_NEWS = [
       "video anime",
       "YouTube",
       "AnimeMoments",
-      "Lovanet",
+      "ree3franc",
       "anime",
       "AnimemomentsAnimeofficiel"
     ],
     "sourcePath": "/chaine-youtube",
-    "author": "Rédaction Lovanet"
+    "author": "Rédaction ree3franc"
   },
   {
     "id": "video-tokyo-ghoul-8",
@@ -164,12 +164,12 @@ const RAW_SEO_NEWS = [
       "video anime",
       "YouTube",
       "AnimeMoments",
-      "Lovanet",
+      "ree3franc",
       "anime",
       "AnimemomentsAnimeofficiel"
     ],
     "sourcePath": "/chaine-youtube",
-    "author": "Rédaction Lovanet"
+    "author": "Rédaction ree3franc"
   },
   {
     "id": "video-attack-on-titan-season-2-9",
@@ -185,12 +185,12 @@ const RAW_SEO_NEWS = [
       "video anime",
       "YouTube",
       "AnimeMoments",
-      "Lovanet",
+      "ree3franc",
       "anime",
       "AnimemomentsAnimeofficiel"
     ],
     "sourcePath": "/chaine-youtube",
-    "author": "Rédaction Lovanet"
+    "author": "Rédaction ree3franc"
   },
   {
     "id": "video-naruto-10",
@@ -206,12 +206,12 @@ const RAW_SEO_NEWS = [
       "video anime",
       "YouTube",
       "AnimeMoments",
-      "Lovanet",
+      "ree3franc",
       "anime",
       "AnimemomentsAnimeofficiel"
     ],
     "sourcePath": "/chaine-youtube",
-    "author": "Rédaction Lovanet"
+    "author": "Rédaction ree3franc"
   },
   {
     "id": "video-sword-art-online-11",
@@ -227,12 +227,12 @@ const RAW_SEO_NEWS = [
       "video anime",
       "YouTube",
       "AnimeMoments",
-      "Lovanet",
+      "ree3franc",
       "anime",
       "AnimemomentsAnimeofficiel"
     ],
     "sourcePath": "/chaine-youtube",
-    "author": "Rédaction Lovanet"
+    "author": "Rédaction ree3franc"
   },
   {
     "id": "video-your-name-12",
@@ -248,19 +248,19 @@ const RAW_SEO_NEWS = [
       "video anime",
       "YouTube",
       "AnimeMoments",
-      "Lovanet",
+      "ree3franc",
       "anime",
       "AnimemomentsAnimeofficiel"
     ],
     "sourcePath": "/chaine-youtube",
-    "author": "Rédaction Lovanet"
+    "author": "Rédaction ree3franc"
   },
   {
     "id": "product-produit-anime-manga-lovanet-am-001-13",
     "slug": "product-produit-anime-manga-lovanet-am-001-13",
     "url": "https://ree3franc.com/actualites/product-produit-anime-manga-lovanet-am-001-13",
-    "title": "Produit anime manga Lovanet AM-001",
-    "description": "Produit officiel Anime.Moments.officiel disponible dans la magasin Lovanet.",
+    "title": "Produit anime manga ree3franc AM-001",
+    "description": "Produit officiel Anime.Moments.officiel disponible dans la magasin ree3franc.",
     "image": "/products/am-001.svg",
     "datePublished": "2026-07-18T04:11:04+00:00",
     "dateModified": "2026-07-18T04:11:04+00:00",
@@ -269,19 +269,19 @@ const RAW_SEO_NEWS = [
       "produit anime",
       "magasin manga",
       "manga",
-      "Lovanet",
+      "ree3franc",
       "anime",
       "AnimemomentsAnimeofficiel"
     ],
     "sourcePath": "/shop",
-    "author": "Rédaction Lovanet"
+    "author": "Rédaction ree3franc"
   },
   {
     "id": "product-produit-anime-manga-lovanet-am-002-14",
     "slug": "product-produit-anime-manga-lovanet-am-002-14",
     "url": "https://ree3franc.com/actualites/product-produit-anime-manga-lovanet-am-002-14",
-    "title": "Produit anime manga Lovanet AM-002",
-    "description": "Produit officiel Anime.Moments.officiel disponible dans la magasin Lovanet.",
+    "title": "Produit anime manga ree3franc AM-002",
+    "description": "Produit officiel Anime.Moments.officiel disponible dans la magasin ree3franc.",
     "image": "/products/am-002.svg",
     "datePublished": "2026-07-18T01:11:04+00:00",
     "dateModified": "2026-07-18T01:11:04+00:00",
@@ -290,19 +290,19 @@ const RAW_SEO_NEWS = [
       "produit anime",
       "magasin manga",
       "manga",
-      "Lovanet",
+      "ree3franc",
       "anime",
       "AnimemomentsAnimeofficiel"
     ],
     "sourcePath": "/shop",
-    "author": "Rédaction Lovanet"
+    "author": "Rédaction ree3franc"
   },
   {
     "id": "product-produit-anime-manga-lovanet-am-003-15",
     "slug": "product-produit-anime-manga-lovanet-am-003-15",
     "url": "https://ree3franc.com/actualites/product-produit-anime-manga-lovanet-am-003-15",
-    "title": "Produit anime manga Lovanet AM-003",
-    "description": "Produit officiel Anime.Moments.officiel disponible dans la magasin Lovanet.",
+    "title": "Produit anime manga ree3franc AM-003",
+    "description": "Produit officiel Anime.Moments.officiel disponible dans la magasin ree3franc.",
     "image": "/products/am-003.svg",
     "datePublished": "2026-07-17T22:11:04+00:00",
     "dateModified": "2026-07-17T22:11:04+00:00",
@@ -311,19 +311,19 @@ const RAW_SEO_NEWS = [
       "produit anime",
       "magasin manga",
       "manga",
-      "Lovanet",
+      "ree3franc",
       "anime",
       "AnimemomentsAnimeofficiel"
     ],
     "sourcePath": "/shop",
-    "author": "Rédaction Lovanet"
+    "author": "Rédaction ree3franc"
   },
   {
     "id": "product-produit-anime-manga-lovanet-am-004-16",
     "slug": "product-produit-anime-manga-lovanet-am-004-16",
     "url": "https://ree3franc.com/actualites/product-produit-anime-manga-lovanet-am-004-16",
-    "title": "Produit anime manga Lovanet AM-004",
-    "description": "Produit officiel Anime.Moments.officiel disponible dans la magasin Lovanet.",
+    "title": "Produit anime manga ree3franc AM-004",
+    "description": "Produit officiel Anime.Moments.officiel disponible dans la magasin ree3franc.",
     "image": "/products/am-004.svg",
     "datePublished": "2026-07-17T19:11:04+00:00",
     "dateModified": "2026-07-17T19:11:04+00:00",
@@ -332,19 +332,19 @@ const RAW_SEO_NEWS = [
       "produit anime",
       "magasin manga",
       "manga",
-      "Lovanet",
+      "ree3franc",
       "anime",
       "AnimemomentsAnimeofficiel"
     ],
     "sourcePath": "/shop",
-    "author": "Rédaction Lovanet"
+    "author": "Rédaction ree3franc"
   },
   {
     "id": "product-produit-anime-manga-lovanet-am-005-17",
     "slug": "product-produit-anime-manga-lovanet-am-005-17",
     "url": "https://ree3franc.com/actualites/product-produit-anime-manga-lovanet-am-005-17",
-    "title": "Produit anime manga Lovanet AM-005",
-    "description": "Produit officiel Anime.Moments.officiel disponible dans la magasin Lovanet.",
+    "title": "Produit anime manga ree3franc AM-005",
+    "description": "Produit officiel Anime.Moments.officiel disponible dans la magasin ree3franc.",
     "image": "/products/am-005.svg",
     "datePublished": "2026-07-17T16:11:04+00:00",
     "dateModified": "2026-07-17T16:11:04+00:00",
@@ -353,19 +353,19 @@ const RAW_SEO_NEWS = [
       "produit anime",
       "magasin manga",
       "manga",
-      "Lovanet",
+      "ree3franc",
       "anime",
       "AnimemomentsAnimeofficiel"
     ],
     "sourcePath": "/shop",
-    "author": "Rédaction Lovanet"
+    "author": "Rédaction ree3franc"
   },
   {
     "id": "product-produit-anime-manga-lovanet-am-006-18",
     "slug": "product-produit-anime-manga-lovanet-am-006-18",
     "url": "https://ree3franc.com/actualites/product-produit-anime-manga-lovanet-am-006-18",
-    "title": "Produit anime manga Lovanet AM-006",
-    "description": "Produit officiel Anime.Moments.officiel disponible dans la magasin Lovanet.",
+    "title": "Produit anime manga ree3franc AM-006",
+    "description": "Produit officiel Anime.Moments.officiel disponible dans la magasin ree3franc.",
     "image": "/products/am-006.svg",
     "datePublished": "2026-07-17T13:11:04+00:00",
     "dateModified": "2026-07-17T13:11:04+00:00",
@@ -374,19 +374,19 @@ const RAW_SEO_NEWS = [
       "produit anime",
       "magasin manga",
       "manga",
-      "Lovanet",
+      "ree3franc",
       "anime",
       "AnimemomentsAnimeofficiel"
     ],
     "sourcePath": "/shop",
-    "author": "Rédaction Lovanet"
+    "author": "Rédaction ree3franc"
   },
   {
     "id": "product-produit-anime-manga-lovanet-am-007-19",
     "slug": "product-produit-anime-manga-lovanet-am-007-19",
     "url": "https://ree3franc.com/actualites/product-produit-anime-manga-lovanet-am-007-19",
-    "title": "Produit anime manga Lovanet AM-007",
-    "description": "Produit officiel Anime.Moments.officiel disponible dans la magasin Lovanet.",
+    "title": "Produit anime manga ree3franc AM-007",
+    "description": "Produit officiel Anime.Moments.officiel disponible dans la magasin ree3franc.",
     "image": "/products/am-007.svg",
     "datePublished": "2026-07-17T10:11:04+00:00",
     "dateModified": "2026-07-17T10:11:04+00:00",
@@ -395,19 +395,19 @@ const RAW_SEO_NEWS = [
       "produit anime",
       "magasin manga",
       "manga",
-      "Lovanet",
+      "ree3franc",
       "anime",
       "AnimemomentsAnimeofficiel"
     ],
     "sourcePath": "/shop",
-    "author": "Rédaction Lovanet"
+    "author": "Rédaction ree3franc"
   },
   {
     "id": "product-produit-anime-manga-lovanet-am-008-20",
     "slug": "product-produit-anime-manga-lovanet-am-008-20",
     "url": "https://ree3franc.com/actualites/product-produit-anime-manga-lovanet-am-008-20",
-    "title": "Produit anime manga Lovanet AM-008",
-    "description": "Produit officiel Anime.Moments.officiel disponible dans la magasin Lovanet.",
+    "title": "Produit anime manga ree3franc AM-008",
+    "description": "Produit officiel Anime.Moments.officiel disponible dans la magasin ree3franc.",
     "image": "/products/am-008.svg",
     "datePublished": "2026-07-17T07:11:04+00:00",
     "dateModified": "2026-07-17T07:11:04+00:00",
@@ -416,12 +416,12 @@ const RAW_SEO_NEWS = [
       "produit anime",
       "magasin manga",
       "manga",
-      "Lovanet",
+      "ree3franc",
       "anime",
       "AnimemomentsAnimeofficiel"
     ],
     "sourcePath": "/shop",
-    "author": "Rédaction Lovanet"
+    "author": "Rédaction ree3franc"
   },
   {
     "id": "catalog-attack-on-titan-21",
@@ -437,12 +437,12 @@ const RAW_SEO_NEWS = [
       "catalogue anime",
       "manga",
       "trailer",
-      "Lovanet",
+      "ree3franc",
       "anime",
       "AnimemomentsAnimeofficiel"
     ],
     "sourcePath": "/anime-catalog",
-    "author": "Rédaction Lovanet"
+    "author": "Rédaction ree3franc"
   },
   {
     "id": "catalog-demon-slayer-kimetsu-no-yaiba-22",
@@ -458,12 +458,12 @@ const RAW_SEO_NEWS = [
       "catalogue anime",
       "manga",
       "trailer",
-      "Lovanet",
+      "ree3franc",
       "anime",
       "AnimemomentsAnimeofficiel"
     ],
     "sourcePath": "/anime-catalog",
-    "author": "Rédaction Lovanet"
+    "author": "Rédaction ree3franc"
   },
   {
     "id": "catalog-jujutsu-kaisen-23",
@@ -479,12 +479,12 @@ const RAW_SEO_NEWS = [
       "catalogue anime",
       "manga",
       "trailer",
-      "Lovanet",
+      "ree3franc",
       "anime",
       "AnimemomentsAnimeofficiel"
     ],
     "sourcePath": "/anime-catalog",
-    "author": "Rédaction Lovanet"
+    "author": "Rédaction ree3franc"
   },
   {
     "id": "catalog-death-note-24",
@@ -500,12 +500,12 @@ const RAW_SEO_NEWS = [
       "catalogue anime",
       "manga",
       "trailer",
-      "Lovanet",
+      "ree3franc",
       "anime",
       "AnimemomentsAnimeofficiel"
     ],
     "sourcePath": "/anime-catalog",
-    "author": "Rédaction Lovanet"
+    "author": "Rédaction ree3franc"
   },
   {
     "id": "catalog-my-hero-academia-25",
@@ -521,12 +521,12 @@ const RAW_SEO_NEWS = [
       "catalogue anime",
       "manga",
       "trailer",
-      "Lovanet",
+      "ree3franc",
       "anime",
       "AnimemomentsAnimeofficiel"
     ],
     "sourcePath": "/anime-catalog",
-    "author": "Rédaction Lovanet"
+    "author": "Rédaction ree3franc"
   },
   {
     "id": "catalog-hunter-x-hunter-2011-26",
@@ -542,12 +542,12 @@ const RAW_SEO_NEWS = [
       "catalogue anime",
       "manga",
       "trailer",
-      "Lovanet",
+      "ree3franc",
       "anime",
       "AnimemomentsAnimeofficiel"
     ],
     "sourcePath": "/anime-catalog",
-    "author": "Rédaction Lovanet"
+    "author": "Rédaction ree3franc"
   },
   {
     "id": "catalog-one-punch-man-27",
@@ -563,12 +563,12 @@ const RAW_SEO_NEWS = [
       "catalogue anime",
       "manga",
       "trailer",
-      "Lovanet",
+      "ree3franc",
       "anime",
       "AnimemomentsAnimeofficiel"
     ],
     "sourcePath": "/anime-catalog",
-    "author": "Rédaction Lovanet"
+    "author": "Rédaction ree3franc"
   },
   {
     "id": "catalog-one-piece-28",
@@ -584,12 +584,12 @@ const RAW_SEO_NEWS = [
       "catalogue anime",
       "manga",
       "trailer",
-      "Lovanet",
+      "ree3franc",
       "anime",
       "AnimemomentsAnimeofficiel"
     ],
     "sourcePath": "/anime-catalog",
-    "author": "Rédaction Lovanet"
+    "author": "Rédaction ree3franc"
   },
   {
     "id": "catalog-tokyo-ghoul-29",
@@ -605,12 +605,12 @@ const RAW_SEO_NEWS = [
       "catalogue anime",
       "manga",
       "trailer",
-      "Lovanet",
+      "ree3franc",
       "anime",
       "AnimemomentsAnimeofficiel"
     ],
     "sourcePath": "/anime-catalog",
-    "author": "Rédaction Lovanet"
+    "author": "Rédaction ree3franc"
   },
   {
     "id": "catalog-attack-on-titan-season-2-30",
@@ -626,12 +626,12 @@ const RAW_SEO_NEWS = [
       "catalogue anime",
       "manga",
       "trailer",
-      "Lovanet",
+      "ree3franc",
       "anime",
       "AnimemomentsAnimeofficiel"
     ],
     "sourcePath": "/anime-catalog",
-    "author": "Rédaction Lovanet"
+    "author": "Rédaction ree3franc"
   }
  ] as const;
 

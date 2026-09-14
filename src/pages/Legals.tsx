@@ -5,9 +5,9 @@ import { getSiteOrigin } from "@/lib/siteOrigin";
 
 const Legals = () => {
   useEffect(() => {
-    document.title = "Mentions légales — Lovanet";
+    document.title = "Mentions légales — ree3franc";
     const desc =
-      "Mentions légales de Lovanet : éditeur, hébergement, propriété intellectuelle, données personnelles et contact.";
+      "Mentions légales de ree3franc : éditeur, hébergement, propriété intellectuelle, données personnelles et contact.";
     let meta = document.querySelector('meta[name="description"]');
     if (!meta) {
       meta = document.createElement("meta");
@@ -43,7 +43,7 @@ const Legals = () => {
             <h2 className="text-xl font-semibold mb-2 text-primary">Propriété intellectuelle</h2>
             <p>
               L’ensemble des éléments du site (textes, visuels, sons, logos, marque
-              Lovanet) est protégé par le droit d’auteur. Toute
+              ree3franc) est protégé par le droit d’auteur. Toute
               reproduction, représentation ou diffusion sans autorisation écrite
               préalable est interdite. Les contenus tiers restent la propriété de
               leurs ayants droit respectifs.
@@ -53,7 +53,7 @@ const Legals = () => {
           <div>
             <h2 className="text-xl font-semibold mb-2 text-primary">Données personnelles &amp; cookies</h2>
             <p>
-              Lovanet collecte uniquement les données strictement nécessaires au
+              ree3franc collecte uniquement les données strictement nécessaires au
               fonctionnement du service (compte client, commandes via la magasin,
               formulaire de contact). Conformément au RGPD, vous disposez d’un droit
               d’accès, de rectification et de suppression de vos données en nous
@@ -68,7 +68,7 @@ const Legals = () => {
               L’éditeur s’efforce d’assurer l’exactitude des informations publiées
               mais ne peut être tenu responsable des erreurs, omissions ou
               indisponibilités du service. Les liens vers des sites tiers ne
-              sauraient engager la responsabilité de Lovanet.
+              sauraient engager la responsabilité de ree3franc.
             </p>
           </div>
 

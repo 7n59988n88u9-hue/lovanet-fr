@@ -13,7 +13,7 @@ export const SITE_KNOWLEDGE: KnowledgeEntry[] = [
     id: "accueil",
     keywords: ["accueil", "accueil", "home", "page principale", "landing", "demarrer", "commencer"],
     answer:
-      "Le Accueil est la page d'accueil de Lovanet : bannière vidéo, trailers en avant-première et accès rapide vers toutes les plateformes (Cinéma, Sélection, Magasin, Studio IA).",
+      "Le Accueil est la page d'accueil de ree3franc : bannière vidéo, trailers en avant-première et accès rapide vers toutes les plateformes (Cinéma, Sélection, Magasin, Studio IA).",
     link: { label: "Aller au Accueil", to: "/" },
   },
   {
@@ -76,7 +76,7 @@ export const SITE_KNOWLEDGE: KnowledgeEntry[] = [
     id: "aihub",
     keywords: ["ai", "ai hub", "ia", "intelligence", "hub"],
     answer:
-      "L'Studio IA réunit les outils et expériences IA de Lovanet, avec sa bannière vidéo immersive.",
+      "L'Studio IA réunit les outils et expériences IA de ree3franc, avec sa bannière vidéo immersive.",
     link: { label: "Ouvrir l'Studio IA", to: "/ai-hub" },
   },
   {
@@ -127,7 +127,7 @@ export const SITE_KNOWLEDGE: KnowledgeEntry[] = [
     id: "install",
     keywords: ["application", "app", "installer", "pwa", "mobile", "telephone", "hors ligne"],
     answer:
-      "Lovanet s'installe comme application (PWA) : accepte l'invite d'installation ou utilise « Ajouter à l'écran d'accueil ». L'app garde tes réglages de thème et de panneaux.",
+      "ree3franc s'installe comme application (PWA) : accepte l'invite d'installation ou utilise « Ajouter à l'écran d'accueil ». L'app garde tes réglages de thème et de panneaux.",
   },
   {
     id: "contact",
@@ -200,7 +200,7 @@ export function answerQuestion(question: string, botId: BotId = "lova-bot"): Bot
     return { text: BOT_GREETINGS[botId], matched: true };
   }
   if (/(merci|super|genial|parfait)/.test(raw)) {
-    return { text: "Avec plaisir ! Une autre question sur Lovanet ?", matched: true };
+    return { text: "Avec plaisir ! Une autre question sur ree3franc ?", matched: true };
   }
 
   const tokens = tokenize(question);

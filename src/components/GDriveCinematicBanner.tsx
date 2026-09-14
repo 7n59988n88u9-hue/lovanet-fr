@@ -52,7 +52,7 @@ export const GDriveCinematicBanner = ({
           loop
           playsInline
           preload="metadata"
-          aria-label={title ?? "Bannière cinématique Lovanet"}
+          aria-label={title ?? "Bannière cinématique ree3franc"}
           data-bg-video
         />
         <div

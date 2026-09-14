@@ -128,7 +128,7 @@ const enforceCurrentBuild = async () => {
 const LOVANET_RELOAD_FLAG = "lovanet_sw_unregistered";
 const LOVANET_RELOAD_VERSION = "17"; // force la purge et le renouvellement de la PWA
 
-const forceLovanetReload = () => {
+const forceree3francReload = () => {
   if (typeof window === "undefined") return;
 
   const doReload = () => {
@@ -170,7 +170,7 @@ const forceLovanetReload = () => {
 };
 
 if (typeof window !== "undefined") {
-  (window as any).forceLovanetReload = forceLovanetReload;
+  (window as any).forceree3francReload = forceree3francReload;
   applyLaunchFormatBodyClass();
 
   window.addEventListener("lovanet:launch-format", () => {

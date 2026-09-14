@@ -4,7 +4,7 @@ import { SHOP_CATEGORIES } from "../../../data/shopProducts";
 export default defineTool({
   name: "list_shop_categories",
   title: "List shop categories",
-  description: "Return the list of product categories available in the Lovanet shop.",
+  description: "Return the list of product categories available in the ree3franc shop.",
   inputSchema: {},
   annotations: { readOnlyHint: true, idempotentHint: true, openWorldHint: false },
   handler: () => ({

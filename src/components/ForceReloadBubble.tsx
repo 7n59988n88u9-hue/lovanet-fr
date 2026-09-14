@@ -17,8 +17,8 @@ export function ForceReloadBubble() {
 
     // Donne le temps au toast de s'afficher avant le hard reload
     setTimeout(() => {
-      if (typeof window !== "undefined" && (window as any).forceLovanetReload) {
-        (window as any).forceLovanetReload();
+      if (typeof window !== "undefined" && (window as any).forceree3francReload) {
+        (window as any).forceree3francReload();
       } else {
         // Fallback si la fonction globale n'est pas encore montée
         window.location.reload();

@@ -11,10 +11,10 @@ const projectRef = import.meta.env.VITE_SUPABASE_PROJECT_ID || ((globalThis as a
 
 export default defineMcp({
   name: "lovanet-mcp",
-  title: "Lovanet MCP",
+  title: "ree3franc MCP",
   version: "0.1.0",
   instructions:
-    "Tools exposing the public Lovanet catalog. Use `echo` to test connectivity, `list_shop_categories` to discover categories, `list_shop_products` to browse products, and `search_shop_products` to search by keyword, price, source, type, stock, and category.",
+    "Tools exposing the public ree3franc catalog. Use `echo` to test connectivity, `list_shop_categories` to discover categories, `list_shop_products` to browse products, and `search_shop_products` to search by keyword, price, source, type, stock, and category.",
   auth: auth.oauth.issuer({
     issuer: `https://${projectRef}.supabase.co/auth/v1`,
     acceptedAudiences: "authenticated",

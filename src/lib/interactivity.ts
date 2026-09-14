@@ -1,5 +1,5 @@
 /**
- * Global site-wide interactivity layer for Lovanet.
+ * Global site-wide interactivity layer for ree3franc.
  * Import once (see index) and it enhances EVERY page automatically:
  *
  *  1. Cursor spotlight — an intelligent light overlay that follows the pointer

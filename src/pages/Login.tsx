@@ -83,10 +83,10 @@ export default function Login() {
           <div className="flex items-center justify-between gap-3">
             <div className="flex items-center gap-3">
               <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-fuchsia-500 to-cyan-400 flex items-center justify-center shadow-[inset_0_2px_6px_rgba(255,255,255,0.06),0_12px_30px_-6px_rgba(34,211,238,0.12)]">
-                <img src="/lovanet-icon-32.png?v=16" alt="Lovanet" className="h-6 w-6" />
+                <img src="/lovanet-icon-32.png?v=16" alt="ree3franc" className="h-6 w-6" />
               </div>
               <div className="leading-tight">
-                <div className="text-sm font-semibold text-foreground">{compact ? 'Lovanet' : (isRegister ? "Créer un compte" : "Se connecter")}</div>
+                <div className="text-sm font-semibold text-foreground">{compact ? 'ree3franc' : (isRegister ? "Créer un compte" : "Se connecter")}</div>
                 {!compact && <div className="text-xs text-muted-foreground">Accède à ton compte sans quitter la page</div>}
               </div>
             </div>

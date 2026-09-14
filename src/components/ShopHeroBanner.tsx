@@ -72,7 +72,7 @@ export const ShopHeroBanner = ({
       {/* Premium heading */}
       <header className="mb-4 sm:mb-6 text-center sm:text-left">
         <span className="inline-flex items-center gap-2 text-[10px] uppercase tracking-[0.35em] text-primary">
-          <Sparkles className="w-3 h-3" /> Magasin officielle Lovanet
+          <Sparkles className="w-3 h-3" /> Magasin officielle ree3franc
         </span>
         <h1 className="font-display text-3xl sm:text-5xl lg:text-6xl font-extrabold mt-2 gradient-text leading-[1.05]">
           Magasin

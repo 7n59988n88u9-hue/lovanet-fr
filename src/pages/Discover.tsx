@@ -11,7 +11,7 @@ import { getSiteOrigin } from "@/lib/siteOrigin";
 /**
  * /univers — Page Monde (accès rapides).
  * Purpose: give Google / Bing / image & video search a single,
- * crawlable index of everything Lovanet offers — products with real
+ * crawlable index of everything ree3franc offers — products with real
  * <img> thumbnails, video previews with VideoObject JSON-LD, and
  * deep links to every section. No filler text.
  */
@@ -34,7 +34,7 @@ const Discover = () => {
   }, []);
 
   useEffect(() => {
-    document.title = "Monde Lovanet : vidéos, shorts, magasin et animés";
+    document.title = "Monde ree3franc : vidéos, shorts, magasin et animés";
     const PRIMARY_SITE = getSiteOrigin();
     const meta = (name: string, value: string, prop = false) => {
       const sel = prop ? `meta[property="${name}"]` : `meta[name="${name}"]`;
@@ -42,9 +42,9 @@ const Discover = () => {
       if (!el) { el = document.createElement("meta"); prop ? el.setAttribute("property", name) : el.setAttribute("name", name); document.head.appendChild(el); }
       el.content = value;
     };
-    meta("description", "Monde Lovanet : la porte d'entrée vers Moments Anime, la chaîne YouTube, les shorts TikTok, Cinéma, le catalogue 1500+ titres, les sorties prochainement et le magasin collector.");
-    meta("og:title", "Monde Lovanet", true);
-    meta("og:description", "Monde Lovanet : vidéos, shorts, catalogue anime, sorties prochainement et magasin collector.", true);
+    meta("description", "Monde ree3franc : la porte d'entrée vers Moments Anime, la chaîne YouTube, les shorts TikTok, Cinéma, le catalogue 1500+ titres, les sorties prochainement et le magasin collector.");
+    meta("og:title", "Monde ree3franc", true);
+    meta("og:description", "Monde ree3franc : vidéos, shorts, catalogue anime, sorties prochainement et magasin collector.", true);
       meta("og:url", `${PRIMARY_SITE}/univers`, true);
     let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
     if (!canonical) { canonical = document.createElement("link"); canonical.rel = "canonical"; document.head.appendChild(canonical); }
@@ -104,7 +104,7 @@ const Discover = () => {
   const catalogItemListLd = (chunk: typeof catalogSeo, offset: number) => ({
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: `Sélection Lovanet — animés ${offset + 1}–${offset + chunk.length}`,
+    name: `Sélection ree3franc — animés ${offset + 1}–${offset + chunk.length}`,
     itemListElement: chunk.map((it, i) => ({
       "@type": "ListItem",
       position: offset + i + 1,
@@ -112,7 +112,7 @@ const Discover = () => {
         ? {
             "@type": "VideoObject",
             name: `${it.title} — Trailer officiel`,
-            description: it.summary || `${it.title} — trailer et fiche complète sur Lovanet.`,
+            description: it.summary || `${it.title} — trailer et fiche complète sur ree3franc.`,
             thumbnailUrl: [it.cover, `https://i.ytimg.com/vi/${it.trailerId}/hqdefault.jpg`].filter(Boolean),
             uploadDate: it.year ? `${it.year}-01-01` : "2020-01-01",
             contentUrl: `https://www.youtube.com/watch?v=${it.trailerId}`,
@@ -123,7 +123,7 @@ const Discover = () => {
         : {
             "@type": "CreativeWork",
             name: it.title,
-            description: it.summary || `${it.title} — fiche complète sur Lovanet.`,
+            description: it.summary || `${it.title} — fiche complète sur ree3franc.`,
             image: [it.cover, it.banner].filter(Boolean),
             genre: it.genres,
             url: it.url,
@@ -181,10 +181,10 @@ const Discover = () => {
             <div className="relative z-10 max-w-4xl mx-auto flex flex-col items-center">
               <div className="max-w-3xl space-y-5">
                 <div className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/8 px-4 py-2 text-xs font-bold uppercase tracking-[0.24em] text-white/75 backdrop-blur-xl">
-                  Monde Lovanet
+                  Monde ree3franc
                 </div>
                 <h1 className="text-4xl font-black tracking-tight text-white md:text-6xl">
-                  Explore l’univers anime, vidéos et magasin de Lovanet
+                  Explore l’univers anime, vidéos et magasin de ree3franc
                 </h1>
                 <div className="flex flex-wrap justify-center gap-3 pt-2">
                   <Link

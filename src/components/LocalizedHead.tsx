@@ -27,7 +27,7 @@ const KEYWORDS = [
   "Animer officiel",
   "Anime.Moments.officiel",
   "AnimemomentsAnimeofficiel",
-  "Lovanet",
+  "ree3franc",
   "ree3franc.com",
   "ree3franc.com",
   "manga animé",
@@ -50,9 +50,9 @@ function localizedPath(route: string, locale: string) {
 
 function breadcrumbFor(route: string, canonical: string) {
   const labels: Record<string, string> = {
-    "/": "Accueil Lovanet",
+    "/": "Accueil ree3franc",
     "/anime-moments": "Moments Anime",
-    "/univers": "Monde Lovanet",
+    "/univers": "Monde ree3franc",
     "/shop": "Magasin",
     "/anime-catalog": "Sélection Anime",
     "/anime-countdown": "Anime prochainement",
@@ -67,10 +67,10 @@ function breadcrumbFor(route: string, canonical: string) {
   return {
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Lovanet", item: `${PRIMARY_SITE}/` },
+      { "@type": "ListItem", position: 1, name: "ree3franc", item: `${PRIMARY_SITE}/` },
       ...(route === "/"
         ? []
-        : [{ "@type": "ListItem", position: 2, name: labels[route] || "Page Lovanet", item: canonical }]),
+        : [{ "@type": "ListItem", position: 2, name: labels[route] || "Page ree3franc", item: canonical }]),
     ],
   };
 }
@@ -115,7 +115,7 @@ export function LocalizedHead() {
       {
         "@type": "Organization",
         "@id": `${PRIMARY_SITE}/#organization`,
-        name: "Lovanet Anime.Moments.officiel",
+        name: "ree3franc Anime.Moments.officiel",
         alternateName: ["AnimemomentsAnimeofficiel", "Moments Anime Officiel", "Animer officiel"],
         url: PRIMARY_SITE,
         logo: LOGO,
@@ -153,7 +153,7 @@ export function LocalizedHead() {
         ],
         hasOfferCatalog: {
           "@type": "OfferCatalog",
-          name: "Catalogue des services Lovanet",
+          name: "Catalogue des services ree3franc",
           itemListElement: [
             { "@type": "Offer", name: "Magasin anime manga", url: `${PRIMARY_SITE}/shop` },
             { "@type": "Offer", name: "Sélection anime", url: `${PRIMARY_SITE}/anime-catalog` },
@@ -163,17 +163,17 @@ export function LocalizedHead() {
         aggregateRating: { "@type": "AggregateRating", ratingValue: "4.8", reviewCount: "1284", bestRating: "5" },
         review: {
           "@type": "Review",
-          name: "Avis éditorial Lovanet",
+          name: "Avis éditorial ree3franc",
           reviewBody: "Plateforme anime complète réunissant vidéos, catalogue, magasin manga et actus Anime.Moments.officiel.",
           reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
-          author: { "@type": "Organization", name: "Lovanet" },
+          author: { "@type": "Organization", name: "ree3franc" },
         },
       },
       {
         "@type": "WebSite",
         "@id": `${PRIMARY_SITE}/#website`,
         url: PRIMARY_SITE,
-        name: "Lovanet",
+        name: "ree3franc",
         description,
         inLanguage: HREFLANG_MAP[locale],
         publisher: { "@id": `${PRIMARY_SITE}/#organization` },
@@ -186,7 +186,7 @@ export function LocalizedHead() {
       {
         "@type": "ItemList",
         "@id": `${PRIMARY_SITE}/#services`,
-        name: "Services Lovanet",
+        name: "Services ree3franc",
         itemListOrder: "https://schema.org/ItemListOrderAscending",
         numberOfItems: serviceLinks.length,
         itemListElement: serviceLinks.map((item, idx) => ({
@@ -228,9 +228,9 @@ export function LocalizedHead() {
       <meta name="keywords" content={KEYWORDS} />
       <meta name="robots" content="index,follow,max-image-preview:large,max-video-preview:-1,max-snippet:-1" />
       <meta name="googlebot" content="index,follow,max-image-preview:large,max-video-preview:-1,max-snippet:-1" />
-      <meta name="author" content="Lovanet Anime.Moments.officiel" />
-      <meta name="publisher" content="Lovanet" />
-      <meta name="news_keywords" content="anime, manga, AnimeMoments, Lovanet, YouTube anime, TikTok anime, Cinéma anime" />
+      <meta name="author" content="ree3franc Anime.Moments.officiel" />
+      <meta name="publisher" content="ree3franc" />
+      <meta name="news_keywords" content="anime, manga, AnimeMoments, ree3franc, YouTube anime, TikTok anime, Cinéma anime" />
       {GOOGLE_SITE_VERIFICATION ? <meta name="google-site-verification" content={GOOGLE_SITE_VERIFICATION} /> : null}
       {BING_SITE_VERIFICATION ? <meta name="msvalidate.01" content={BING_SITE_VERIFICATION} /> : null}
       {YANDEX_SITE_VERIFICATION ? <meta name="yandex-verification" content={YANDEX_SITE_VERIFICATION} /> : null}
@@ -241,10 +241,10 @@ export function LocalizedHead() {
       {alternateCanonicals.map((href) => (
         <link key={`domain-alt-${href}`} rel="alternate" href={href} />
       ))}
-      <link rel="alternate" type="application/rss+xml" title="Lovanet Actus RSS" href={`${PRIMARY_SITE}/rss.xml`} />
-      <link rel="alternate" type="application/atom+xml" title="Lovanet Actus Atom" href={`${PRIMARY_SITE}/atom.xml`} />
+      <link rel="alternate" type="application/rss+xml" title="ree3franc Actus RSS" href={`${PRIMARY_SITE}/rss.xml`} />
+      <link rel="alternate" type="application/atom+xml" title="ree3franc Actus Atom" href={`${PRIMARY_SITE}/atom.xml`} />
       <link rel="sitemap" type="application/xml" href={`${PRIMARY_SITE}/sitemap.xml`} />
-      <meta property="og:site_name" content="Lovanet" />
+      <meta property="og:site_name" content="ree3franc" />
       <meta property="og:type" content={route === "/actualites" ? "article" : "website"} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />

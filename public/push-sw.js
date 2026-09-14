@@ -4,10 +4,10 @@ self.addEventListener('push', (event) => {
   try { payload = event.data ? event.data.json() : {}; } catch (_) {
     payload = { body: event.data ? event.data.text() : '' };
   }
-  const title = payload.title || 'Lovanet';
+  const title = payload.title || 'ree3franc';
   event.waitUntil(
     self.registration.showNotification(title, {
-      body: payload.body || 'Nouveau contenu disponible sur Lovanet.',
+      body: payload.body || 'Nouveau contenu disponible sur ree3franc.',
       icon: payload.icon || '/lovanet-icon-192.png?v=20',
       badge: payload.badge || '/lovanet-icon-192.png?v=20',
       data: { url: payload.url || '/' },

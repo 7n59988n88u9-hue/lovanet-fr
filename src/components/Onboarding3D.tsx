@@ -38,14 +38,14 @@ const stepsData = [
     icon: <Cpu className="w-4 h-4" />,
     color: "from-sky-400 to-indigo-400",
     orb: "linear-gradient(135deg,#7dd3fc,#6366f1,#a855f7)",
-    text: "Intelligence cristalline connectée. Je filtre et optimise tes recommandations pour un univers Lovanet sur-mesure.",
+    text: "Intelligence cristalline connectée. Je filtre et optimise tes recommandations pour un univers ree3franc sur-mesure.",
   },
   {
     name: "Lova King AI",
     icon: <Shield className="w-4 h-4" />,
     color: "from-amber-400 to-emerald-600",
     orb: "linear-gradient(135deg,#fbbf24,#34d399,#10b981)",
-    text: "Je suis Lova King AI, l'esprit millénaire de la forêt numérique. Je protège l'écosystème et garantis la puissance de Lovanet.",
+    text: "Je suis Lova King AI, l'esprit millénaire de la forêt numérique. Je protège l'écosystème et garantis la puissance de ree3franc.",
   }
 ];
 

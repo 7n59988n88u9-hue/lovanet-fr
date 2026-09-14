@@ -1,4 +1,4 @@
-// Service worker Lovanet — sans precache figé (evite les versions obsoletes).
+// Service worker ree3franc — sans precache figé (evite les versions obsoletes).
 // Version: bump pour forcer une purge complete des anciens caches.
 const SW_VERSION = "2026-09-14-v11-ree3franc-domain";
 const RUNTIME_CACHE = `lovanet-runtime-${SW_VERSION}`;

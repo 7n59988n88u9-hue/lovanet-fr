@@ -33,7 +33,7 @@ export default defineTool({
   name: "search_shop_products",
   title: "Search shop products",
   description:
-    "Search the Lovanet shop catalog by keyword and filters such as category, product type, source, price range, stock, and sort order.",
+    "Search the ree3franc shop catalog by keyword and filters such as category, product type, source, price range, stock, and sort order.",
   inputSchema: {
     query: z.string().optional().describe("Keyword to search in product names, tags, descriptions, bullets, and specs."),
     category: z.enum(CATEGORY_VALUES).optional().describe("Restrict results to one product category."),

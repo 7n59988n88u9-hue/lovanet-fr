@@ -408,7 +408,7 @@ function collectionJsonLd(items: NewsItem[]) {
   return {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    name: "Actus premium Lovanet",
+    name: "Actus premium ree3franc",
     description: "Flux premium anime, manga, gaming et culture pop japonaise alimentés par de vraies sources publiques.",
     url: `${PRIMARY_SITE}/actualites`,
     hasPart: items.slice(0, 18).map((item) => ({
@@ -420,8 +420,8 @@ function collectionJsonLd(items: NewsItem[]) {
       image: [seoImage(item.image)],
       datePublished: item.published_at,
       url: `${PRIMARY_SITE}/actualites/${item.slug}`,
-      author: { "@type": "Organization", name: item.source_name || item.author || "Lovanet" },
-      publisher: { "@type": "Organization", name: "Lovanet", logo: { "@type": "ImageObject", url: `${PRIMARY_SITE}/lovanet-logo-custom.png` } },
+      author: { "@type": "Organization", name: item.source_name || item.author || "ree3franc" },
+      publisher: { "@type": "Organization", name: "ree3franc", logo: { "@type": "ImageObject", url: `${PRIMARY_SITE}/lovanet-logo-custom.png` } },
     })),
   };
 }
@@ -437,10 +437,10 @@ function articleJsonLd(item: NewsItem) {
     dateModified: item.published_at,
     url: `${PRIMARY_SITE}/actualites/${item.slug}`,
     mainEntityOfPage: `${PRIMARY_SITE}/actualites/${item.slug}`,
-    author: { "@type": "Organization", name: item.source_name || item.author || "Lovanet" },
+    author: { "@type": "Organization", name: item.source_name || item.author || "ree3franc" },
     publisher: {
       "@type": "Organization",
-      name: "Lovanet",
+      name: "ree3franc",
       logo: { "@type": "ImageObject", url: `${PRIMARY_SITE}/lovanet-logo-custom.png` },
     },
     articleSection: item.categoryLabels?.join(", ") || item.categories?.join(", "),
@@ -784,12 +784,12 @@ function Actualites() {
   }, [slug, detail?.item]);
 
   const pageTitle = detail?.item
-    ? `${detail.item.title} — Actus premium Lovanet`
-    : "Actus premium anime, manga, gaming et pop culture — Lovanet";
+    ? `${detail.item.title} — Actus premium ree3franc`
+    : "Actus premium anime, manga, gaming et pop culture — ree3franc";
 
   const pageDescription = detail?.item
     ? stripHtml(detail.item.description || detail.item.excerpt || detail.item.content).slice(0, 180)
-    : "Vraies actus premium issues de sources publiques anime, manga, gaming et culture pop japonaise, agrégées automatiquement par Lovanet.";
+    : "Vraies actus premium issues de sources publiques anime, manga, gaming et culture pop japonaise, agrégées automatiquement par ree3franc.";
 
   const canonical = detail?.item ? `${PRIMARY_SITE}/actualites/${detail.item.slug}` : `${PRIMARY_SITE}/actualites`;
   const detailParagraphs = useMemo(() => articleParagraphs(detail?.item), [detail]);

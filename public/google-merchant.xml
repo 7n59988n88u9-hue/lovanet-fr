@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">
   <channel>
-    <title>Lovanet Google Merchant Feed</title>
+    <title>ree3franc Google Merchant Feed</title>
     <link>https://ree3franc.com/shop</link>
     <description>Flux produits pour Google Merchant Center.</description>
     <lastBuildDate>Sat, 08 Aug 2026 20:04:32 GMT</lastBuildDate>
@@ -14,7 +14,7 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>1500.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -28,7 +28,7 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>800.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -36,13 +36,13 @@
     <item>
       <g:id>am-lc-003</g:id>
       <g:title>Ticket Watch Party Privée</g:title>
-      <g:description>Rejoins l&apos;équipe Lovanet pour une séance de visionnage en direct exclusive.</g:description>
+      <g:description>Rejoins l&apos;équipe ree3franc pour une séance de visionnage en direct exclusive.</g:description>
       <g:link>https://ree3franc.com/shop?product=am-lc-003</g:link>
       <g:image_link>https://ree3franc.com/lovanet-logo-custom.png</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>2500.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -56,7 +56,7 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>1200.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -70,7 +70,7 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>24.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -84,7 +84,7 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>29.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -98,7 +98,7 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>32.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -112,7 +112,7 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>49.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -126,7 +126,7 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>19.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -140,21 +140,21 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>22.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
 
     <item>
       <g:id>am-007</g:id>
-      <g:title>Affiche XXL Mur Lovanet</g:title>
+      <g:title>Affiche XXL Mur ree3franc</g:title>
       <g:description>Format mural 100×140 cm, idéal pour chambre gamer. Impression haute résolution.</g:description>
       <g:link>https://ree3franc.com/shop?product=am-007</g:link>
       <g:image_link>https://ree3franc.com/lovanet-logo-custom.png</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>59.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -168,21 +168,21 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>39.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
 
     <item>
       <g:id>am-009</g:id>
-      <g:title>Affiche Calligraphie Kanji Lovanet</g:title>
-      <g:description>Calligraphie kanji à l&apos;encre de Chine, hommage à la chaîne Lovanet. Papier washi 40×60 cm.</g:description>
+      <g:title>Affiche Calligraphie Kanji ree3franc</g:title>
+      <g:description>Calligraphie kanji à l&apos;encre de Chine, hommage à la chaîne ree3franc. Papier washi 40×60 cm.</g:description>
       <g:link>https://ree3franc.com/shop?product=am-009</g:link>
       <g:image_link>https://ree3franc.com/lovanet-logo-custom.png</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>25.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -196,7 +196,7 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>34.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -210,7 +210,7 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>27.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -224,7 +224,7 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>79.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -238,7 +238,7 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>89.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -252,7 +252,7 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>249.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -266,7 +266,7 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>59.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -280,7 +280,7 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>179.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -294,21 +294,21 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>39.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
 
     <item>
       <g:id>am-018</g:id>
-      <g:title>Vinyle Picture Disc Lovanet</g:title>
-      <g:description>Vinyle picture disc 33 tours avec artwork anime, bande-son officielle Lovanet.</g:description>
+      <g:title>Vinyle Picture Disc ree3franc</g:title>
+      <g:description>Vinyle picture disc 33 tours avec artwork anime, bande-son officielle ree3franc.</g:description>
       <g:link>https://ree3franc.com/shop?product=am-018</g:link>
       <g:image_link>https://ree3franc.com/lovanet-logo-custom.png</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>34.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -322,7 +322,7 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>14.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -336,7 +336,7 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>29.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -350,7 +350,7 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>199.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -364,7 +364,7 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>24.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -378,7 +378,7 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>49.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -392,7 +392,7 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>44.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -406,21 +406,21 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>129.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
 
     <item>
       <g:id>am-026</g:id>
-      <g:title>Hoodie Oversize Néon Lovanet</g:title>
+      <g:title>Hoodie Oversize Néon ree3franc</g:title>
       <g:description>Sweat capuche oversize 320g, broderie néon dos. Coton bio certifié. Tailles XS à XXL.</g:description>
       <g:link>https://ree3franc.com/shop?product=am-026</g:link>
       <g:image_link>https://ree3franc.com/lovanet-logo-custom.png</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>79.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -434,7 +434,7 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>35.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -448,7 +448,7 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>65.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -462,7 +462,7 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>119.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -476,7 +476,7 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>42.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -490,7 +490,7 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>89.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -504,21 +504,21 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>55.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
 
     <item>
       <g:id>am-033</g:id>
-      <g:title>Casquette Brodée Lovanet</g:title>
-      <g:description>Casquette 6 panneaux structurée, broderie 3D logo Lovanet. Snapback ajustable.</g:description>
+      <g:title>Casquette Brodée ree3franc</g:title>
+      <g:description>Casquette 6 panneaux structurée, broderie 3D logo ree3franc. Snapback ajustable.</g:description>
       <g:link>https://ree3franc.com/shop?product=am-033</g:link>
       <g:image_link>https://ree3franc.com/lovanet-logo-custom.png</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>29.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -532,7 +532,7 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>22.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -546,7 +546,7 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>39.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -560,7 +560,7 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>95.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -574,7 +574,7 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>69.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -588,7 +588,7 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>19.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -602,7 +602,7 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>49.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -616,7 +616,7 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>45.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -630,7 +630,7 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>159.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -644,7 +644,7 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>129.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -658,7 +658,7 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>89.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -672,7 +672,7 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>179.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -686,7 +686,7 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>49.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -700,7 +700,7 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>119.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -714,7 +714,7 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>99.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -728,21 +728,21 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>149.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
 
     <item>
       <g:id>am-049</g:id>
-      <g:title>Sneakers Co-Lab Lovanet</g:title>
-      <g:description>Collaboration exclusive Lovanet. Numérotées sur la semelle.</g:description>
+      <g:title>Sneakers Co-Lab ree3franc</g:title>
+      <g:description>Collaboration exclusive ree3franc. Numérotées sur la semelle.</g:description>
       <g:link>https://ree3franc.com/shop?product=am-049</g:link>
       <g:image_link>https://ree3franc.com/lovanet-logo-custom.png</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>199.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -756,7 +756,7 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>35.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -770,7 +770,7 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>32.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -784,21 +784,21 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>14.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
 
     <item>
       <g:id>am-053</g:id>
-      <g:title>EP Digital Lovanet Lo-Fi</g:title>
+      <g:title>EP Digital ree3franc Lo-Fi</g:title>
       <g:description>EP 6 titres lo-fi anime téléchargeable en FLAC et MP3 320kbps. Artwork HD inclus.</g:description>
       <g:link>https://ree3franc.com/shop?product=am-053</g:link>
       <g:image_link>https://ree3franc.com/lovanet-logo-custom.png</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>9.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -812,7 +812,7 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>19.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -826,7 +826,7 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>119.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -840,7 +840,7 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>189.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -854,7 +854,7 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>12.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -868,7 +868,7 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>24.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -882,35 +882,35 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>11.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
 
     <item>
       <g:id>am-060</g:id>
-      <g:title>BD Hardcover Lovanet Saga</g:title>
+      <g:title>BD Hardcover ree3franc Saga</g:title>
       <g:description>Roman graphique cartonné 120 pages couleur, papier mat 150g.</g:description>
       <g:link>https://ree3franc.com/shop?product=am-060</g:link>
       <g:image_link>https://ree3franc.com/lovanet-logo-custom.png</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>29.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
 
     <item>
       <g:id>am-061</g:id>
-      <g:title>Light Novel Lovanet Chronicles</g:title>
+      <g:title>Light Novel ree3franc Chronicles</g:title>
       <g:description>Light novel illustré 320 pages, 12 illustrations couleur pleine page.</g:description>
       <g:link>https://ree3franc.com/shop?product=am-061</g:link>
       <g:image_link>https://ree3franc.com/lovanet-logo-custom.png</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>16.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -924,7 +924,7 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>18.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -938,7 +938,7 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>79.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -952,7 +952,7 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>22.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -966,7 +966,7 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>39.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -980,7 +980,7 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>14.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -994,7 +994,7 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>18.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -1008,7 +1008,7 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>26.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -1022,7 +1022,7 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>19.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -1036,7 +1036,7 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>35.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -1050,7 +1050,7 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>24.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -1064,7 +1064,7 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>49.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -1078,7 +1078,7 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>12.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -1092,7 +1092,7 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>16.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -1106,7 +1106,7 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>39.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>
@@ -1120,7 +1120,7 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>22.00 EUR</g:price>
-      <g:brand>Lovanet</g:brand>
+      <g:brand>ree3franc</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>222</g:google_product_category>
     </item>

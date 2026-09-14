@@ -47,7 +47,7 @@ export default function Podium() {
   return (
     <PageShell className="actualites-monochrome">
       <Helmet>
-        <title>Podium Global — Lovanet</title>
+        <title>Podium Global — ree3franc</title>
       </Helmet>
       
       <section className="container mx-auto px-4 lg:px-8 py-12 md:py-20 max-w-5xl">
@@ -73,7 +73,7 @@ export default function Podium() {
             Temple de la <span className="text-white">Renommée</span>
           </h1>
           <p className="text-white/60 max-w-2xl mx-auto text-sm md:text-base">
-            Découvrez les membres les plus actifs de la communauté Lovanet. Accumulez des LovaCoins en complétant des quêtes journalières et débloquez des succès pour gravir les échelons.
+            Découvrez les membres les plus actifs de la communauté ree3franc. Accumulez des LovaCoins en complétant des quêtes journalières et débloquez des succès pour gravir les échelons.
           </p>
         </header>
 

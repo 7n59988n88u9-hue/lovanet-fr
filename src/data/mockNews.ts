@@ -52,7 +52,7 @@ const SOURCES = [
   { id: "mywaifulist", name: "MyWaifuList News" },
   { id: "sugoilite", name: "Sugoi Lite" },
   { id: "wsjmanga", name: "WSJ_manga" },
-  { id: "lovanet", name: "Lovanet Officiel" }
+  { id: "lovanet", name: "ree3franc Officiel" }
 ];
 
 export const getMockNews = (limit = 24, offset = 0) => {

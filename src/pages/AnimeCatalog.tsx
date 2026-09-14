@@ -80,7 +80,7 @@ const PRIMARY_SITE = getSiteOrigin();
 const FAVORITES_STORAGE_KEY = "lovanet.catalog.favorites.v2";
 
 function mediaTitle(media: Media | null | undefined) {
-  if (!media) return "Sélection Anime Lovanet";
+  if (!media) return "Sélection Anime ree3franc";
   return media.title.english || media.title.romaji || media.title.native || `Anime ${media.id}`;
 }
 
@@ -1007,7 +1007,7 @@ export default function AnimeCatalog() {
           </div>
           <div class="pip-meta">
             <p class="pip-title">${mediaTitle(activePlayer)}</p>
-            <p class="pip-sub">${activePlayer.format || "Anime"} · ${activePlayer.seasonYear || "Sélection Lovanet"}</p>
+            <p class="pip-sub">${activePlayer.format || "Anime"} · ${activePlayer.seasonYear || "Sélection ree3franc"}</p>
           </div>
         `;
         pipWindow.document.body.appendChild(shell);
@@ -1128,10 +1128,10 @@ export default function AnimeCatalog() {
     };
   }, []);
 
-  const seoTitle = selectedSeoMedia ? `${mediaTitle(selectedSeoMedia)} · Lecteur Sélection anime Lovanet` : "Sélection Anime Lovanet";
+  const seoTitle = selectedSeoMedia ? `${mediaTitle(selectedSeoMedia)} · Lecteur Sélection anime ree3franc` : "Sélection Anime ree3franc";
   const seoDescription = selectedSeoMedia
     ? mediaDescription(selectedSeoMedia)
-    : "Sélection anime/manga Lovanet avec lecteur géant, lecture auto, favoris persistants et fiches vidéo indexables.";
+    : "Sélection anime/manga ree3franc avec lecteur géant, lecture auto, favoris persistants et fiches vidéo indexables.";
   const seoCanonical = selectedSeoMedia ? `${PRIMARY_SITE}/anime-catalog?anime=${selectedSeoMedia.id}` : `${PRIMARY_SITE}/anime-catalog`;
 
   return (
@@ -1172,7 +1172,7 @@ export default function AnimeCatalog() {
                   ratingValue: ((selectedSeoMedia.averageScore ?? 80) / 20).toFixed(1),
                   bestRating: "5",
                 },
-                author: { "@type": "Organization", name: "Lovanet" },
+                author: { "@type": "Organization", name: "ree3franc" },
               },
             })}
           </script>

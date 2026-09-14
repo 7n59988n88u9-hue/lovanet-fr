@@ -4057,7 +4057,7 @@ body[data-panel-tint="on"] .glass3d-btn.is-active {
 
 /* ============================================================
    Effets interactifs forts + verre 3D épais partagé
-   (panneau accès rapide, thèmes, menu complet, parcours Lovanet)
+   (panneau accès rapide, thèmes, menu complet, parcours ree3franc)
    ============================================================ */
 .glass3d-btn {
   position: relative;
@@ -4192,7 +4192,7 @@ body[data-panel-tint="on"] .glass3d-surface a:not(.glass3d-plain):not([style*="b
   background: linear-gradient(180deg, hsl(var(--primary) / 0.26), rgba(255, 255, 255, 0.06) 55%, rgba(0, 0, 0, 0.2)) !important;
 }
 
-/* Menu mobile complet et méga-menu « Parcours Lovanet » : même verre épais */
+/* Menu mobile complet et méga-menu « Parcours ree3franc » : même verre épais */
 .mnav-shell.glass3d-panel,
 .nav-theme-shell.glass3d-panel {
   background:
