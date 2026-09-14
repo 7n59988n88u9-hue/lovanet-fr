@@ -126,7 +126,7 @@ const enforceCurrentBuild = async () => {
 
 // Ensure old service workers and caches are unregistered to avoid stale preview assets.
 const LOVANET_RELOAD_FLAG = "lovanet_sw_unregistered";
-const LOVANET_RELOAD_VERSION = "17"; // force la purge et le renouvellement de la PWA
+const LOVANET_RELOAD_VERSION = "18"; // force la purge et le renouvellement de la PWA
 
 const forceree3francReload = () => {
   if (typeof window === "undefined") return;
