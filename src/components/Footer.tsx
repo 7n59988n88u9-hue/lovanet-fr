@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 import { Youtube, ShoppingBag, Newspaper, Compass, Film, PlayCircle, Home, Music2, Clapperboard, Clock } from "lucide-react";
+import footerBannerBackground from "@/assets/footer-banner-background.mp4.asset.json";
 
 const FOOTER_SQUARE_VIDEO = "/portal-bottom-square.mp4";
-const FOOTER_BACKDROP_VIDEO = "/media/portal-bottom-background-extra.mp4";
+const FOOTER_BACKDROP_VIDEO = footerBannerBackground.url;
 const FOOTER_BACKDROP_IMAGE = "/media/portal-bottom-background-image.png";
 
 // Unique destinations — no duplicates between nav and content
