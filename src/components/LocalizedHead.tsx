@@ -12,7 +12,7 @@ import {
 import { getSiteOrigin } from "@/lib/siteOrigin";
 
 const PRIMARY_SITE = getSiteOrigin();
-const ALTERNATE_SITES = ["https://ree3franc.com", "https://ree3franc.com", "https://ree3franc.com"].filter((site) => site !== PRIMARY_SITE);
+const ALTERNATE_SITES: string[] = [];
 const OG_IMAGE = `${PRIMARY_SITE}/lovanet-logo-custom.png`;
 const LOGO = `${PRIMARY_SITE}/lovanet-logo-custom.png`;
 const GOOGLE_SITE_VERIFICATION = (import.meta.env.VITE_GOOGLE_SITE_VERIFICATION ?? "");
