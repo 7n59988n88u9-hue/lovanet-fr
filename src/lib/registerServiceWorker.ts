@@ -42,7 +42,7 @@ const unregisterAppWorkers = async () => {
 // Purge unique par version : si un navigateur (ou une PWA installee) garde un
 // ancien cache Workbox, on supprime workers + caches puis on recharge une fois.
 const PURGE_KEY = "lovanet_prod_cache_purge";
-const PURGE_VERSION = "2026-09-14-ree3franc-domain-v12";
+const PURGE_VERSION = "2026-09-14-ree3franc-brand-v13";
 
 const purgeStaleCachesOnce = async () => {
   try {

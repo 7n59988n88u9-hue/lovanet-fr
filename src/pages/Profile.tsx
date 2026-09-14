@@ -322,7 +322,7 @@ export default function Profile() {
         {/* Right Column */}
         <div className="space-y-6">
           
-          {/* IDEA 7: Carte Membre Virtuelle Lovanet Premium (Holographic Tilt Card) */}
+          {/* IDEA 7: Carte Membre Virtuelle ree3franc Premium (Holographic Tilt Card) */}
           <div className="perspective-1000 relative w-full aspect-[1.6/1] group cursor-pointer">
             <div className="w-full h-full transition-transform duration-500 transform-style-3d group-hover:rotate-y-12 group-hover:rotate-x-12 rounded-2xl bg-gradient-to-br from-zinc-800 to-black border border-white/20 shadow-2xl p-5 flex flex-col justify-between overflow-hidden relative">
               <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -331,7 +331,7 @@ export default function Profile() {
               
               <div className="flex justify-between items-start relative z-10">
                 <div className="font-display font-black text-xl tracking-wider bg-clip-text text-transparent bg-gradient-to-r from-amber-200 to-amber-500">
-                  LOVANET PREMIUM
+                  ree3franc PREMIUM
                 </div>
                 <ShieldCheck className="w-6 h-6 text-amber-400" />
               </div>

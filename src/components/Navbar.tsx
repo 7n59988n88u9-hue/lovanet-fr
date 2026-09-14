@@ -78,7 +78,7 @@ const megaSections: MegaItem[] = [
   { to: "/anime-catalog", label: "Sélection Anime", icon: Film },
   { to: "/ai-hub", label: "AI", icon: Bot },
   { to: "/shop", label: "Magasin", icon: ShoppingBag },
-  { to: "/univers", label: "Monde Lovanet", icon: Compass },
+  { to: "/univers", label: "Monde ree3franc", icon: Compass },
   { to: "/actualites", label: "Actus", icon: Sparkles },
   { to: "/profile", label: "Profil", icon: User },
   { to: "/contact", label: "Contact", icon: Mail },
@@ -226,7 +226,7 @@ export const Navbar = () => {
     <Link
       to="/"
       className="group inline-flex min-h-[52px] items-center rounded-full p-0.5"
-      aria-label="Lovanet — Accueil"
+      aria-label="ree3franc — Accueil"
       data-testid="header-home-logo-link"
       onClick={() => setOpen(false)}
     >
@@ -235,7 +235,7 @@ export const Navbar = () => {
       >
         <img
           src="/lovanet-logo-round.png?v=21"
-          alt="Lovanet"
+          alt="ree3franc"
           className="relative z-10 h-full w-full rounded-full object-cover object-center"
         />
         <span className="nav-logo-pin-gloss" aria-hidden="true" />
@@ -458,7 +458,7 @@ export const Navbar = () => {
         <SheetContent side="right" className="mobile-sheet-panel mnav-slim mnav-drawer w-[min(88vw,368px)] border-none bg-transparent p-1.5 shadow-none sm:p-2 overflow-hidden" data-testid="mobile-nav-sheet">
           <div className="mnav-backdrop absolute inset-0 -z-10" />
           <SheetHeader className="sr-only">
-            <SheetTitle>Navigation mobile Lovanet</SheetTitle>
+            <SheetTitle>Navigation mobile ree3franc</SheetTitle>
             <SheetDescription>Navigation principale, accès rapides et liens utiles.</SheetDescription>
           </SheetHeader>
           <div className="mnav-shell mnav-glass-slim flex h-full flex-col overflow-hidden rounded-[1.5rem] relative z-10">

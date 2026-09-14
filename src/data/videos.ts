@@ -23,7 +23,7 @@ export const products = [
   { id: "tee", name: "T-shirt Oversize Moments Anime", tag: "Drop manga", emoji: "👕" },
   { id: "fig", name: "Figurine LED Anime Glow", tag: "Collector", emoji: "💡" },
   { id: "pos", name: "Pack Posters Moments Officiels", tag: "Nouveau", emoji: "🖼️" },
-  { id: "hoodie", name: "Hoodie Lovanet Neon", tag: "Streetwear", emoji: "🧥" },
+  { id: "hoodie", name: "Hoodie ree3franc Neon", tag: "Streetwear", emoji: "🧥" },
   { id: "mug", name: "Mug Anime Moment", tag: "Daily", emoji: "☕" },
   { id: "stickers", name: "Sticker Pack Madoka", tag: "Fan art", emoji: "✨" },
 ];

@@ -100,7 +100,7 @@ export default function OAuthConsent() {
         <div className="space-y-2 text-center">
           <h1 className="text-2xl font-semibold">Connect {clientName}</h1>
           <p className="text-sm text-muted-foreground">
-            This will let {clientName} call Lovanet MCP tools while acting as your account.
+            This will let {clientName} call ree3franc MCP tools while acting as your account.
           </p>
         </div>
         {details.scopes && details.scopes.length > 0 && (

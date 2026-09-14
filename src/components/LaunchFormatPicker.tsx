@@ -82,7 +82,7 @@ export function LaunchFormatPicker() {
           <X className="h-4 w-4" />
         </button>
         <p className="text-[10px] font-black uppercase tracking-[0.28em] text-white/65">Choix du format</p>
-        <h2 className="mt-2 text-2xl font-black tracking-tight">Ouvrir Lovanet comme…</h2>
+        <h2 className="mt-2 text-2xl font-black tracking-tight">Ouvrir ree3franc comme…</h2>
         <p className="mt-2 text-sm text-white/75">Choisis le format de départ à chaque ouverture installée.</p>
 
         <div className="mt-5 grid gap-3 sm:grid-cols-2">

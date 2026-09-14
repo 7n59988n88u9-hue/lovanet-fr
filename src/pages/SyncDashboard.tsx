@@ -176,7 +176,7 @@ export default function SyncDashboard() {
         
         {/* Sidebar */}
         <div className="w-full md:w-64 space-y-2">
-          <h2 className="text-xl font-bold mb-6 font-heading text-primary">Admin Lovanet</h2>
+          <h2 className="text-xl font-bold mb-6 font-heading text-primary">Admin ree3franc</h2>
           <button 
             onClick={() => setActiveTab("dashboard")} 
             className={`w-full flex items-center gap-3 px-4 py-3 rounded-lg transition-colors ${activeTab === "dashboard" ? "bg-primary text-white" : "hover:bg-white/5"}`}

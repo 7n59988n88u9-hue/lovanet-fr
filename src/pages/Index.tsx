@@ -113,7 +113,7 @@ const AnimePreview = ({
   );
 };
 
-const tags = ["Lovanet", "Manga animé", "YouTube", "TikTok", "Shop", "3D", "Live", "Selection"];
+const tags = ["ree3franc", "Manga animé", "YouTube", "TikTok", "Shop", "3D", "Live", "Selection"];
 const reactions = [
   { emoji: "🔥", label: "Hot" },
   { emoji: "😂", label: "Fun" },
@@ -251,7 +251,7 @@ const Index = () => {
     <PageShell>
       <section className="relative overflow-hidden">
         <h1 className="sr-only">
-          Lovanet — Accueil anime, manga, gaming et pop culture japonaise
+          ree3franc — Accueil anime, manga, gaming et pop culture japonaise
         </h1>
         <div
           className="absolute inset-0 -z-10"

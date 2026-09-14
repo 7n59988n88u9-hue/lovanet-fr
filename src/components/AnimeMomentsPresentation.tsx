@@ -24,7 +24,7 @@ import blingBling from "@/assets/bling-bling.jpg.asset.json";
 import { videos } from "@/data/videos";
 
 const tags = [
-  "Lovanet",
+  "ree3franc",
   "Manga animé",
   "YouTube",
   "TikTok",
@@ -268,7 +268,7 @@ export const AnimeMomentsPresentation = () => {
 
   const shareUrl =
     typeof window !== "undefined" ? window.location.href : "https://ree3franc.com";
-  const shareText = "Lovanet — Moments Anime, catalogue & shop";
+  const shareText = "ree3franc — Moments Anime, catalogue & shop";
 
   const copyLink = async () => {
     try {
@@ -456,7 +456,7 @@ export const AnimeMomentsPresentation = () => {
           {/* Banner overlays */}
           <div className="absolute top-4 left-4 sm:top-6 sm:left-6 z-30 flex items-center gap-2">
             <span className="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-full bg-white/[0.08] backdrop-blur border border-white/10 text-white/90 text-[10px] font-bold tracking-widest uppercase">
-              Officiel Lovanet
+              Officiel ree3franc
             </span>
           </div>
 

@@ -18,7 +18,7 @@ import { motion } from "framer-motion";
 
 const rotatingPortalDestinations = [
   { to: "/anime-moments", label: "Moments Anime", icon: Film },
-  { to: "/decouvrir", label: "Monde Lovanet", icon: Compass },
+  { to: "/decouvrir", label: "Monde ree3franc", icon: Compass },
   { to: "/actualites", label: "Actus", icon: Newspaper },
   { to: "/shop", label: "Magasin", icon: ShoppingBag },
   { to: "/prime-video", label: "Cinéma", icon: Play },

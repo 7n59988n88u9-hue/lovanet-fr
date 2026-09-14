@@ -199,7 +199,7 @@ export default function GlassMusicPlayer({ className = "" }: { className?: strin
     try {
       for (const file of Array.from(files)) {
         if (!file.type.startsWith("audio/")) continue;
-        await uploadCloudTrack(file, genre, "Bibliothèque Lovanet");
+        await uploadCloudTrack(file, genre, "Bibliothèque ree3franc");
       }
       setCloud(await fetchCloudTracks());
       toast({ title: "Musiques publiées", description: "Les titres sont disponibles pour tous les visiteurs." });

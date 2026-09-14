@@ -40,9 +40,9 @@ var SEEDS = [
   { name: "Triptyque Moments Forts S1", category: "poster", tag: "Set de 3", price: 49, description: "Trois posters 30\xD740 cm formant une sc\xE8ne panoramique. Best-of saison 1 de la cha\xEEne YouTube.", source: "youtube" },
   { name: "Affiche Minimaliste Madoka", category: "poster", tag: "Art print", price: 19, description: "Style art d\xE9co minimaliste, papier coton 300g. \xC9dition open de 500 exemplaires.", source: "youtube" },
   { name: "Poster Vintage Manga Anim\xE9", category: "poster", tag: "R\xE9tro", price: 22, description: "Inspiration affiche cin\xE9ma japonaise des ann\xE9es 80, papier vieilli kraft. 50\xD770 cm.", source: "both" },
-  { name: "Affiche XXL Mur Lovanet", category: "poster", tag: "Mural", price: 59, description: "Format mural 100\xD7140 cm, id\xE9al pour chambre gamer. Impression haute r\xE9solution.", source: "tiktok" },
+  { name: "Affiche XXL Mur ree3franc", category: "poster", tag: "Mural", price: 59, description: "Format mural 100\xD7140 cm, id\xE9al pour chambre gamer. Impression haute r\xE9solution.", source: "tiktok" },
   { name: "Poster Lenticulaire 3D Anime", category: "poster", tag: "3D lenticulaire", price: 39, description: "Effet 3D et changement d'image selon l'angle. Encadr\xE9 bois noir 30\xD740 cm.", source: "both" },
-  { name: "Affiche Calligraphie Kanji Lovanet", category: "poster", tag: "Signature", price: 25, description: "Calligraphie kanji \xE0 l'encre de Chine, hommage \xE0 la cha\xEEne Lovanet. Papier washi 40\xD760 cm.", source: "youtube" },
+  { name: "Affiche Calligraphie Kanji ree3franc", category: "poster", tag: "Signature", price: 25, description: "Calligraphie kanji \xE0 l'encre de Chine, hommage \xE0 la cha\xEEne ree3franc. Papier washi 40\xD760 cm.", source: "youtube" },
   { name: "Set Mini-Posters Episodes Cultes", category: "poster", tag: "Pack x6", price: 34, description: "Six mini-posters A4 des \xE9pisodes les plus vus de la cha\xEEne. Tube collector inclus.", source: "youtube" },
   { name: "Poster Cyberpunk TikTok Edit", category: "poster", tag: "N\xE9o-Tokyo", price: 27, description: "Composition cyberpunk inspir\xE9e des edits TikTok viraux. Finition mate 50\xD770 cm.", source: "tiktok" },
   { name: "Affiche Premium Encadr\xE9e Alu", category: "poster", tag: "Encadr\xE9", price: 79, description: "Tirage Hahnem\xFChle 70\xD7100 cm encadr\xE9 aluminium bross\xE9. Pr\xEAt \xE0 accrocher.", source: "both" },
@@ -52,7 +52,7 @@ var SEEDS = [
   { name: "Nendoroid Moments Anime", category: "collector", tag: "Chibi", price: 59, description: "Figurine chibi 10 cm articul\xE9e avec 3 visages interchangeables et accessoires.", source: "youtube" },
   { name: "Bust Half-Scale Madoka", category: "collector", tag: "Demi-buste", price: 179, description: "Buste demi-\xE9chelle, 20 cm de haut, finition mate premium. Bo\xEEte collector incluse.", source: "youtube" },
   { name: "Set Pin's \xC9mail Officiels", category: "collector", tag: "Pack x10", price: 39, description: "10 pin's \xE9mail dur, design exclusif AnimemomentsAnimeofficiel. Carte support cartonn\xE9e.", source: "tiktok" },
-  { name: "Vinyle Picture Disc Lovanet", category: "collector", tag: 'Vinyle 12"', price: 34, description: "Vinyle picture disc 33 tours avec artwork anime, bande-son officielle Lovanet.", source: "both" },
+  { name: "Vinyle Picture Disc ree3franc", category: "collector", tag: 'Vinyle 12"', price: 34, description: "Vinyle picture disc 33 tours avec artwork anime, bande-son officielle ree3franc.", source: "both" },
   { name: "Carte Holo Tirage Limit\xE9", category: "collector", tag: "Trading card", price: 14, description: "Carte holographique format trading, scell\xE9e. Tirage 1000 exemplaires num\xE9rot\xE9s.", source: "tiktok" },
   { name: "Funko Style Anime Officiel", category: "collector", tag: "Vinyl figure", price: 29, description: "Figurine vinyle stylis\xE9e 10 cm, bo\xEEte fen\xEAtre. Premi\xE8re \xE9dition sign\xE9e.", source: "youtube" },
   { name: "Diorama LED Sc\xE8ne Culte", category: "collector", tag: "Diorama", price: 199, description: "Diorama 25\xD725 cm avec \xE9clairage LED int\xE9gr\xE9, t\xE9l\xE9commande RGB. Pi\xE8ce unique.", source: "youtube" },
@@ -61,14 +61,14 @@ var SEEDS = [
   { name: "Boule de Cristal Hologramme", category: "collector", tag: "Cristal 3D", price: 44, description: "Boule cristal grav\xE9e laser avec personnage en 3D et socle LED. Diam\xE8tre 8 cm.", source: "tiktok" },
   { name: "Coffret Collector Saison 1", category: "collector", tag: "Box set", price: 129, description: "Coffret rigide contenant artbook, pin's, poster, m\xE9daille et carte. \xC9dition fans.", source: "youtube" },
   // ===== VÊTEMENTS / APPAREL (15) =====
-  { name: "Hoodie Oversize N\xE9on Lovanet", category: "apparel", tag: "Streetwear", price: 79, description: "Sweat capuche oversize 320g, broderie n\xE9on dos. Coton bio certifi\xE9. Tailles XS \xE0 XXL.", source: "both" },
+  { name: "Hoodie Oversize N\xE9on ree3franc", category: "apparel", tag: "Streetwear", price: 79, description: "Sweat capuche oversize 320g, broderie n\xE9on dos. Coton bio certifi\xE9. Tailles XS \xE0 XXL.", source: "both" },
   { name: "T-shirt Heavyweight \xD1LL\xD1", category: "apparel", tag: "Heavyweight", price: 35, description: "T-shirt \xE9pais 240g coupe boxy, s\xE9rigraphie poitrine + dos. 100% coton peign\xE9.", source: "tiktok" },
   { name: "Crewneck Moments Anime Vintage", category: "apparel", tag: "Vintage wash", price: 65, description: "Sweat ras-du-cou d\xE9lavage stone wash. Patch brod\xE9 manche gauche.", source: "youtube" },
   { name: "Veste Bomber Reversible Manga", category: "apparel", tag: "Bomber", price: 119, description: "Bomber r\xE9versible noir/magenta, doublure satin imprim\xE9e. Manches \xE9lastiqu\xE9es.", source: "both" },
   { name: "Tee Long Sleeve Glitch Edit", category: "apparel", tag: "Long sleeve", price: 42, description: "Manches longues coupe oversize, print glitch sur manche. S\xE9rigraphie haute densit\xE9.", source: "tiktok" },
   { name: "Hoodie Zip-Up Cyberpunk", category: "apparel", tag: "Full zip", price: 89, description: "Sweat zipp\xE9 technique avec poches lat\xE9rales, capuche doubl\xE9e. Print dos all-over.", source: "youtube" },
   { name: "Shorts Cargo Streetwear", category: "apparel", tag: "Cargo", price: 55, description: "Short cargo ample avec poches lat\xE9rales zipp\xE9es. Imprim\xE9 katakana cuisse.", source: "tiktok" },
-  { name: "Casquette Brod\xE9e Lovanet", category: "apparel", tag: "Cap", price: 29, description: "Casquette 6 panneaux structur\xE9e, broderie 3D logo Lovanet. Snapback ajustable.", source: "both" },
+  { name: "Casquette Brod\xE9e ree3franc", category: "apparel", tag: "Cap", price: 29, description: "Casquette 6 panneaux structur\xE9e, broderie 3D logo ree3franc. Snapback ajustable.", source: "both" },
   { name: "Bonnet Beanie Magenta Glow", category: "apparel", tag: "Beanie", price: 22, description: "Bonnet maille c\xF4tel\xE9e, patch tiss\xE9 Moments Anime. Acrylique doux.", source: "youtube" },
   { name: "Tee Tie-Dye Magenta Cyan", category: "apparel", tag: "Tie-dye", price: 39, description: "T-shirt tie-dye r\xE9alis\xE9 \xE0 la main, chaque pi\xE8ce est unique. Coton lourd 220g.", source: "tiktok" },
   { name: "Veste Coach Anime Officiel", category: "apparel", tag: "Coach jacket", price: 95, description: "Veste coach nylon l\xE9ger, pressions devant, broderie dos AnimemomentsAnimeofficiel.", source: "both" },
@@ -85,12 +85,12 @@ var SEEDS = [
   { name: "Sneakers Low Magenta Suede", category: "sneakers", tag: "Suede", price: 119, description: "Baskets basses daim magenta, semelle gomme blanche. Bo\xEEte collector.", source: "both" },
   { name: "Trainers Bicolore Cyan/Noir", category: "sneakers", tag: "Trainer", price: 99, description: "Trainer vintage bicolore, languette \xE9paisse, semelle gum. Coupe r\xE9tro 90s.", source: "youtube" },
   { name: "Chunky Sneakers Anime Beast", category: "sneakers", tag: "Chunky", price: 149, description: "Chunky sole 6 cm, multi-couches mesh et cuir, broderie cr\xE9ature anime talon.", source: "tiktok" },
-  { name: "Sneakers Co-Lab Lovanet", category: "sneakers", tag: "Co-lab", price: 199, description: "Collaboration exclusive Lovanet. Num\xE9rot\xE9es sur la semelle.", source: "both" },
+  { name: "Sneakers Co-Lab ree3franc", category: "sneakers", tag: "Co-lab", price: 199, description: "Collaboration exclusive ree3franc. Num\xE9rot\xE9es sur la semelle.", source: "both" },
   { name: "Chaussons Maison Anime Plush", category: "sneakers", tag: "Cozy", price: 35, description: "Chaussons peluche imprim\xE9s personnages anime, semelle antid\xE9rapante.", source: "youtube" },
   // ===== MUSIQUE / MUSIC (8) =====
   { name: "Vinyle OST Ruri no Houseki", category: "music", tag: 'Vinyle 12"', price: 32, description: "Bande originale officielle press\xE9e sur vinyle 180g color\xE9 magenta translucide.", source: "youtube" },
   { name: "Cassette Mixtape TikTok Edits", category: "music", tag: "Cassette", price: 14, description: "Mixtape K7 audio limit\xE9e \xE0 300 ex, compilation des edits TikTok viraux.", source: "tiktok" },
-  { name: "EP Digital Lovanet Lo-Fi", category: "music", tag: "Digital", price: 9, description: "EP 6 titres lo-fi anime t\xE9l\xE9chargeable en FLAC et MP3 320kbps. Artwork HD inclus.", source: "both" },
+  { name: "EP Digital ree3franc Lo-Fi", category: "music", tag: "Digital", price: 9, description: "EP 6 titres lo-fi anime t\xE9l\xE9chargeable en FLAC et MP3 320kbps. Artwork HD inclus.", source: "both" },
   { name: "CD Collector Box Anime Beats", category: "music", tag: "CD digipack", price: 19, description: "Double CD digipack, 24 titres remasteris\xE9s, livret 24 pages.", source: "youtube" },
   { name: "Casque Audio N\xE9on NLNQ", category: "music", tag: "Audio gear", price: 119, description: "Casque circum-aural sans-fil 40h d'autonomie, anneaux LED r\xE9actifs au son.", source: "both" },
   { name: "Platine Vinyle Compact Magenta", category: "music", tag: "Hardware", price: 189, description: "Platine vinyle Bluetooth coloris magenta, capot transparent, pr\xE9-ampli int\xE9gr\xE9.", source: "youtube" },
@@ -98,8 +98,8 @@ var SEEDS = [
   { name: "Synthwave Pack Sample NLNQ", category: "music", tag: "Sample pack", price: 24, description: "150 samples synthwave royalty-free, kicks, snares, leads, presets Serum.", source: "both" },
   // ===== MANGA & BD / COMICS (8) =====
   { name: "Manga Tome 1 Moments Anime", category: "manga", tag: "Tome 01", price: 11, description: "Premier tome 192 pages, format poche, jaquette r\xE9versible et marque-page collector.", source: "youtube" },
-  { name: "BD Hardcover Lovanet Saga", category: "manga", tag: "Hardcover", price: 29, description: "Roman graphique cartonn\xE9 120 pages couleur, papier mat 150g.", source: "both" },
-  { name: "Light Novel Lovanet Chronicles", category: "manga", tag: "Light novel", price: 16, description: "Light novel illustr\xE9 320 pages, 12 illustrations couleur pleine page.", source: "youtube" },
+  { name: "BD Hardcover ree3franc Saga", category: "manga", tag: "Hardcover", price: 29, description: "Roman graphique cartonn\xE9 120 pages couleur, papier mat 150g.", source: "both" },
+  { name: "Light Novel ree3franc Chronicles", category: "manga", tag: "Light novel", price: 16, description: "Light novel illustr\xE9 320 pages, 12 illustrations couleur pleine page.", source: "youtube" },
   { name: "Doujinshi \xC9dition Fan-Club", category: "manga", tag: "Doujin", price: 18, description: "Doujinshi A5 64 pages, tirage limit\xE9 500 ex num\xE9rot\xE9s \xE0 la main.", source: "tiktok" },
   { name: "Manga Box Set Saison 1", category: "manga", tag: "Coffret 6 tomes", price: 79, description: "Coffret carton rigide 6 premiers tomes + poster exclusif double face.", source: "youtube" },
   { name: "Webtoon Print Anniversaire", category: "manga", tag: "Webtoon", price: 22, description: "Premi\xE8re impression papier d'un webtoon viral, format vertical 21\xD740 cm.", source: "tiktok" },
@@ -119,7 +119,7 @@ var SEEDS = [
   // ===== LOVACOINS EXCLUSIF (4) =====
   { name: "Titre Holographique: Otaku Supr\xEAme", category: "lovacoins", tag: "Digital", price: 1500, currency: "LC", description: "D\xE9bloque un titre holographique unique pour ton profil. Effet visuel incroyable.", source: "both" },
   { name: "Cadre Avatar N\xE9on Flamme", category: "lovacoins", tag: "Digital", price: 800, currency: "LC", description: "Un cadre de profil anim\xE9 avec des flammes n\xE9on magenta. Rends ton avatar \xE9pique.", source: "youtube" },
-  { name: "Ticket Watch Party Priv\xE9e", category: "lovacoins", tag: "Digital", price: 2500, currency: "LC", description: "Rejoins l'\xE9quipe Lovanet pour une s\xE9ance de visionnage en direct exclusive.", source: "tiktok" },
+  { name: "Ticket Watch Party Priv\xE9e", category: "lovacoins", tag: "Digital", price: 2500, currency: "LC", description: "Rejoins l'\xE9quipe ree3franc pour une s\xE9ance de visionnage en direct exclusive.", source: "tiktok" },
   { name: "Banni\xE8re Profil Cyber-City", category: "lovacoins", tag: "Digital", price: 1200, currency: "LC", description: "Banni\xE8re de profil anim\xE9e repr\xE9sentant une ville cyberpunk sous la pluie.", source: "both" }
 ];
 var SHOP_CATEGORIES = Object.keys(CATEGORY_LABEL).map((id) => ({
@@ -153,7 +153,7 @@ var SHOP_PRODUCTS = [
 var list_shop_products_default = defineTool2({
   name: "list_shop_products",
   title: "List shop products",
-  description: "Return the public Lovanet shop catalog (posters, apparel, sneakers, manga, music, daily). Supports optional category filter and result limit.",
+  description: "Return the public ree3franc shop catalog (posters, apparel, sneakers, manga, music, daily). Supports optional category filter and result limit.",
   inputSchema: {
     category: z2.enum(["poster", "collector", "apparel", "sneakers", "music", "manga", "daily"]).optional().describe("Restrict the results to a single category."),
     limit: z2.number().int().min(1).max(200).optional().describe("Maximum number of products to return (default 50).")
@@ -175,7 +175,7 @@ import { defineTool as defineTool3 } from "npm:@lovable.dev/mcp-js@0.20.1";
 var list_shop_categories_default = defineTool3({
   name: "list_shop_categories",
   title: "List shop categories",
-  description: "Return the list of product categories available in the Lovanet shop.",
+  description: "Return the list of product categories available in the ree3franc shop.",
   inputSchema: {},
   annotations: { readOnlyHint: true, idempotentHint: true, openWorldHint: false },
   handler: () => ({
@@ -431,7 +431,7 @@ var searchableText = (product) => normalize(
 var search_shop_products_default = defineTool4({
   name: "search_shop_products",
   title: "Search shop products",
-  description: "Search the Lovanet shop catalog by keyword and filters such as category, product type, source, price range, stock, and sort order.",
+  description: "Search the ree3franc shop catalog by keyword and filters such as category, product type, source, price range, stock, and sort order.",
   inputSchema: {
     query: z3.string().optional().describe("Keyword to search in product names, tags, descriptions, bullets, and specs."),
     category: z3.enum(CATEGORY_VALUES).optional().describe("Restrict results to one product category."),
@@ -493,9 +493,9 @@ var search_shop_products_default = defineTool4({
 var projectRef = "pvgfxzzwuhjhfqsiylpr";
 var mcp_default = defineMcp({
   name: "lovanet-mcp",
-  title: "Lovanet MCP",
+  title: "ree3franc MCP",
   version: "0.1.0",
-  instructions: "Tools exposing the public Lovanet catalog. Use `echo` to test connectivity, `list_shop_categories` to discover categories, `list_shop_products` to browse products, and `search_shop_products` to search by keyword, price, source, type, stock, and category.",
+  instructions: "Tools exposing the public ree3franc catalog. Use `echo` to test connectivity, `list_shop_categories` to discover categories, `list_shop_products` to browse products, and `search_shop_products` to search by keyword, price, source, type, stock, and category.",
   auth: auth.oauth.issuer({
     issuer: `https://${projectRef}.supabase.co/auth/v1`,
     acceptedAudiences: "authenticated"

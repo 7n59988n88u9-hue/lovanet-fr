@@ -194,7 +194,7 @@ const Shop = () => {
           name: "Magasin AnimemomentsAnimeofficiel",
           url: `${origin}/shop`,
           image: shopImage,
-          description: "Magasin Lovanet avec produits anime, manga et culture pop japonaise.",
+          description: "Magasin ree3franc avec produits anime, manga et culture pop japonaise.",
           mainEntity: {
             "@id": `${origin}/shop#item-list`,
           },
@@ -249,7 +249,7 @@ const Shop = () => {
                     name: `Avis client ${p.name}`,
                     reviewBody: p.description,
                     reviewRating: { "@type": "Rating", ratingValue: `${ratingValue}`, bestRating: "5", worstRating: "1" },
-                    author: { "@type": "Organization", name: "Lovanet" },
+                    author: { "@type": "Organization", name: "ree3franc" },
                     datePublished: "2026-01-01",
                   },
                 ],
@@ -263,7 +263,7 @@ const Shop = () => {
                     value: stockCount,
                   },
                   url: productUrl,
-                  seller: { "@type": "Organization", name: "Lovanet" },
+                  seller: { "@type": "Organization", name: "ree3franc" },
                   itemCondition: "https://schema.org/NewCondition",
                   shippingDetails: {
                     "@type": "OfferShippingDetails",
@@ -308,7 +308,7 @@ const Shop = () => {
   return (
     <PageShell>
       <Helmet>
-        <title>Magasin — Lovanet · Anime.Moments.officiel & AnimemomentsAnimeofficiel</title>
+        <title>Magasin — ree3franc · Anime.Moments.officiel & AnimemomentsAnimeofficiel</title>
         <script type="application/ld+json">{JSON.stringify(shopStructuredData)}</script>
       </Helmet>
       <section className="container mx-auto px-3 sm:px-4 lg:px-8 pt-6 sm:pt-8 pb-5" data-testid="shop-train-station-hub-section">

@@ -13,7 +13,7 @@
     "server": {
       "name": "lovanet-mcp",
       "version": "0.1.0",
-      "title": "Lovanet MCP"
+      "title": "ree3franc MCP"
     },
     "tools": [
       {
@@ -45,7 +45,7 @@
       {
         "name": "list_shop_categories",
         "title": "List shop categories",
-        "description": "Return the list of product categories available in the Lovanet shop.",
+        "description": "Return the list of product categories available in the ree3franc shop.",
         "annotations": {
           "readOnlyHint": true,
           "idempotentHint": true,
@@ -61,7 +61,7 @@
       {
         "name": "list_shop_products",
         "title": "List shop products",
-        "description": "Return the public Lovanet shop catalog (posters, apparel, sneakers, manga, music, daily). Supports optional category filter and result limit.",
+        "description": "Return the public ree3franc shop catalog (posters, apparel, sneakers, manga, music, daily). Supports optional category filter and result limit.",
         "annotations": {
           "readOnlyHint": true,
           "idempotentHint": true,
@@ -98,7 +98,7 @@
       {
         "name": "search_shop_products",
         "title": "Search shop products",
-        "description": "Search the Lovanet shop catalog by keyword and filters such as category, product type, source, price range, stock, and sort order.",
+        "description": "Search the ree3franc shop catalog by keyword and filters such as category, product type, source, price range, stock, and sort order.",
         "annotations": {
           "readOnlyHint": true,
           "idempotentHint": true,

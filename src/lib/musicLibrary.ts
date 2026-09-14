@@ -112,7 +112,7 @@ export async function fetchCloudTracks(): Promise<MusicTrack[]> {
       return {
         id: row.id,
         title: row.title,
-        artist: row.artist || "Bibliothèque Lovanet",
+        artist: row.artist || "Bibliothèque ree3franc",
         genre: row.genre || "ambiance",
         url,
         source: "cloud" as const,
@@ -135,7 +135,7 @@ export async function uploadCloudTrack(file: File, genre: string, artist: string
   const { data: userData } = await supabase.auth.getUser();
   const { error } = await supabase.from("music_tracks").insert({
     title: cleanTitle(file.name),
-    artist: artist || "Bibliothèque Lovanet",
+    artist: artist || "Bibliothèque ree3franc",
     genre,
     url: path,
     source: "upload",

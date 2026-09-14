@@ -49,7 +49,7 @@ const Contact = () => {
             <form
               onSubmit={(e) => {
                 e.preventDefault();
-                toast({ title: "Message envoyé", description: "Lovanet te répond rapidement." });
+                toast({ title: "Message envoyé", description: "ree3franc te répond rapidement." });
                 (e.target as HTMLFormElement).reset();
               }}
               className="tilt-card space-y-4 p-6 rounded-2xl bg-card border border-border neon-edge"

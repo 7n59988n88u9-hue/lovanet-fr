@@ -154,13 +154,13 @@ export const InstallAppPrompt = () => {
       if (perm === "granted") {
         const reg = "serviceWorker" in navigator ? await navigator.serviceWorker.getRegistration() : null;
         const options = {
-          body: "Vous recevrez les alertes Lovanet : nouveautés, sorties et actus.",
+          body: "Vous recevrez les alertes ree3franc : nouveautés, sorties et actus.",
            icon: "/lovanet-icon-192.png?v=20",
            badge: "/lovanet-icon-192.png?v=20",
           tag: "lovanet-welcome",
         };
-        if (reg) await reg.showNotification("Alertes Lovanet activées", options);
-        else new Notification("Alertes Lovanet activées", options);
+        if (reg) await reg.showNotification("Alertes ree3franc activées", options);
+        else new Notification("Alertes ree3franc activées", options);
       } else if (perm === "denied") {
         setNotice("Alertes bloquées : réactivez-les dans les réglages du navigateur (icône cadenas).");
       }
@@ -198,7 +198,7 @@ export const InstallAppPrompt = () => {
           <span className="pointer-events-none absolute inset-0 rounded-full bg-[radial-gradient(circle_at_50%_35%,rgba(255,255,255,0.28),transparent_65%)]" />
           <img
             src="/lovanet-icon-512.png?v=20"
-            alt="Logo Lovanet"
+            alt="Logo ree3franc"
             width={192}
             height={192}
             className="relative h-24 w-24 rounded-full object-cover drop-shadow-[0_8px_20px_rgba(0,0,0,0.45)] sm:h-32 sm:w-32"
@@ -206,7 +206,7 @@ export const InstallAppPrompt = () => {
         </div>
 
           <p className="text-[10px] font-black uppercase tracking-[0.28em] text-white/65">Choix du format</p>
-          <h2 className="mt-2 text-2xl font-black tracking-tight text-white drop-shadow">Ouvrir Lovanet comme…</h2>
+          <h2 className="mt-2 text-2xl font-black tracking-tight text-white drop-shadow">Ouvrir ree3franc comme…</h2>
           <p className="mt-2 text-sm text-white/75">Choisis le format de départ à chaque ouverture installée.</p>
 
         <div className="mt-5 rounded-2xl border border-white/15 bg-white/[0.05] p-3 text-left">

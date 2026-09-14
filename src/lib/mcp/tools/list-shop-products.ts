@@ -6,7 +6,7 @@ export default defineTool({
   name: "list_shop_products",
   title: "List shop products",
   description:
-    "Return the public Lovanet shop catalog (posters, apparel, sneakers, manga, music, daily). Supports optional category filter and result limit.",
+    "Return the public ree3franc shop catalog (posters, apparel, sneakers, manga, music, daily). Supports optional category filter and result limit.",
   inputSchema: {
     category: z
       .enum(["poster", "collector", "apparel", "sneakers", "music", "manga", "daily"])

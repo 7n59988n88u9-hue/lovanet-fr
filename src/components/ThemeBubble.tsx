@@ -1242,7 +1242,7 @@ export const ThemeBubble = () => {
           <SheetContent side="right" className="w-full max-w-[480px] border-none bg-transparent p-3 shadow-none sm:max-w-[480px]" data-testid="theme-desktop-sheet">
             <SheetHeader className="sr-only">
               <SheetTitle>Catalogue des thèmes</SheetTitle>
-              <SheetDescription>Sélection de thèmes premium Lovanet.</SheetDescription>
+              <SheetDescription>Sélection de thèmes premium ree3franc.</SheetDescription>
             </SheetHeader>
             {panelBody}
           </SheetContent>
@@ -1252,7 +1252,7 @@ export const ThemeBubble = () => {
           <DrawerContent className="max-h-[90vh] border-none bg-transparent px-2 pb-[max(0.5rem,env(safe-area-inset-bottom))] shadow-none" data-testid="theme-mobile-drawer">
             <DrawerHeader className="sr-only">
               <DrawerTitle>Catalogue des thèmes</DrawerTitle>
-              <DrawerDescription>Sélection de thèmes premium Lovanet.</DrawerDescription>
+              <DrawerDescription>Sélection de thèmes premium ree3franc.</DrawerDescription>
             </DrawerHeader>
             {panelBody}
           </DrawerContent>

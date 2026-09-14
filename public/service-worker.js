@@ -1,4 +1,4 @@
-// Worker de nettoyage : remplace l'ancien service worker Lovanet.
+// Worker de nettoyage : remplace l'ancien service worker ree3franc.
 // Le nouveau worker hors ligne est servi sur /sw.js.
 function isWorkboxCacheForThisRegistration(name) {
   const hasWorkboxBucket = /(^|-)precache-v\d+-|(^|-)runtime-|(^|-)googleAnalytics-/.test(name);
