@@ -516,7 +516,7 @@ export const AnimeMomentsPresentation = () => {
                 aria-label="Explorer le catalogue d'animés"
               >
                 <Sparkles className="w-4 h-4" />
-                <span>Catalogue 1500+</span>
+                <span>Sélection 1500+</span>
                 <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
               </Link>
             </div>

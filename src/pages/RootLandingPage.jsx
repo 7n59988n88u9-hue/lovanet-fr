@@ -444,14 +444,14 @@ export default function RootLandingPage() {
                 })}
               </div>
 
-              {/* Séparateur épais + boutons Catalogue & Son centrés en dessous */}
+              {/* Séparateur épais + boutons Sélection & Son centrés en dessous */}
               <div className="mt-10 flex flex-col items-center gap-8">
                 <div className="h-1.5 w-full max-w-md rounded-full bg-[linear-gradient(90deg,transparent,var(--theme-accent,#00ff9d),transparent)] opacity-60" />
                 <div className="flex items-center justify-center gap-3">
                   <Button asChild size="sm" className="h-11 rounded-full px-6 text-sm font-semibold bg-[rgba(255,255,255,0.08)] text-[rgba(255,255,255,0.95)] backdrop-blur-md border-[rgba(255,255,255,0.25)] hover:bg-[rgba(255,255,255,0.18)] hover:border-[rgba(255,255,255,0.40)] hover:text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.12),0_12px_28px_-18px_rgba(0,0,0,0.5)]" data-testid="home-platforms-button">
                     <Link to="/anime-catalog">
                       <span className="inline-flex items-center gap-2 animate-in fade-in zoom-in-95 duration-500">
-                        Catalogue
+                        Sélection
                         <ArrowRight className="h-4 w-4 text-white drop-shadow-[0_0_5px_rgba(255,255,255,0.55)]" />
                       </span>
                     </Link>

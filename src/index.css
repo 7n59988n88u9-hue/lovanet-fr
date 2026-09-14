@@ -4681,7 +4681,7 @@ body[data-panel-tint="on"] .glass3d-surface a:not(.glass3d-plain):not([style*="b
 }
 
 /* ============================================================
-   Pages Cinéma & Catalogue : style identique à la barre de
+   Pages Cinéma & Sélection : style identique à la barre de
    menu (verre transparent 3D interactif) + suppression du bleu.
    ============================================================ */
 .page-nav-glass [class*="text-sky-"],
@@ -5212,7 +5212,7 @@ html[data-nav-carousel="spotlight"] .quicknav-floating a::after {
   color: rgba(255,255,255,0.58) !important;
 }
 
-/* Catalogue: monochrome glass theme (white/translucent, no blue accents) */
+/* Sélection: monochrome glass theme (white/translucent, no blue accents) */
 .page-nav-glass.catalogue-monochrome {
   --theme-link: rgba(255,255,255,0.94);
   --theme-link-hover: rgba(255,255,255,1);

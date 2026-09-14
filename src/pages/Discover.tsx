@@ -265,7 +265,7 @@ const Discover = () => {
               </div>
 
               <div className="relative z-10 mt-5 inline-flex items-center gap-2 text-xs font-semibold text-white/80 group-hover:text-white transition-colors">
-                Univers
+                Monde
                 <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
               </div>
             </Link>
