@@ -268,7 +268,7 @@ export const AnimeMomentsPresentation = () => {
 
   const shareUrl =
     typeof window !== "undefined" ? window.location.href : "https://animemomentsofficiel.fr";
-  const shareText = "Lovanet — Anime Moments, catalogue & shop";
+  const shareText = "Lovanet — Moments Anime, catalogue & shop";
 
   const copyLink = async () => {
     try {
@@ -487,7 +487,7 @@ export const AnimeMomentsPresentation = () => {
               style={{ letterSpacing: "-0.02em" }}
             >
               ANIME<br />MOMENTS
-              <span className="sr-only"> — portail officiel anime, manga et pop culture japonaise</span>
+              <span className="sr-only"> — accueil officiel anime, manga et pop culture japonaise</span>
             </h1>
 
             {/* Primary CTAs */}

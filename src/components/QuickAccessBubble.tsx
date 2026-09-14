@@ -31,7 +31,7 @@ const GROUPS: { id: string; label: string; items: Item[] }[] = [
     id: "priority",
     label: "Accès rapide",
     items: [
-      { to: "/", label: "Portail", icon: Home },
+      { to: "/", label: "Accueil", icon: Home },
       { to: "/anime-catalog", label: "Catalogue", icon: Film },
       { to: "/ai-hub", label: "AI", icon: Bot },
       { to: "/prime-video", label: "Prime Vidéo", icon: Play },
@@ -53,8 +53,8 @@ const GROUPS: { id: string; label: string; items: Item[] }[] = [
     label: "Explorer",
     items: [
       { to: "/univers", label: "Univers", icon: Compass },
-      { to: "/actualites", label: "Actualités", icon: Sparkles },
-      { to: "/leaderboard", label: "Classement", icon: Trophy },
+      { to: "/actualites", label: "Actus", icon: Sparkles },
+      { to: "/leaderboard", label: "Podium", icon: Trophy },
       { to: "/profile", label: "Profil", icon: User },
       { to: "/contact", label: "Contact", icon: Mail },
     ],

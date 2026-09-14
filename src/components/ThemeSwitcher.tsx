@@ -13,7 +13,7 @@ type ThemeDef = {
 
 const THEMES: ThemeDef[] = [
   { id: "menthe-vibrant-cypher", label: "Menthe Vibrant Cypher", bg: "#06120d", preview: ["#00ff9d", "#22d3ee", "#10b981"] },
-  { id: "default-blue", label: "Anime Moments", bg: "#020617", preview: ["#38bdf8", "#f472b6", "#8b5cf6"] },
+  { id: "default-blue", label: "Moments Anime", bg: "#020617", preview: ["#38bdf8", "#f472b6", "#8b5cf6"] },
   { id: "cyberpunk", label: "Cyberpunk", bg: "#09090b", preview: ["#22c55e", "#facc15", "#ef4444"] },
   { id: "kawaii", label: "Kawaii Pink", bg: "#fff0f5", preview: ["#ff69b4", "#ff1493", "#ba55d3"] },
   { id: "samurai", label: "Samurai Red", bg: "#1a0f14", preview: ["#dc2626", "#b91c1c", "#eab308"] },

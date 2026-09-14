@@ -20,7 +20,7 @@ export const videos: Video[] = [
 export const thumb = (id: string) => `https://i.ytimg.com/vi/${id}/hqdefault.jpg`;
 
 export const products = [
-  { id: "tee", name: "T-shirt Oversize Anime Moments", tag: "Drop manga", emoji: "👕" },
+  { id: "tee", name: "T-shirt Oversize Moments Anime", tag: "Drop manga", emoji: "👕" },
   { id: "fig", name: "Figurine LED Anime Glow", tag: "Collector", emoji: "💡" },
   { id: "pos", name: "Pack Posters Moments Officiels", tag: "Nouveau", emoji: "🖼️" },
   { id: "hoodie", name: "Hoodie Lovanet Neon", tag: "Streetwear", emoji: "🧥" },

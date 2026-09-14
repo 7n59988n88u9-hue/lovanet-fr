@@ -548,7 +548,7 @@ export default function AnimeCountdown() {
             animate={{ scale: [1, 1.02, 1] }}
             transition={{ duration: 4, repeat: Infinity }}
           >
-            Animés à venir
+            Animés prochainement
           </motion.h1>
           <p className="text-sm mt-2" style={{ color: "rgba(255,255,255,0.85)" }}>
             Explorez les prochains épisodes et gagnez des récompenses 🎁

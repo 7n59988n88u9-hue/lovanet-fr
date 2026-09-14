@@ -8,15 +8,15 @@ export const SUGGESTIONS_STATE_EVENT = "lovanet:suggestions-state";
 type Suggestion = { to: string; label: string; emoji: string };
 
 const BASE: Suggestion[] = [
-  { to: "/", label: "Portail", emoji: "🏠" },
+  { to: "/", label: "Accueil", emoji: "🏠" },
   { to: "/anime-catalog", label: "Catalogue", emoji: "📺" },
   { to: "/prime-video", label: "Prime Vidéo", emoji: "🎬" },
   { to: "/chaine-youtube", label: "YouTube", emoji: "▶️" },
   { to: "/tiktok", label: "TikTok", emoji: "🎵" },
-  { to: "/actualites", label: "Actualités", emoji: "📰" },
+  { to: "/actualites", label: "Actus", emoji: "📰" },
   { to: "/univers", label: "Univers", emoji: "🌍" },
   { to: "/shop", label: "Magasin", emoji: "🛍️" },
-  { to: "/leaderboard", label: "Classement", emoji: "🏆" },
+  { to: "/leaderboard", label: "Podium", emoji: "🏆" },
 ];
 
 export function SuggestionsBubble() {

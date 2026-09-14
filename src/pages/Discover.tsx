@@ -42,9 +42,9 @@ const Discover = () => {
       if (!el) { el = document.createElement("meta"); prop ? el.setAttribute("property", name) : el.setAttribute("name", name); document.head.appendChild(el); }
       el.content = value;
     };
-    meta("description", "Univers Lovanet : la porte d'entrée vers Anime Moments, la chaîne YouTube, les shorts TikTok, Prime Video, le catalogue 1500+ titres, les sorties à venir et le magasin collector.");
+    meta("description", "Univers Lovanet : la porte d'entrée vers Moments Anime, la chaîne YouTube, les shorts TikTok, Prime Video, le catalogue 1500+ titres, les sorties prochainement et le magasin collector.");
     meta("og:title", "Univers Lovanet", true);
-    meta("og:description", "Univers Lovanet : vidéos, shorts, catalogue anime, sorties à venir et magasin collector.", true);
+    meta("og:description", "Univers Lovanet : vidéos, shorts, catalogue anime, sorties prochainement et magasin collector.", true);
       meta("og:url", `${PRIMARY_SITE}/univers`, true);
     let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
     if (!canonical) { canonical = document.createElement("link"); canonical.rel = "canonical"; document.head.appendChild(canonical); }
@@ -58,9 +58,9 @@ const Discover = () => {
     { to: "/chaine-youtube", label: "AnimemomentsAnimeofficiel", tagline: "YouTube officiel", desc: "Edits, trailers & épisodes en HD", icon: Youtube, grad: "from-red-500/40 via-rose-500/20 to-transparent", accent: "#ef4444", emoji: "▶️" },
     { to: "/tiktok", label: "Anime.Moments.officiel", tagline: "TikTok · shorts viraux", desc: "Shorts verticaux, edits & moments cultes", icon: Music2, grad: "from-fuchsia-500/40 via-cyan-400/20 to-transparent", accent: "#e879f9", emoji: "🎵" },
     { to: "/prime-video", label: "Prime Video", tagline: "Séances premium", desc: "Lecture cinéma en pleine page", icon: Play, grad: "from-sky-500/40 via-blue-500/20 to-transparent", accent: "#38bdf8", emoji: "🎬" },
-    { to: "/anime-countdown", label: "À venir", tagline: "Countdown live", desc: "Prochaines sorties anime en direct", icon: Calendar, grad: "from-amber-500/40 via-orange-500/20 to-transparent", accent: "#fbbf24", emoji: "⏳" },
+    { to: "/anime-countdown", label: "Prochainement", tagline: "Countdown live", desc: "Prochaines sorties anime en direct", icon: Calendar, grad: "from-amber-500/40 via-orange-500/20 to-transparent", accent: "#fbbf24", emoji: "⏳" },
     { to: "/anime-catalog", label: "Catalogue", tagline: "1500+ animés", desc: "Fiches, trailers, synopsis complets", icon: Sparkles, grad: "from-violet-500/40 via-indigo-500/20 to-transparent", accent: "#a78bfa", emoji: "📚" },
-    { to: "/anime-moments", label: "Anime Moments", tagline: "Expérience premium", desc: "La page originale avec hologrammes et carrousel vivant", icon: Film, grad: "from-emerald-500/40 via-teal-500/20 to-transparent", accent: "#34d399", emoji: "🌌" },
+    { to: "/anime-moments", label: "Moments Anime", tagline: "Expérience premium", desc: "La page originale avec hologrammes et carrousel vivant", icon: Film, grad: "from-emerald-500/40 via-teal-500/20 to-transparent", accent: "#34d399", emoji: "🌌" },
     { to: "/shop", label: "Shop", tagline: "Collector officiel", desc: `${SHOP_PRODUCTS.length} pièces exclusives · édition limitée`, icon: ShoppingBag, grad: "from-pink-500/40 via-rose-500/20 to-transparent", accent: "#f472b6", emoji: "🛍️" },
   ];
 
@@ -197,7 +197,7 @@ const Discover = () => {
                     to="/anime-moments"
                     className="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-6 py-3 text-sm font-extrabold text-white backdrop-blur-xl transition-colors hover:bg-white/16"
                   >
-                    <Play className="w-4 h-4" /> Anime Moments
+                    <Play className="w-4 h-4" /> Moments Anime
                   </Link>
                 </div>
               </div>
@@ -283,7 +283,7 @@ const Discover = () => {
             to="/anime-moments"
             className="relative inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-6 py-3 text-sm font-extrabold text-white backdrop-blur-xl transition-transform hover:scale-105 hover:bg-white/16"
           >
-            Aller vers Anime Moments <ArrowRight className="w-4 h-4" />
+            Aller vers Moments Anime <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
       </section>

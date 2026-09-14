@@ -22,7 +22,7 @@ import OAuthConsent from "./pages/OAuthConsent";
 import SyncDashboard from "./pages/SyncDashboard";
 import Actualites from "./pages/Actualites";
 import HubTrainStationStandalone from "./pages/HubTrainStationStandalone";
-import Leaderboard from "./pages/Leaderboard";
+import Podium from "./pages/Podium";
 import HubFerryStandalone from "./pages/HubFerryStandalone";
 import Profile from "./pages/Profile";
 import Login from "./pages/Login";
@@ -67,7 +67,7 @@ const APP_ROUTES: Array<{ path: string; element: JSX.Element }> = [
   { path: "/contact", element: <Contact /> },
   { path: "/profile", element: <Profile /> },
   { path: "/legals", element: <Legals /> },
-  { path: "/leaderboard", element: <Leaderboard /> },
+  { path: "/leaderboard", element: <Podium /> },
   { path: "/anime-countdown", element: <AnimeCountdown /> },
   { path: "/anime-catalog", element: <AnimeCatalog /> },
   { path: "/actualites", element: <Actualites /> },
@@ -94,7 +94,7 @@ const REDIRECTS: Array<{ from: string; to: string }> = [
   { from: "/prime", to: "/prime-video" },
   { from: "/amazon-prime", to: "/prime-video" },
   { from: "/tik-tok", to: "/" },
-  { from: "/classement", to: "/leaderboard" },
+  { from: "/podium", to: "/leaderboard" },
   { from: "/boutique", to: "/shop" },
   { from: "/catalogue", to: "/anime-catalog" },
   { from: "/anime", to: "/anime-catalog" },

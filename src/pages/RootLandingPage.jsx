@@ -20,14 +20,14 @@ import { motion } from "framer-motion";
 
 
 const rotatingPortalDestinations = [
-  { to: "/anime-moments", label: "Anime Moments", icon: Film },
+  { to: "/anime-moments", label: "Moments Anime", icon: Film },
   { to: "/decouvrir", label: "Univers Lovanet", icon: Compass },
-  { to: "/actualites", label: "Actualités", icon: Newspaper },
+  { to: "/actualites", label: "Actus", icon: Newspaper },
   { to: "/shop", label: "Magasin", icon: ShoppingBag },
   { to: "/prime-video", label: "Prime Vidéo", icon: Play },
   { to: "/tiktok", label: "TikTok", icon: Play },
   { to: "/anime-catalog", label: "Catalogue", icon: Star },
-  { to: "/anime-countdown", label: "À venir", icon: Play },
+  { to: "/anime-countdown", label: "Prochainement", icon: Play },
   { to: "/lecteurs-video", label: "Lecteurs vidéo", icon: Film },
   { to: "/contact", label: "Contact", icon: Newspaper },
 ];
@@ -58,7 +58,7 @@ const platformCards = [
   { title: "Prime Vidéo", testId: "home-platform-card-prime", to: "/prime-video" },
   { title: "", testId: "home-platform-card-tiktok", to: "/tiktok" },
   { title: "Catalogue", testId: "home-platform-card-catalogue", to: "/anime-catalog" },
-  { title: "À venir", testId: "home-platform-card-upcoming", to: "/anime-countdown" },
+  { title: "Prochainement", testId: "home-platform-card-upcoming", to: "/anime-countdown" },
 ];
 
 const TRAILER_VERSION_LABEL = {
@@ -88,8 +88,8 @@ const featuredNews = SEO_NEWS.slice(0, 3).map((item, index) => ({
 const pageStructuredData = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  name: "Lovanet : portail anime manga officiel",
-  description: "Portail Lovanet pour explorer Anime Moments, les vidéos, les actualités et la magasin collector.",
+  name: "Lovanet : accueil anime manga officiel",
+  description: "Accueil Lovanet pour explorer Moments Anime, les vidéos, les actus et la magasin collector.",
   url: "https://lovanet.fr/",
 };
 

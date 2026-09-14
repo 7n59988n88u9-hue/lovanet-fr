@@ -250,7 +250,7 @@ const Index = () => {
     <PageShell>
       <section className="relative overflow-hidden">
         <h1 className="sr-only">
-          Lovanet — Portail anime, manga, gaming et pop culture japonaise
+          Lovanet — Accueil anime, manga, gaming et pop culture japonaise
         </h1>
         <div
           className="absolute inset-0 -z-10"
@@ -298,7 +298,7 @@ const Index = () => {
                 loop
                 playsInline
                 preload="metadata"
-                aria-label="Bannière vidéo Anime Moments"
+                aria-label="Bannière vidéo Moments Anime"
               />
             </div>
           </div>

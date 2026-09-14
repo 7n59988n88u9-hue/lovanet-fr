@@ -604,7 +604,7 @@ export default function AnimeCatalog() {
   const forcedTrailerId = searchParams.get("trailer") || undefined;
   const wantsAutoplay = searchParams.get("autoplay") === "1";
 
-  // REGLE VERROUILLEE — Deep link depuis la page portail :
+  // REGLE VERROUILLEE — Deep link depuis la page accueil :
   // chaque carte trailer pousse SA propre vidéo (?anime=..&trailer=..).
   // Le trailer demandé est prioritaire absolu tant que le visiteur n'a pas
   // changé de version/de titre manuellement.
@@ -1645,7 +1645,7 @@ export default function AnimeCatalog() {
                     <SelectItem value="all">Tous les statuts</SelectItem>
                     <SelectItem value="releasing">En cours</SelectItem>
                     <SelectItem value="finished">Terminé</SelectItem>
-                    <SelectItem value="upcoming">À venir</SelectItem>
+                    <SelectItem value="upcoming">Prochainement</SelectItem>
                     <SelectItem value="hiatus">En pause</SelectItem>
                     <SelectItem value="cancelled">Annulé</SelectItem>
                   </SelectContent>

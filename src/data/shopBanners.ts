@@ -22,9 +22,9 @@ export type BannerVideoSlide = {
 export const BANNER_VIDEO_SLIDES: BannerVideoSlide[] = [
   {
     src: "/banner-seq-2.mp4",
-    title: "Anime Moments \u00b7 Drop TikTok viral",
+    title: "Moments Anime \u00b7 Drop TikTok viral",
     subtitle: "S\u00e9ries inspir\u00e9es des edits TikTok \u2014 livraison sous 3\u20137j",
-    badge: "Vid\u00e9o \u00b7 Anime Moments",
+    badge: "Vid\u00e9o \u00b7 Moments Anime",
   },
   {
     src: "/banner-seq-3.mp4",
