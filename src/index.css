@@ -5058,6 +5058,9 @@ html[data-nav-carousel="spotlight"] .quicknav-floating a::after {
   box-shadow: 0 22px 54px -26px rgba(0,0,0,0.72), inset 0 1px 0 rgba(255,255,255,0.28);
   backdrop-filter: blur(22px) saturate(125%);
   -webkit-backdrop-filter: blur(22px) saturate(125%);
+  max-height: min(82vh, 42rem);
+  overflow-y: auto;
+  overscroll-behavior: contain;
 }
 .quicknav-floating[data-collapsed="true"] {
   width: auto;

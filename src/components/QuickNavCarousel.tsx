@@ -117,11 +117,13 @@ export default function QuickNavCarousel({ items = DEFAULT_ITEMS, onClose }: { i
     const openLeft = () => {
       setRightOpen(false);
       setMainCollapsed(false);
+      bringOpenPanelIntoView();
       setLeftOpen(true);
     };
     const toggleLeftFromEvent = () => {
       setRightOpen(false);
       setMainCollapsed(false);
+      bringOpenPanelIntoView();
       setLeftOpen((value) => !value);
     };
     window.addEventListener(OPEN_QUICKNAV_EVENT, openLeft);
@@ -174,6 +176,21 @@ export default function QuickNavCarousel({ items = DEFAULT_ITEMS, onClose }: { i
       x: Math.min(Math.max(margin, x), maxX),
       y: Math.min(Math.max(margin, y), maxY),
     };
+  };
+
+  const bringOpenPanelIntoView = () => {
+    if (typeof window === "undefined") return;
+    setDockPos((previous) => {
+      if (!previous.dragged) return previous;
+      const margin = 8;
+      const estimatedWidth = Math.min(window.innerWidth * 0.94, 384);
+      const estimatedHeight = Math.min(window.innerHeight - 32, 660);
+      return {
+        x: Math.min(Math.max(margin, previous.x), Math.max(margin, window.innerWidth - estimatedWidth - margin)),
+        y: Math.min(Math.max(margin, previous.y), Math.max(margin, window.innerHeight - estimatedHeight - margin)),
+        dragged: true,
+      };
+    });
   };
 
   useEffect(() => {
@@ -309,6 +326,7 @@ export default function QuickNavCarousel({ items = DEFAULT_ITEMS, onClose }: { i
     // immédiatement le carrousel principal, même s'il était mémorisé replié.
     setMainCollapsed(false);
     setRightOpen(false);
+    bringOpenPanelIntoView();
     setLeftOpen(true);
   };
 
