@@ -192,7 +192,6 @@ export const Navbar = () => {
   useEffect(() => {
     const onKey = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
-        setMegaOpen(false);
         setOpen(false);
       }
     };
