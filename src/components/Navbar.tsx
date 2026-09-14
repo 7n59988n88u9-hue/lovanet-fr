@@ -275,31 +275,6 @@ export const Navbar = () => {
               <NavSuggestionsBar />
               <QuickNavCarousel />
 
-              <div className="hidden items-center gap-2 md:flex" onMouseEnter={cancelClose}>
-                <button
-                  type="button"
-                  aria-haspopup="true"
-                  aria-expanded={megaOpen}
-                  aria-controls="mega-menu-panel"
-                  onClick={() => {
-                    cancelClose();
-                    setMegaOpen(true);
-                    window.dispatchEvent(new CustomEvent(OPEN_QUICKNAV_EVENT));
-                  }}
-                  onMouseEnter={() => {
-                    cancelClose();
-                    setMegaOpen(true);
-                  }}
-                  className={cn(
-                    "nav-theme-chip ml-auto inline-flex h-11 w-11 items-center justify-center rounded-full",
-                    megaOpen && "nav-theme-chip-active",
-                  )}
-                  aria-label="Ouvrir le menu"
-                  data-testid="desktop-mega-menu-button"
-                >
-                  <Menu className="h-5 w-5" strokeWidth={2} />
-                </button>
-              </div>
 
               <nav className="mx-auto hidden flex-1 items-center justify-center gap-1 overflow-visible md:flex">
                 {rotatingNavItems.map((item, index) => {
