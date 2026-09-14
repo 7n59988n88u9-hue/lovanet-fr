@@ -30,7 +30,7 @@ type Line = {
 
 const LINES: Line[] = [
   { category: "poster", types: ["Affiche","Poster","Tirage art","Triptyque","Mural XXL","Poster lenticulaire"], tags: ["A2","A1","50x70","Holo","Mat premium","Edition limitee"], base: 18, range: 42,
-    desc: (n,t,s)=>`${n} — impression giclee HD, papier 250g mat, finition ${s.toLowerCase()}. Univers ${t}, signe AnimemomentsAnimeofficiel. Tube renforce, expedition suivie 3-7j.` },
+    desc: (n,t,s)=>`${n} — impression giclee HD, papier 250g mat, finition ${s.toLowerCase()}. Monde ${t}, signe AnimemomentsAnimeofficiel. Tube renforce, expedition suivie 3-7j.` },
   { category: "collector", types: ["Figurine","Statue","Nendoroid","Buste","Diorama","Boule cristal","Vinyle picture disc","Artbook"], tags: ["Edition 500","Numerote","Resine","PVC premium","Coffret","Rare"], base: 34, range: 220,
     desc: (n,t,s)=>`${n} — piece collection ${s.toLowerCase()} inspiree de ${t}. Peinture main, socle premium, boite fenetre, certificat d'authenticite AnimemomentsAnimeofficiel.` },
   { category: "apparel", types: ["Hoodie","T-shirt","Crewneck","Bomber","Coach jacket","Long sleeve","Kimono street","Varsity"], tags: ["Oversize","Heavyweight 320g","Coton bio","Broderie","All-over","Streetwear"], base: 32, range: 95,
@@ -103,7 +103,7 @@ export function generateProducts(count = 1500): ShopProduct[] {
       brand: "AnimemomentsAnimeofficiel",
       description: line.desc(name, theme, style),
       bullets: [
-        `Univers ${theme} · style ${style}`,
+        `Monde ${theme} · style ${style}`,
         `Finition premium, contrôle qualité en atelier`,
         `Emballage protecteur & suivi de colis`,
         `Retour offert sous 14 jours`,

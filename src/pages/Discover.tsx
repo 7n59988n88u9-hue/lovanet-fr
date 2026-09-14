@@ -9,7 +9,7 @@ import { ShoppingBag, Youtube, Music2, Play, Film, Calendar, Sparkles, ArrowRigh
 import { getSiteOrigin } from "@/lib/siteOrigin";
 
 /**
- * /univers — Univers landing page.
+ * /univers — Page Monde (accès rapides).
  * Purpose: give Google / Bing / image & video search a single,
  * crawlable index of everything Lovanet offers — products with real
  * <img> thumbnails, video previews with VideoObject JSON-LD, and
@@ -34,7 +34,7 @@ const Discover = () => {
   }, []);
 
   useEffect(() => {
-    document.title = "Univers Lovanet : vidéos, shorts, magasin et animés";
+    document.title = "Monde Lovanet : vidéos, shorts, magasin et animés";
     const PRIMARY_SITE = getSiteOrigin();
     const meta = (name: string, value: string, prop = false) => {
       const sel = prop ? `meta[property="${name}"]` : `meta[name="${name}"]`;
@@ -42,9 +42,9 @@ const Discover = () => {
       if (!el) { el = document.createElement("meta"); prop ? el.setAttribute("property", name) : el.setAttribute("name", name); document.head.appendChild(el); }
       el.content = value;
     };
-    meta("description", "Univers Lovanet : la porte d'entrée vers Moments Anime, la chaîne YouTube, les shorts TikTok, Prime Video, le catalogue 1500+ titres, les sorties prochainement et le magasin collector.");
-    meta("og:title", "Univers Lovanet", true);
-    meta("og:description", "Univers Lovanet : vidéos, shorts, catalogue anime, sorties prochainement et magasin collector.", true);
+    meta("description", "Monde Lovanet : la porte d'entrée vers Moments Anime, la chaîne YouTube, les shorts TikTok, Cinéma, le catalogue 1500+ titres, les sorties prochainement et le magasin collector.");
+    meta("og:title", "Monde Lovanet", true);
+    meta("og:description", "Monde Lovanet : vidéos, shorts, catalogue anime, sorties prochainement et magasin collector.", true);
       meta("og:url", `${PRIMARY_SITE}/univers`, true);
     let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
     if (!canonical) { canonical = document.createElement("link"); canonical.rel = "canonical"; document.head.appendChild(canonical); }
@@ -57,9 +57,9 @@ const Discover = () => {
   }> = [
     { to: "/chaine-youtube", label: "AnimemomentsAnimeofficiel", tagline: "YouTube officiel", desc: "Edits, trailers & épisodes en HD", icon: Youtube, grad: "from-red-500/40 via-rose-500/20 to-transparent", accent: "#ef4444", emoji: "▶️" },
     { to: "/tiktok", label: "Anime.Moments.officiel", tagline: "TikTok · shorts viraux", desc: "Shorts verticaux, edits & moments cultes", icon: Music2, grad: "from-fuchsia-500/40 via-cyan-400/20 to-transparent", accent: "#e879f9", emoji: "🎵" },
-    { to: "/prime-video", label: "Prime Video", tagline: "Séances premium", desc: "Lecture cinéma en pleine page", icon: Play, grad: "from-sky-500/40 via-blue-500/20 to-transparent", accent: "#38bdf8", emoji: "🎬" },
+    { to: "/prime-video", label: "Cinéma", tagline: "Séances premium", desc: "Lecture cinéma en pleine page", icon: Play, grad: "from-sky-500/40 via-blue-500/20 to-transparent", accent: "#38bdf8", emoji: "🎬" },
     { to: "/anime-countdown", label: "Prochainement", tagline: "Countdown live", desc: "Prochaines sorties anime en direct", icon: Calendar, grad: "from-amber-500/40 via-orange-500/20 to-transparent", accent: "#fbbf24", emoji: "⏳" },
-    { to: "/anime-catalog", label: "Catalogue", tagline: "1500+ animés", desc: "Fiches, trailers, synopsis complets", icon: Sparkles, grad: "from-violet-500/40 via-indigo-500/20 to-transparent", accent: "#a78bfa", emoji: "📚" },
+    { to: "/anime-catalog", label: "Sélection", tagline: "1500+ animés", desc: "Fiches, trailers, synopsis complets", icon: Sparkles, grad: "from-violet-500/40 via-indigo-500/20 to-transparent", accent: "#a78bfa", emoji: "📚" },
     { to: "/anime-moments", label: "Moments Anime", tagline: "Expérience premium", desc: "La page originale avec hologrammes et carrousel vivant", icon: Film, grad: "from-emerald-500/40 via-teal-500/20 to-transparent", accent: "#34d399", emoji: "🌌" },
     { to: "/shop", label: "Shop", tagline: "Collector officiel", desc: `${SHOP_PRODUCTS.length} pièces exclusives · édition limitée`, icon: ShoppingBag, grad: "from-pink-500/40 via-rose-500/20 to-transparent", accent: "#f472b6", emoji: "🛍️" },
   ];
@@ -67,7 +67,7 @@ const Discover = () => {
   const itemListLd = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: "Catalogue AnimemomentsAnimeofficiel",
+    name: "Sélection AnimemomentsAnimeofficiel",
     itemListElement: SHOP_PRODUCTS.slice(0, 76).map((p, i) => ({
       "@type": "ListItem",
       position: i + 1,
@@ -104,7 +104,7 @@ const Discover = () => {
   const catalogItemListLd = (chunk: typeof catalogSeo, offset: number) => ({
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: `Catalogue Lovanet — animés ${offset + 1}–${offset + chunk.length}`,
+    name: `Sélection Lovanet — animés ${offset + 1}–${offset + chunk.length}`,
     itemListElement: chunk.map((it, i) => ({
       "@type": "ListItem",
       position: offset + i + 1,
@@ -181,7 +181,7 @@ const Discover = () => {
             <div className="relative z-10 max-w-4xl mx-auto flex flex-col items-center">
               <div className="max-w-3xl space-y-5">
                 <div className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/8 px-4 py-2 text-xs font-bold uppercase tracking-[0.24em] text-white/75 backdrop-blur-xl">
-                  Univers Lovanet
+                  Monde Lovanet
                 </div>
                 <h1 className="text-4xl font-black tracking-tight text-white md:text-6xl">
                   Explore l’univers anime, vidéos et magasin de Lovanet
@@ -265,7 +265,7 @@ const Discover = () => {
               </div>
 
               <div className="relative z-10 mt-5 inline-flex items-center gap-2 text-xs font-semibold text-white/80 group-hover:text-white transition-colors">
-                Univers
+                Monde
                 <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
               </div>
             </Link>

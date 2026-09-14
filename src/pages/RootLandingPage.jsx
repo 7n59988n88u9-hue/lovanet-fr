@@ -21,12 +21,12 @@ import { motion } from "framer-motion";
 
 const rotatingPortalDestinations = [
   { to: "/anime-moments", label: "Moments Anime", icon: Film },
-  { to: "/decouvrir", label: "Univers Lovanet", icon: Compass },
+  { to: "/decouvrir", label: "Monde Lovanet", icon: Compass },
   { to: "/actualites", label: "Actus", icon: Newspaper },
   { to: "/shop", label: "Magasin", icon: ShoppingBag },
-  { to: "/prime-video", label: "Prime Vidéo", icon: Play },
+  { to: "/prime-video", label: "Cinéma", icon: Play },
   { to: "/tiktok", label: "TikTok", icon: Play },
-  { to: "/anime-catalog", label: "Catalogue", icon: Star },
+  { to: "/anime-catalog", label: "Sélection", icon: Star },
   { to: "/anime-countdown", label: "Prochainement", icon: Play },
   { to: "/lecteurs-video", label: "Lecteurs vidéo", icon: Film },
   { to: "/contact", label: "Contact", icon: Newspaper },
@@ -44,7 +44,7 @@ const portalCards = [
     to: "/shop",
   },
   {
-    title: "Prime & vidéos",
+    title: "Cinéma & vidéos",
     subtitle: "",
     description: "Lecture premium, extraits et navigation multi-plateforme.",
     image: "",
@@ -55,9 +55,9 @@ const portalCards = [
 ];
 
 const platformCards = [
-  { title: "Prime Vidéo", testId: "home-platform-card-prime", to: "/prime-video" },
+  { title: "Cinéma", testId: "home-platform-card-prime", to: "/prime-video" },
   { title: "", testId: "home-platform-card-tiktok", to: "/tiktok" },
-  { title: "Catalogue", testId: "home-platform-card-catalogue", to: "/anime-catalog" },
+  { title: "Sélection", testId: "home-platform-card-catalogue", to: "/anime-catalog" },
   { title: "Prochainement", testId: "home-platform-card-upcoming", to: "/anime-countdown" },
 ];
 
@@ -167,7 +167,7 @@ export default function RootLandingPage() {
               trailerId: String(item.trailerId || "").trim(),
               genres: Array.isArray(item.genres) ? item.genres.slice(0, 3) : [],
               href: `/anime-catalog?anime=${item.id}&trailer=${String(item.trailerId || "").trim()}&autoplay=1`,
-              year: item.seasonYear || item.year || "Catalogue",
+              year: item.seasonYear || item.year || "Sélection",
             })),
         );
         setCatalogPreviewPool(normalized);
@@ -444,14 +444,14 @@ export default function RootLandingPage() {
                 })}
               </div>
 
-              {/* Séparateur épais + boutons Catalogue & Son centrés en dessous */}
+              {/* Séparateur épais + boutons Sélection & Son centrés en dessous */}
               <div className="mt-10 flex flex-col items-center gap-8">
                 <div className="h-1.5 w-full max-w-md rounded-full bg-[linear-gradient(90deg,transparent,var(--theme-accent,#00ff9d),transparent)] opacity-60" />
                 <div className="flex items-center justify-center gap-3">
                   <Button asChild size="sm" className="h-11 rounded-full px-6 text-sm font-semibold bg-[rgba(255,255,255,0.08)] text-[rgba(255,255,255,0.95)] backdrop-blur-md border-[rgba(255,255,255,0.25)] hover:bg-[rgba(255,255,255,0.18)] hover:border-[rgba(255,255,255,0.40)] hover:text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.12),0_12px_28px_-18px_rgba(0,0,0,0.5)]" data-testid="home-platforms-button">
                     <Link to="/anime-catalog">
                       <span className="inline-flex items-center gap-2 animate-in fade-in zoom-in-95 duration-500">
-                        Catalogue
+                        Sélection
                         <ArrowRight className="h-4 w-4 text-white drop-shadow-[0_0_5px_rgba(255,255,255,0.55)]" />
                       </span>
                     </Link>
@@ -509,7 +509,7 @@ export default function RootLandingPage() {
                                 </div>
                                 <div className="hero-premium-lower-copy">
                                   <p className="hero-premium-lower-title">{item.title}</p>
-                                  <p className="hero-premium-lower-description">{item.genres.join(" • ") || "Catalogue premium"}</p>
+                                  <p className="hero-premium-lower-description">{item.genres.join(" • ") || "Sélection premium"}</p>
                                 </div>
                               </Link>
 

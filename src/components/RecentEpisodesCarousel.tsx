@@ -45,7 +45,7 @@ type ImportedVideo = {
 const sourceMeta: Record<ImportedVideo["source"], { label: string; Icon: typeof Youtube }> = {
   youtube: { label: "YouTube", Icon: Youtube },
   tiktok: { label: "TikTok", Icon: Music2 },
-  prime: { label: "Prime Video", Icon: Tv },
+  prime: { label: "Cinéma", Icon: Tv },
 };
 
 export const RecentEpisodesCarousel = () => {

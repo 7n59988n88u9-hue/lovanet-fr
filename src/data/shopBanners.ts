@@ -42,6 +42,6 @@ export const BANNER_VIDEO_SLIDES: BannerVideoSlide[] = [
     src: "/custom_video_lovanet.mp4",
     title: "Lovanet Zone \u00b7 Capsule Collector",
     subtitle: "Pi\u00e8ces exclusives de l'univers Lovanet \u2014 s\u00e9rie limit\u00e9e maison",
-    badge: "Vid\u00e9o \u00b7 Univers Lovanet",
+    badge: "Vid\u00e9o \u00b7 Monde Lovanet",
   },
 ];

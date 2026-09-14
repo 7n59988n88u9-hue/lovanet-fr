@@ -13,15 +13,15 @@ export const SITE_KNOWLEDGE: KnowledgeEntry[] = [
     id: "accueil",
     keywords: ["accueil", "accueil", "home", "page principale", "landing", "demarrer", "commencer"],
     answer:
-      "Le Accueil est la page d'accueil de Lovanet : bannière vidéo, trailers en avant-première et accès rapide vers toutes les plateformes (YouTube, TikTok, Prime Vidéo, Catalogue, Magasin).",
+      "Le Accueil est la page d'accueil de Lovanet : bannière vidéo, trailers en avant-première et accès rapide vers toutes les plateformes (Cinéma, Sélection, Magasin, Studio IA).",
     link: { label: "Aller au Accueil", to: "/" },
   },
   {
     id: "catalogue",
     keywords: ["catalogue", "anime catalog", "carrousel 3d", "trailer", "trailers", "series", "films", "filtre", "filtres"],
     answer:
-      "Le Catalogue regroupe les animes avec un carrousel 3D, des filtres par genre/année/statut, un lecteur multi-langues (VO, VF, VOSTFR) et le scroll infini. Astuce : tu peux changer la couleur des cartes via la bulle Palette dans la barre de rattachement à gauche.",
-    link: { label: "Ouvrir le Catalogue", to: "/anime-catalog" },
+      "La Sélection regroupe les animes avec un carrousel 3D, des filtres par genre/année/statut, un lecteur multi-langues (VO, VF, VOSTFR) et le scroll infini. Astuce : tu peux changer la couleur des cartes via la bulle Palette dans la barre de rattachement à gauche.",
+    link: { label: "Ouvrir la Sélection", to: "/anime-catalog" },
   },
   {
     id: "youtube",
@@ -41,8 +41,8 @@ export const SITE_KNOWLEDGE: KnowledgeEntry[] = [
     id: "prime",
     keywords: ["prime", "prime video", "amazon", "streaming", "vod"],
     answer:
-      "Prime Vidéo présente le catalogue de trailers et fiches avec lecteur multi-doublage (VO / VF / VOSTFR) et sous-titres.",
-    link: { label: "Ouvrir Prime Vidéo", to: "/prime-video" },
+      "Cinéma présente le catalogue de trailers et fiches avec lecteur multi-doublage (VO / VF / VOSTFR) et sous-titres.",
+    link: { label: "Ouvrir Cinéma", to: "/prime-video" },
   },
   {
     id: "shop",
@@ -109,7 +109,7 @@ export const SITE_KNOWLEDGE: KnowledgeEntry[] = [
     id: "navigation",
     keywords: ["menu", "navigation", "acces rapide", "accès rapide", "chercher", "trouver page"],
     answer:
-      "Le menu de navigation est accessible en haut (PC) et via l'accès rapide sur mobile : boutons Accueil, Catalogue, YouTube, TikTok, Prime, AI, Magasin, Actus, Profil. Les listes de boutons défilent par simple glissement.",
+      "Le menu de navigation est accessible en haut (PC) et via l'accès rapide sur mobile : boutons Accueil, Sélection, Cinéma, Studio IA, Magasin, Actus, Profil. Les listes de boutons défilent par simple glissement.",
   },
   {
     id: "lecteur",
@@ -222,7 +222,7 @@ export function answerQuestion(question: string, botId: BotId = "lova-bot"): Bot
   if (!best) {
     return {
       text:
-        "Je n'ai pas la réponse exacte à ça. Je peux t'aider sur : les pages du site (Accueil, Catalogue, YouTube, TikTok, Prime, Magasin, Actus, Studio IA), le lecteur et les langues, la personnalisation (thème, bulles, couleurs des cartes), les comptes et les commandes.",
+        "Je n'ai pas la réponse exacte à ça. Je peux t'aider sur : les pages du site (Accueil, Sélection, Cinéma, Magasin, Actus, Studio IA), le lecteur et les langues, la personnalisation (thème, bulles, couleurs des cartes), les comptes et les commandes.",
       matched: false,
     };
   }

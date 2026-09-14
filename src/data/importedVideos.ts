@@ -127,7 +127,7 @@ export const IMPORTED_VIDEOS: ImportedVideo[] = [
     id: "pr-1",
     source: "prime",
     external_id: "pr-vid-1",
-    title: "Prime Video Anime Trailer 1",
+    title: "Cinéma Anime Trailer 1",
     thumbnail_url: "https://placehold.co/600x400/1a1a2e/cyan?text=Prime+1",
     video_url: "https://www.primevideo.com/detail/0",
     published_at: new Date().toISOString(),

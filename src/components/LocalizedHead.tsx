@@ -36,7 +36,7 @@ const KEYWORDS = [
   "vidéos anime",
   "YouTube anime",
   "TikTok anime",
-  "Prime Video anime",
+  "Cinéma anime",
   "actus anime",
   "poster anime",
   "figurine anime",
@@ -52,11 +52,11 @@ function breadcrumbFor(route: string, canonical: string) {
   const labels: Record<string, string> = {
     "/": "Accueil Lovanet",
     "/anime-moments": "Moments Anime",
-    "/univers": "Univers Lovanet",
+    "/univers": "Monde Lovanet",
     "/shop": "Magasin",
-    "/anime-catalog": "Catalogue Anime",
+    "/anime-catalog": "Sélection Anime",
     "/anime-countdown": "Anime prochainement",
-    "/prime-video": "Prime Video",
+    "/prime-video": "Cinéma",
     "/actualites": "Actus",
     "/leaderboard": "Podium",
     "/profile": "Espace client",
@@ -100,8 +100,8 @@ export function LocalizedHead() {
     { name: "Accueil", url: `${PRIMARY_SITE}/` },
     { name: "Moments Anime", url: `${PRIMARY_SITE}/anime-moments` },
     { name: "Magasin", url: `${PRIMARY_SITE}/shop` },
-    { name: "Catalogue Anime", url: `${PRIMARY_SITE}/anime-catalog` },
-    { name: "Prime Video", url: `${PRIMARY_SITE}/prime-video` },
+    { name: "Sélection Anime", url: `${PRIMARY_SITE}/anime-catalog` },
+    { name: "Cinéma", url: `${PRIMARY_SITE}/prime-video` },
     { name: "Actus", url: `${PRIMARY_SITE}/actualites` },
     { name: "Podium", url: `${PRIMARY_SITE}/leaderboard` },
     { name: "Espace client", url: `${PRIMARY_SITE}/profile` },
@@ -156,7 +156,7 @@ export function LocalizedHead() {
           name: "Catalogue des services Lovanet",
           itemListElement: [
             { "@type": "Offer", name: "Magasin anime manga", url: `${PRIMARY_SITE}/shop` },
-            { "@type": "Offer", name: "Catalogue anime", url: `${PRIMARY_SITE}/anime-catalog` },
+            { "@type": "Offer", name: "Sélection anime", url: `${PRIMARY_SITE}/anime-catalog` },
             { "@type": "Offer", name: "Espace client", url: `${PRIMARY_SITE}/profile` },
           ],
         },
@@ -230,7 +230,7 @@ export function LocalizedHead() {
       <meta name="googlebot" content="index,follow,max-image-preview:large,max-video-preview:-1,max-snippet:-1" />
       <meta name="author" content="Lovanet Anime.Moments.officiel" />
       <meta name="publisher" content="Lovanet" />
-      <meta name="news_keywords" content="anime, manga, AnimeMoments, Lovanet, YouTube anime, TikTok anime, Prime Video anime" />
+      <meta name="news_keywords" content="anime, manga, AnimeMoments, Lovanet, YouTube anime, TikTok anime, Cinéma anime" />
       {GOOGLE_SITE_VERIFICATION ? <meta name="google-site-verification" content={GOOGLE_SITE_VERIFICATION} /> : null}
       {BING_SITE_VERIFICATION ? <meta name="msvalidate.01" content={BING_SITE_VERIFICATION} /> : null}
       {YANDEX_SITE_VERIFICATION ? <meta name="yandex-verification" content={YANDEX_SITE_VERIFICATION} /> : null}

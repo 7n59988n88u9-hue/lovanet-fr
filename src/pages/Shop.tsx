@@ -334,7 +334,7 @@ const Shop = () => {
         <div className="container mx-auto px-3 sm:px-4 lg:px-8 flex items-center gap-1 overflow-x-auto no-scrollbar py-2 text-xs">
           {[
             { href: "#rails",     label: "Sélections",       icon: <Sparkles className="w-3.5 h-3.5" /> },
-            { href: "#catalog",   label: "Catalogue",        icon: <Package className="w-3.5 h-3.5" /> },
+            { href: "#catalog",   label: "Sélection",        icon: <Package className="w-3.5 h-3.5" /> },
             { href: "#games",     label: "Jouer & gagner",   icon: <Gamepad2 className="w-3.5 h-3.5" /> },
           ].map((l) => (
             <a key={l.href} href={l.href} className="glass3d-btn shrink-0 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-white/30 bg-white/10 text-white font-semibold transition">
