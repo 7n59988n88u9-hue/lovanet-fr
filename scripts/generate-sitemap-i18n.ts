@@ -12,11 +12,7 @@ const LOCALES = ["fr", "en", "es", "de", "it", "pt", "ja", "zh"] as const;
 // Keep in sync with APP_ROUTES in src/App.tsx (public, indexable routes only).
 const ROUTES: Array<{ path: string; changefreq: string; priority: string }> = [
   { path: "/", changefreq: "daily", priority: "1.0" },
-  { path: "/chaine-youtube", changefreq: "daily", priority: "0.9" },
-  { path: "/chaine-youtube/manga", changefreq: "daily", priority: "0.8" },
-  { path: "/lecteurs-video", changefreq: "daily", priority: "0.8" },
   { path: "/prime-video", changefreq: "daily", priority: "0.9" },
-  { path: "/tiktok", changefreq: "daily", priority: "0.9" },
   { path: "/decouvrir", changefreq: "weekly", priority: "0.9" },
   { path: "/shop", changefreq: "weekly", priority: "0.9" },
   { path: "/anime-catalog", changefreq: "weekly", priority: "0.8" },
