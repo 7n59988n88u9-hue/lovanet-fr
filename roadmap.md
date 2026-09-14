@@ -6,4 +6,4 @@
 - [x] Permettre une orientation horizontale ou verticale et un déplacement rapide.
 - [x] Replier automatiquement la barre après 10 secondes.
 - [x] Refaire la forme et la couleur des deux chevrons, avec celui de droite centré en hauteur.
-- [ ] Vérifier l’affichage, les interactions et publier.
+- [x] Vérifier l’affichage, les interactions et publier.
