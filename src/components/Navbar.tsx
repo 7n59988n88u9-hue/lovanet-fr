@@ -324,7 +324,7 @@ export const Navbar = () => {
                       >
                         <Icon className="h-4 w-4 text-white group-hover:text-fuchsia-300 transition-colors" />
                       </motion.div>
-                      <span key={`desktop-label-${index}-${item.to}-${menuRotationIndex}`} className="inline-block whitespace-nowrap animate-in fade-in zoom-in-95 duration-500 nav-theme-accent-text">
+                      <span key={`desktop-label-${index}-${item.to}-${menuRotationIndex}`} className="inline-block whitespace-nowrap animate-in fade-in zoom-in-95 duration-500 neon-rgb-text-mini text-xs">
                         {item.label}
                       </span>
                     </Link>
@@ -340,7 +340,7 @@ export const Navbar = () => {
                   className="nav-theme-chip nav-theme-chip-active inline-flex min-h-[44px] items-center gap-2 rounded-full px-4 py-2 text-sm font-semibold"
                   data-testid="desktop-rotating-cta-button"
                 >
-                  <span key={`desktop-cta-${rotatingCta.to}-${menuRotationIndex}`} className="inline-flex items-center gap-2 animate-in fade-in zoom-in-95 duration-500 nav-theme-accent-text">
+                  <span key={`desktop-cta-${rotatingCta.to}-${menuRotationIndex}`} className="inline-flex items-center gap-2 animate-in fade-in zoom-in-95 duration-500 neon-rgb-text-mini text-xs">
                     {rotatingCta.label}
                     <ChevronRight className="h-4 w-4" />
                   </span>
