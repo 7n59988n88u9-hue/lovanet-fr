@@ -19,13 +19,13 @@ type QuickNavItem = {
 };
 
 const DEFAULT_ITEMS: QuickNavItem[] = [
-  { id: "home", title: "Portail", to: "/anime-moments", color: "linear-gradient(45deg, #22d3ee, #6366f1)" },
+  { id: "home", title: "Accueil", to: "/anime-moments", color: "linear-gradient(45deg, #22d3ee, #6366f1)" },
   { id: "catalog", title: "Catalogue", to: "/anime-catalog", color: "linear-gradient(45deg, #fbbf24, #ef4444)" },
   { id: "ai", title: "AI", to: "/ai-hub", color: "linear-gradient(45deg, #00ff9d, #22d3ee)" },
   { id: "shop", title: "Magasin", to: "/shop", color: "linear-gradient(45deg, #f472b6, #9333ea)" },
   { id: "prime", title: "Prime Vidéo", to: "/prime-video", color: "linear-gradient(45deg, #60a5fa, #1d4ed8)" },
-  { id: "news", title: "Actualités", to: "/actualites", color: "linear-gradient(45deg, #a78bfa, #6d28d9)" },
-  { id: "leader", title: "Classement", to: "/leaderboard", color: "linear-gradient(45deg, #e879f9, #e11d48)" },
+  { id: "news", title: "Actus", to: "/actualites", color: "linear-gradient(45deg, #a78bfa, #6d28d9)" },
+  { id: "leader", title: "Podium", to: "/leaderboard", color: "linear-gradient(45deg, #e879f9, #e11d48)" },
 ];
 
 const LOGIN_ITEM: QuickNavItem = {

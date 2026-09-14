@@ -10,11 +10,11 @@ export type KnowledgeEntry = {
 
 export const SITE_KNOWLEDGE: KnowledgeEntry[] = [
   {
-    id: "portail",
-    keywords: ["portail", "accueil", "home", "page principale", "landing", "demarrer", "commencer"],
+    id: "accueil",
+    keywords: ["accueil", "accueil", "home", "page principale", "landing", "demarrer", "commencer"],
     answer:
-      "Le Portail est la page d'accueil de Lovanet : bannière vidéo, trailers en avant-première et accès rapide vers toutes les plateformes (YouTube, TikTok, Prime Vidéo, Catalogue, Magasin).",
-    link: { label: "Aller au Portail", to: "/" },
+      "Le Accueil est la page d'accueil de Lovanet : bannière vidéo, trailers en avant-première et accès rapide vers toutes les plateformes (YouTube, TikTok, Prime Vidéo, Catalogue, Magasin).",
+    link: { label: "Aller au Accueil", to: "/" },
   },
   {
     id: "catalogue",
@@ -67,24 +67,24 @@ export const SITE_KNOWLEDGE: KnowledgeEntry[] = [
   },
   {
     id: "actualites",
-    keywords: ["actualite", "actualités", "news", "article", "articles", "traduction", "langue", "langues"],
+    keywords: ["actualite", "actus", "news", "article", "articles", "traduction", "langue", "langues"],
     answer:
-      "La page Actualités agrège les flux d'infos anime/manga. Une barre de langues permet de traduire un article à la volée en 8 langues.",
-    link: { label: "Lire les actualités", to: "/actualites" },
+      "La page Actus agrège les flux d'infos anime/manga. Une barre de langues permet de traduire un article à la volée en 8 langues.",
+    link: { label: "Lire les actus", to: "/actualites" },
   },
   {
     id: "aihub",
     keywords: ["ai", "ai hub", "ia", "intelligence", "hub"],
     answer:
-      "L'AI Hub réunit les outils et expériences IA de Lovanet, avec sa bannière vidéo immersive.",
-    link: { label: "Ouvrir l'AI Hub", to: "/ai-hub" },
+      "L'Studio IA réunit les outils et expériences IA de Lovanet, avec sa bannière vidéo immersive.",
+    link: { label: "Ouvrir l'Studio IA", to: "/ai-hub" },
   },
   {
     id: "leaderboard",
-    keywords: ["classement", "leaderboard", "score", "points", "jeu", "jeux", "snake", "quiz", "memory"],
+    keywords: ["podium", "leaderboard", "score", "points", "jeu", "jeux", "snake", "quiz", "memory"],
     answer:
-      "Les mini-jeux (Snake, Memory, Quiz) rapportent des points et le classement global se consulte sur la page Leaderboard.",
-    link: { label: "Voir le classement", to: "/leaderboard" },
+      "Les mini-jeux (Snake, Memory, Quiz) rapportent des points et le podium global se consulte sur la page Podium.",
+    link: { label: "Voir le podium", to: "/leaderboard" },
   },
   {
     id: "countdown",
@@ -109,7 +109,7 @@ export const SITE_KNOWLEDGE: KnowledgeEntry[] = [
     id: "navigation",
     keywords: ["menu", "navigation", "acces rapide", "accès rapide", "chercher", "trouver page"],
     answer:
-      "Le menu de navigation est accessible en haut (PC) et via l'accès rapide sur mobile : boutons Portail, Catalogue, YouTube, TikTok, Prime, AI, Magasin, Actualités, Profil. Les listes de boutons défilent par simple glissement.",
+      "Le menu de navigation est accessible en haut (PC) et via l'accès rapide sur mobile : boutons Accueil, Catalogue, YouTube, TikTok, Prime, AI, Magasin, Actus, Profil. Les listes de boutons défilent par simple glissement.",
   },
   {
     id: "lecteur",
@@ -222,7 +222,7 @@ export function answerQuestion(question: string, botId: BotId = "lova-bot"): Bot
   if (!best) {
     return {
       text:
-        "Je n'ai pas la réponse exacte à ça. Je peux t'aider sur : les pages du site (Portail, Catalogue, YouTube, TikTok, Prime, Magasin, Actualités, AI Hub), le lecteur et les langues, la personnalisation (thème, bulles, couleurs des cartes), les comptes et les commandes.",
+        "Je n'ai pas la réponse exacte à ça. Je peux t'aider sur : les pages du site (Accueil, Catalogue, YouTube, TikTok, Prime, Magasin, Actus, Studio IA), le lecteur et les langues, la personnalisation (thème, bulles, couleurs des cartes), les comptes et les commandes.",
       matched: false,
     };
   }

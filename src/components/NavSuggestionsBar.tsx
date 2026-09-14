@@ -14,7 +14,7 @@ interface TrendingTopic {
 
 const trendingTopics: TrendingTopic[] = [
   { id: "seasonal", label: "Saison 2025", emoji: "🌸", to: "/anime-catalog?season=2025", trend: "hot" },
-  { id: "upcoming", label: "À venir", emoji: "⏰", to: "/anime-countdown", trend: "featured" },
+  { id: "upcoming", label: "Prochainement", emoji: "⏰", to: "/anime-countdown", trend: "featured" },
   { id: "trending", label: "Tendances", emoji: "🔥", to: "/leaderboard", trend: "hot" },
   { id: "exclusive", label: "Exclu Premium", emoji: "👑", to: "/prime-video", trend: "new" },
   { id: "manga", label: "Nouvelles Séries", emoji: "📖", to: "/chaine-youtube/manga", trend: "new" },
@@ -28,7 +28,7 @@ const contextualChips: Record<string, TrendingTopic[]> = {
   ],
   "/anime-moments": [
     { id: "related", label: "Catalogue", emoji: "📺", to: "/anime-catalog" },
-    { id: "upcoming", label: "À venir", emoji: "⏰", to: "/anime-countdown" },
+    { id: "upcoming", label: "Prochainement", emoji: "⏰", to: "/anime-countdown" },
     { id: "trending", label: "Tendances", emoji: "🔥", to: "/leaderboard" },
   ],
   "/anime-catalog": [

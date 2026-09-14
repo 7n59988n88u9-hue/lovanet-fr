@@ -151,7 +151,7 @@ export const InstallAppPrompt = () => {
       if (perm === "granted") {
         const reg = "serviceWorker" in navigator ? await navigator.serviceWorker.getRegistration() : null;
         const options = {
-          body: "Vous recevrez les alertes Lovanet : nouveautés, sorties et actualités.",
+          body: "Vous recevrez les alertes Lovanet : nouveautés, sorties et actus.",
            icon: "/lovanet-icon-192.png?v=20",
            badge: "/lovanet-icon-192.png?v=20",
           tag: "lovanet-welcome",

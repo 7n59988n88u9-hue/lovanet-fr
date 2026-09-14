@@ -21,7 +21,7 @@ const MOCK_LEADERBOARD = [
   { id: "u10", name: "OtakuKing", coins: 2400, achievements: 8, color: "#facc15", isCurrentUser: false },
 ];
 
-export default function Leaderboard() {
+export default function Podium() {
   const { user } = useAuth();
   const { lovaCoins, achievements, neonColor } = useGamification();
 
@@ -47,7 +47,7 @@ export default function Leaderboard() {
   return (
     <PageShell className="actualites-monochrome">
       <Helmet>
-        <title>Classement Global — Lovanet</title>
+        <title>Podium Global — Lovanet</title>
       </Helmet>
       
       <section className="container mx-auto px-4 lg:px-8 py-12 md:py-20 max-w-5xl">
@@ -67,7 +67,7 @@ export default function Leaderboard() {
 
         <header className="text-center mb-16 space-y-4">
           <div className="theme-glass-chip mb-4 inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-xs font-bold uppercase tracking-widest text-white">
-            <Trophy className="w-3.5 h-3.5" /> Leaderboard Officiel
+            <Trophy className="w-3.5 h-3.5" /> Podium Officiel
           </div>
           <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-black text-white drop-shadow-xl">
             Temple de la <span className="text-white">Renommée</span>
@@ -149,7 +149,7 @@ export default function Leaderboard() {
         </div>
         
         <div className="mt-8 text-center text-white/40 text-xs flex items-center justify-center gap-2">
-          <ArrowUp className="w-3 h-3" /> Pensez à compléter vos quêtes journalières pour grimper dans le classement !
+          <ArrowUp className="w-3 h-3" /> Pensez à compléter vos quêtes journalières pour grimper dans le podium !
         </div>
       </section>
     </PageShell>

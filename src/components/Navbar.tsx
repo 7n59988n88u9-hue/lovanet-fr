@@ -49,17 +49,17 @@ const navTestIds: Record<string, string> = {
 };
 
 const rotatingDestinations = [
-  { to: "/", label: "Portail", icon: Home },
-  { to: "/anime-moments", label: "Anime Moments", icon: Film },
+  { to: "/", label: "Accueil", icon: Home },
+  { to: "/anime-moments", label: "Moments Anime", icon: Film },
   { to: "/prime-video", label: "Prime Vidéo", icon: Play },
-  { to: "/anime-countdown", label: "À venir", icon: Play },
+  { to: "/anime-countdown", label: "Prochainement", icon: Play },
   { to: "/anime-catalog", label: "Catalogue", icon: Film },
-  { to: "/ai-hub", label: "AI Hub", icon: Bot },
+  { to: "/ai-hub", label: "Studio IA", icon: Bot },
   { to: "/univers", label: "Univers", icon: Compass },
   { to: "/actualites", label: "News", icon: Sparkles },
   { to: "/shop", label: "Magasin", icon: ShoppingBag },
   { to: "/contact", label: "Contact", icon: Mail },
-  { to: "/leaderboard", label: "Classement", icon: Trophy },
+  { to: "/leaderboard", label: "Podium", icon: Trophy },
 ];
 
 const desktopSlotCount = 10;
@@ -71,19 +71,19 @@ const getRotatingDestination = (slotIndex: number, rotationIndex: number) =>
 type MegaItem = { to: string; label: string; icon: typeof Home; iconOnly?: boolean };
 
 const megaSections: MegaItem[] = [
-  { to: "/", label: "Portail", icon: Home },
-  { to: "/anime-moments", label: "Anime Moments", icon: Film },
+  { to: "/", label: "Accueil", icon: Home },
+  { to: "/anime-moments", label: "Moments Anime", icon: Film },
   { to: "/prime-video", label: "Prime Vidéo", icon: Play },
-  { to: "/anime-countdown", label: "Animés à venir", icon: Play },
+  { to: "/anime-countdown", label: "Animés prochainement", icon: Play },
   { to: "/anime-catalog", label: "Catalogue Animés", icon: Film },
   { to: "/ai-hub", label: "AI", icon: Bot },
   { to: "/shop", label: "Magasin", icon: ShoppingBag },
   { to: "/univers", label: "Univers Lovanet", icon: Compass },
-  { to: "/actualites", label: "Actualités", icon: Sparkles },
+  { to: "/actualites", label: "Actus", icon: Sparkles },
   { to: "/profile", label: "Profil", icon: User },
   { to: "/contact", label: "Contact", icon: Mail },
   { to: "/legals", label: "Mentions légales", icon: ScrollText },
-  { to: "/leaderboard", label: "Leaderboard Global", icon: Trophy, iconOnly: true },
+  { to: "/leaderboard", label: "Podium", icon: Trophy, iconOnly: true },
 
 ];
 
@@ -226,7 +226,7 @@ export const Navbar = () => {
     <Link
       to="/"
       className="group inline-flex min-h-[52px] items-center rounded-full p-0.5"
-      aria-label="Lovanet — Portail"
+      aria-label="Lovanet — Accueil"
       data-testid="header-home-logo-link"
       onClick={() => setOpen(false)}
     >

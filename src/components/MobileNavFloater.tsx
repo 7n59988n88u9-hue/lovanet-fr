@@ -20,11 +20,11 @@ const contextualSuggestions: Record<string, QuickSuggestion[]> = {
     { to: "/anime-catalog", label: "Catalogue", emoji: "📺", type: "quick-link" },
     { to: "/actualites", label: "News", emoji: "📰", type: "trending" },
     { to: "/univers", label: "Univers", emoji: "🌍", type: "recommended" },
-    { to: "/leaderboard", label: "Classement", emoji: "🏆", type: "trending" },
+    { to: "/leaderboard", label: "Podium", emoji: "🏆", type: "trending" },
   ],
   "/anime-moments": [
     { to: "/anime-catalog", label: "Plus d'anime", emoji: "📺", type: "context" },
-    { to: "/actualites", label: "À venir", emoji: "⏰", type: "context" },
+    { to: "/actualites", label: "Prochainement", emoji: "⏰", type: "context" },
     { to: "/shop", label: "Merchandise", emoji: "🛍️", type: "recommended" },
   ],
   "/anime-catalog": [
@@ -35,7 +35,7 @@ const contextualSuggestions: Record<string, QuickSuggestion[]> = {
   "/shop": [
     { to: "/anime-catalog", label: "Inspirations", emoji: "🎨", type: "context" },
     { to: "/actualites", label: "Nouveautés", emoji: "🆕", type: "trending" },
-    { to: "/", label: "Portail", emoji: "🏠", type: "quick-link" },
+    { to: "/", label: "Accueil", emoji: "🏠", type: "quick-link" },
   ],
   "/actualites": [
     { to: "/anime-catalog", label: "Catalogue", emoji: "📺", type: "recommended" },

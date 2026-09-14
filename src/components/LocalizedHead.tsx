@@ -37,7 +37,7 @@ const KEYWORDS = [
   "YouTube anime",
   "TikTok anime",
   "Prime Video anime",
-  "actualités anime",
+  "actus anime",
   "poster anime",
   "figurine anime",
   "manga",
@@ -50,15 +50,15 @@ function localizedPath(route: string, locale: string) {
 
 function breadcrumbFor(route: string, canonical: string) {
   const labels: Record<string, string> = {
-    "/": "Portail Lovanet",
-    "/anime-moments": "Anime Moments",
+    "/": "Accueil Lovanet",
+    "/anime-moments": "Moments Anime",
     "/univers": "Univers Lovanet",
     "/shop": "Magasin",
     "/anime-catalog": "Catalogue Anime",
-    "/anime-countdown": "Anime à venir",
+    "/anime-countdown": "Anime prochainement",
     "/prime-video": "Prime Video",
-    "/actualites": "Actualités",
-    "/leaderboard": "Classement",
+    "/actualites": "Actus",
+    "/leaderboard": "Podium",
     "/profile": "Espace client",
     "/login": "Connexion",
     "/contact": "Contact",
@@ -98,12 +98,12 @@ export function LocalizedHead() {
   const alternateCanonicals = ALTERNATE_SITES.map((site) => `${site}${canonicalPath}${deepSeoQuery}`);
   const serviceLinks = [
     { name: "Accueil", url: `${PRIMARY_SITE}/` },
-    { name: "Anime Moments", url: `${PRIMARY_SITE}/anime-moments` },
+    { name: "Moments Anime", url: `${PRIMARY_SITE}/anime-moments` },
     { name: "Magasin", url: `${PRIMARY_SITE}/shop` },
     { name: "Catalogue Anime", url: `${PRIMARY_SITE}/anime-catalog` },
     { name: "Prime Video", url: `${PRIMARY_SITE}/prime-video` },
-    { name: "Actualités", url: `${PRIMARY_SITE}/actualites` },
-    { name: "Classement", url: `${PRIMARY_SITE}/leaderboard` },
+    { name: "Actus", url: `${PRIMARY_SITE}/actualites` },
+    { name: "Podium", url: `${PRIMARY_SITE}/leaderboard` },
     { name: "Espace client", url: `${PRIMARY_SITE}/profile` },
     { name: "Connexion", url: `${PRIMARY_SITE}/login` },
     { name: "Contact", url: `${PRIMARY_SITE}/contact` },
@@ -116,7 +116,7 @@ export function LocalizedHead() {
         "@type": "Organization",
         "@id": `${PRIMARY_SITE}/#organization`,
         name: "Lovanet Anime.Moments.officiel",
-        alternateName: ["AnimemomentsAnimeofficiel", "Anime Moments Officiel", "Animer officiel"],
+        alternateName: ["AnimemomentsAnimeofficiel", "Moments Anime Officiel", "Animer officiel"],
         url: PRIMARY_SITE,
         logo: LOGO,
         image: OG_IMAGE,
@@ -164,7 +164,7 @@ export function LocalizedHead() {
         review: {
           "@type": "Review",
           name: "Avis éditorial Lovanet",
-          reviewBody: "Plateforme anime complète réunissant vidéos, catalogue, magasin manga et actualités Anime.Moments.officiel.",
+          reviewBody: "Plateforme anime complète réunissant vidéos, catalogue, magasin manga et actus Anime.Moments.officiel.",
           reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
           author: { "@type": "Organization", name: "Lovanet" },
         },
@@ -241,8 +241,8 @@ export function LocalizedHead() {
       {alternateCanonicals.map((href) => (
         <link key={`domain-alt-${href}`} rel="alternate" href={href} />
       ))}
-      <link rel="alternate" type="application/rss+xml" title="Lovanet Actualités RSS" href={`${PRIMARY_SITE}/rss.xml`} />
-      <link rel="alternate" type="application/atom+xml" title="Lovanet Actualités Atom" href={`${PRIMARY_SITE}/atom.xml`} />
+      <link rel="alternate" type="application/rss+xml" title="Lovanet Actus RSS" href={`${PRIMARY_SITE}/rss.xml`} />
+      <link rel="alternate" type="application/atom+xml" title="Lovanet Actus Atom" href={`${PRIMARY_SITE}/atom.xml`} />
       <link rel="sitemap" type="application/xml" href={`${PRIMARY_SITE}/sitemap.xml`} />
       <meta property="og:site_name" content="Lovanet" />
       <meta property="og:type" content={route === "/actualites" ? "article" : "website"} />

@@ -35,7 +35,7 @@ var CATEGORY_LABEL = {
 var SEEDS = [
   // ===== AFFICHES / POSTERS (12) =====
   { name: "Affiche N\xE9on Ruri no Houseki", category: "poster", tag: "\xC9dition limit\xE9e", price: 24, description: "Tirage gicl\xE9e 50\xD770 cm sur papier mat 250g, finition n\xE9on magenta. Num\xE9rot\xE9e et sign\xE9e AnimemomentsAnimeofficiel.", source: "youtube" },
-  { name: "Poster Holographique Anime Moments", category: "poster", tag: "Holo", price: 29, description: "Poster A2 imprim\xE9 sur film holographique, reflets arc-en-ciel selon l'angle. Tube cartonn\xE9 inclus.", source: "both" },
+  { name: "Poster Holographique Moments Anime", category: "poster", tag: "Holo", price: 29, description: "Poster A2 imprim\xE9 sur film holographique, reflets arc-en-ciel selon l'angle. Tube cartonn\xE9 inclus.", source: "both" },
   { name: "Affiche Glow-in-Dark TikTok Drop", category: "poster", tag: "Phosphorescent", price: 32, description: "Encre phosphorescente activ\xE9e \xE0 la lumi\xE8re, brille pendant 6h dans le noir. Format 60\xD790 cm.", source: "tiktok" },
   { name: "Triptyque Moments Forts S1", category: "poster", tag: "Set de 3", price: 49, description: "Trois posters 30\xD740 cm formant une sc\xE8ne panoramique. Best-of saison 1 de la cha\xEEne YouTube.", source: "youtube" },
   { name: "Affiche Minimaliste Madoka", category: "poster", tag: "Art print", price: 19, description: "Style art d\xE9co minimaliste, papier coton 300g. \xC9dition open de 500 exemplaires.", source: "youtube" },
@@ -49,7 +49,7 @@ var SEEDS = [
   // ===== OBJETS DE COLLECTION / COLLECTOR (13) =====
   { name: "Figurine LED Anime Glow 24cm", category: "collector", tag: "Collector", price: 89, description: "Figurine PVC 24 cm, socle LED RGB pilotable. \xC9dition limit\xE9e \xE0 500 exemplaires num\xE9rot\xE9s.", source: "youtube" },
   { name: "Statue Premium \xD1LL\xD1 Resin", category: "collector", tag: "\xC9dition 100", price: 249, description: "Statue r\xE9sine peinte main, hauteur 32 cm, socle marbre. Certificat d'authenticit\xE9.", source: "both" },
-  { name: "Nendoroid Anime Moments", category: "collector", tag: "Chibi", price: 59, description: "Figurine chibi 10 cm articul\xE9e avec 3 visages interchangeables et accessoires.", source: "youtube" },
+  { name: "Nendoroid Moments Anime", category: "collector", tag: "Chibi", price: 59, description: "Figurine chibi 10 cm articul\xE9e avec 3 visages interchangeables et accessoires.", source: "youtube" },
   { name: "Bust Half-Scale Madoka", category: "collector", tag: "Demi-buste", price: 179, description: "Buste demi-\xE9chelle, 20 cm de haut, finition mate premium. Bo\xEEte collector incluse.", source: "youtube" },
   { name: "Set Pin's \xC9mail Officiels", category: "collector", tag: "Pack x10", price: 39, description: "10 pin's \xE9mail dur, design exclusif AnimemomentsAnimeofficiel. Carte support cartonn\xE9e.", source: "tiktok" },
   { name: "Vinyle Picture Disc Lovanet", category: "collector", tag: 'Vinyle 12"', price: 34, description: "Vinyle picture disc 33 tours avec artwork anime, bande-son officielle Lovanet.", source: "both" },
@@ -63,13 +63,13 @@ var SEEDS = [
   // ===== VÊTEMENTS / APPAREL (15) =====
   { name: "Hoodie Oversize N\xE9on Lovanet", category: "apparel", tag: "Streetwear", price: 79, description: "Sweat capuche oversize 320g, broderie n\xE9on dos. Coton bio certifi\xE9. Tailles XS \xE0 XXL.", source: "both" },
   { name: "T-shirt Heavyweight \xD1LL\xD1", category: "apparel", tag: "Heavyweight", price: 35, description: "T-shirt \xE9pais 240g coupe boxy, s\xE9rigraphie poitrine + dos. 100% coton peign\xE9.", source: "tiktok" },
-  { name: "Crewneck Anime Moments Vintage", category: "apparel", tag: "Vintage wash", price: 65, description: "Sweat ras-du-cou d\xE9lavage stone wash. Patch brod\xE9 manche gauche.", source: "youtube" },
+  { name: "Crewneck Moments Anime Vintage", category: "apparel", tag: "Vintage wash", price: 65, description: "Sweat ras-du-cou d\xE9lavage stone wash. Patch brod\xE9 manche gauche.", source: "youtube" },
   { name: "Veste Bomber Reversible Manga", category: "apparel", tag: "Bomber", price: 119, description: "Bomber r\xE9versible noir/magenta, doublure satin imprim\xE9e. Manches \xE9lastiqu\xE9es.", source: "both" },
   { name: "Tee Long Sleeve Glitch Edit", category: "apparel", tag: "Long sleeve", price: 42, description: "Manches longues coupe oversize, print glitch sur manche. S\xE9rigraphie haute densit\xE9.", source: "tiktok" },
   { name: "Hoodie Zip-Up Cyberpunk", category: "apparel", tag: "Full zip", price: 89, description: "Sweat zipp\xE9 technique avec poches lat\xE9rales, capuche doubl\xE9e. Print dos all-over.", source: "youtube" },
   { name: "Shorts Cargo Streetwear", category: "apparel", tag: "Cargo", price: 55, description: "Short cargo ample avec poches lat\xE9rales zipp\xE9es. Imprim\xE9 katakana cuisse.", source: "tiktok" },
   { name: "Casquette Brod\xE9e Lovanet", category: "apparel", tag: "Cap", price: 29, description: "Casquette 6 panneaux structur\xE9e, broderie 3D logo Lovanet. Snapback ajustable.", source: "both" },
-  { name: "Bonnet Beanie Magenta Glow", category: "apparel", tag: "Beanie", price: 22, description: "Bonnet maille c\xF4tel\xE9e, patch tiss\xE9 Anime Moments. Acrylique doux.", source: "youtube" },
+  { name: "Bonnet Beanie Magenta Glow", category: "apparel", tag: "Beanie", price: 22, description: "Bonnet maille c\xF4tel\xE9e, patch tiss\xE9 Moments Anime. Acrylique doux.", source: "youtube" },
   { name: "Tee Tie-Dye Magenta Cyan", category: "apparel", tag: "Tie-dye", price: 39, description: "T-shirt tie-dye r\xE9alis\xE9 \xE0 la main, chaque pi\xE8ce est unique. Coton lourd 220g.", source: "tiktok" },
   { name: "Veste Coach Anime Officiel", category: "apparel", tag: "Coach jacket", price: 95, description: "Veste coach nylon l\xE9ger, pressions devant, broderie dos AnimemomentsAnimeofficiel.", source: "both" },
   { name: "Pantalon Jogger Tech N\xE9on", category: "apparel", tag: "Jogger", price: 69, description: "Pantalon tech-fleece coupe slim, bandes r\xE9fl\xE9chissantes lat\xE9rales. Cheville zipp\xE9e.", source: "youtube" },
@@ -97,7 +97,7 @@ var SEEDS = [
   { name: 'Single 7" Opening Cyber', category: "music", tag: "Single", price: 12, description: "Single 7 pouces avec opening + ending, jaquette holographique.", source: "tiktok" },
   { name: "Synthwave Pack Sample NLNQ", category: "music", tag: "Sample pack", price: 24, description: "150 samples synthwave royalty-free, kicks, snares, leads, presets Serum.", source: "both" },
   // ===== MANGA & BD / COMICS (8) =====
-  { name: "Manga Tome 1 Anime Moments", category: "manga", tag: "Tome 01", price: 11, description: "Premier tome 192 pages, format poche, jaquette r\xE9versible et marque-page collector.", source: "youtube" },
+  { name: "Manga Tome 1 Moments Anime", category: "manga", tag: "Tome 01", price: 11, description: "Premier tome 192 pages, format poche, jaquette r\xE9versible et marque-page collector.", source: "youtube" },
   { name: "BD Hardcover Lovanet Saga", category: "manga", tag: "Hardcover", price: 29, description: "Roman graphique cartonn\xE9 120 pages couleur, papier mat 150g.", source: "both" },
   { name: "Light Novel Lovanet Chronicles", category: "manga", tag: "Light novel", price: 16, description: "Light novel illustr\xE9 320 pages, 12 illustrations couleur pleine page.", source: "youtube" },
   { name: "Doujinshi \xC9dition Fan-Club", category: "manga", tag: "Doujin", price: 18, description: "Doujinshi A5 64 pages, tirage limit\xE9 500 ex num\xE9rot\xE9s \xE0 la main.", source: "tiktok" },
@@ -111,7 +111,7 @@ var SEEDS = [
   { name: "Tote Bag Canvas Manga", category: "daily", tag: "Tote", price: 19, description: "Sac tote 320g coton recycl\xE9, s\xE9rigraphie deux couleurs grand format.", source: "both" },
   { name: "Tapis de Souris XXL RGB", category: "daily", tag: "Gaming", price: 35, description: "Tapis 90\xD740 cm, contour LED RGB USB, surface micro-tiss\xE9e pour souris gaming.", source: "youtube" },
   { name: "Bougie Parfum\xE9e Tokyo Rain", category: "daily", tag: "Bougie", price: 24, description: "Bougie cire de soja 200g, senteurs pluie, c\xE8dre et yuzu. M\xE8che en bois.", source: "tiktok" },
-  { name: "Plaid Sherpa Anime Moments", category: "daily", tag: "Plaid", price: 49, description: "Plaid sherpa 150\xD7200 cm ultra doux, imprim\xE9 all-over, doublure peluche.", source: "both" },
+  { name: "Plaid Sherpa Moments Anime", category: "daily", tag: "Plaid", price: 49, description: "Plaid sherpa 150\xD7200 cm ultra doux, imprim\xE9 all-over, doublure peluche.", source: "both" },
   { name: "Stickers Pack Holographiques", category: "daily", tag: "Stickers x20", price: 12, description: "20 stickers holographiques d\xE9coup\xE9s, vinyle waterproof r\xE9sistant UV.", source: "tiktok" },
   { name: "Carnet A5 Pages Pointill\xE9es", category: "daily", tag: "Stationery", price: 16, description: "Carnet bullet journal 192 pages, papier 100g, \xE9lastique et marque-page.", source: "youtube" },
   { name: "Lampe LED Akari Cube Anime", category: "daily", tag: "D\xE9co", price: 39, description: "Cube lumineux 15 cm, 16 millions de couleurs, t\xE9l\xE9commande et appli mobile.", source: "both" },

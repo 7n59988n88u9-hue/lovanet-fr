@@ -408,7 +408,7 @@ function collectionJsonLd(items: NewsItem[]) {
   return {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    name: "Actualités premium Lovanet",
+    name: "Actus premium Lovanet",
     description: "Flux premium anime, manga, gaming et culture pop japonaise alimentés par de vraies sources publiques.",
     url: `${PRIMARY_SITE}/actualites`,
     hasPart: items.slice(0, 18).map((item) => ({
@@ -444,7 +444,7 @@ function articleJsonLd(item: NewsItem) {
       logo: { "@type": "ImageObject", url: `${PRIMARY_SITE}/lovanet-logo-custom.png` },
     },
     articleSection: item.categoryLabels?.join(", ") || item.categories?.join(", "),
-    keywords: item.tags?.join(", ") || "actualités anime, manga, gaming, pop culture japonaise",
+    keywords: item.tags?.join(", ") || "actus anime, manga, gaming, pop culture japonaise",
     articleBody: item.description || item.excerpt || item.title,
     inLanguage: "fr-FR",
     isAccessibleForFree: true,
@@ -662,7 +662,7 @@ function Actualites() {
             // Article retiré (source supprimée / flux régénéré) : retour à la liste au lieu d'un écran blanc
             navigate("/actualites", { replace: true });
             setDetail(null);
-            setError("Cet article n'est plus disponible. Voici les actualités les plus récentes.");
+            setError("Cet article n'est plus disponible. Voici les actus les plus récentes.");
             return;
           }
           if (!detailRes.ok) throw new Error(`detail-${detailRes.status}`);
@@ -696,8 +696,8 @@ function Actualites() {
         }
       } catch (err) {
         if ((err as Error).name === "AbortError") return;
-        console.error("Actualités fetch error", err);
-        setError("Impossible de charger les actualités premium pour le moment.");
+        console.error("Actus fetch error", err);
+        setError("Impossible de charger les actus premium pour le moment.");
       } finally {
         setLoading(false);
       }
@@ -784,12 +784,12 @@ function Actualites() {
   }, [slug, detail?.item]);
 
   const pageTitle = detail?.item
-    ? `${detail.item.title} — Actualités premium Lovanet`
-    : "Actualités premium anime, manga, gaming et pop culture — Lovanet";
+    ? `${detail.item.title} — Actus premium Lovanet`
+    : "Actus premium anime, manga, gaming et pop culture — Lovanet";
 
   const pageDescription = detail?.item
     ? stripHtml(detail.item.description || detail.item.excerpt || detail.item.content).slice(0, 180)
-    : "Vraies actualités premium issues de sources publiques anime, manga, gaming et culture pop japonaise, agrégées automatiquement par Lovanet.";
+    : "Vraies actus premium issues de sources publiques anime, manga, gaming et culture pop japonaise, agrégées automatiquement par Lovanet.";
 
   const canonical = detail?.item ? `${PRIMARY_SITE}/actualites/${detail.item.slug}` : `${PRIMARY_SITE}/actualites`;
   const detailParagraphs = useMemo(() => articleParagraphs(detail?.item), [detail]);
@@ -862,7 +862,7 @@ function Actualites() {
         <section className="container mx-auto space-y-8 px-4 py-10 lg:px-8" data-testid="actualites-detail-page">
           <div className="flex flex-wrap items-center justify-between gap-3">
             <Button asChild variant="glass" className="rounded-full text-white" data-testid="actualites-back-button">
-              <Link to="/actualites">Retour aux actualités</Link>
+              <Link to="/actualites">Retour aux actus</Link>
             </Button>
             <Button type="button" variant="outline" className="rounded-full text-white" onClick={handleSync} data-testid="actualites-detail-sync-button">
               <RefreshCcw className={`h-4 w-4 ${syncing ? "animate-spin" : ""}`} /> Mettre à jour les flux
@@ -942,7 +942,7 @@ function Actualites() {
                   </a>
                 </Button>
                 <Button asChild variant="glass" className="rounded-full text-white" data-testid="actualites-detail-back-link">
-                  <Link to="/actualites">Retour aux actualités</Link>
+                  <Link to="/actualites">Retour aux actus</Link>
                 </Button>
               </div>
             </article>
@@ -1016,9 +1016,9 @@ function Actualites() {
         <section className="container mx-auto px-4 py-12 lg:px-8" data-testid="actualites-error-state">
           <Card className="theme-panel-surface rounded-[2rem] border border-[var(--theme-border-soft)] bg-transparent text-white">
             <CardContent className="space-y-4 p-8">
-              <p className="text-[11px] uppercase tracking-[0.32em] text-white/52">Actualités</p>
+              <p className="text-[11px] uppercase tracking-[0.32em] text-white/52">Actus</p>
               <h1 className="font-display text-3xl font-black">Flux indisponible temporairement</h1>
-              <p className="max-w-2xl text-white/70">{error || "Le chargement des actualités réelles a échoué. Réessayez ou relancez une synchronisation des flux."}</p>
+              <p className="max-w-2xl text-white/70">{error || "Le chargement des actus réelles a échoué. Réessayez ou relancez une synchronisation des flux."}</p>
               <div className="flex flex-wrap gap-3">
                 {isAdmin && (
                   <Button onClick={handleSync} className="btn-neon-rainbow rounded-full text-white" data-testid="actualites-retry-sync-button">
@@ -1039,7 +1039,7 @@ function Actualites() {
         <title>{pageTitle}</title>
         <meta name="description" key="actualites-description" content={pageDescription} />
         <meta name="robots" content="index,follow,max-image-preview:large,max-video-preview:-1,max-snippet:-1" />
-        <meta name="news_keywords" content="anime, manga, gaming, pop culture japonaise, actualités premium" />
+        <meta name="news_keywords" content="anime, manga, gaming, pop culture japonaise, actus premium" />
         <link rel="canonical" key="actualites-canonical" href={canonical} />
         <link rel="alternate" type="application/rss+xml" href={`${PRIMARY_SITE}/rss.xml`} />
         <meta property="og:type" content="website" />
@@ -1069,7 +1069,7 @@ function Actualites() {
                   <div className="flex flex-col justify-end rounded-[1.8rem] border border-white/10 bg-[rgba(0,0,0,0.32)] p-4" style={{ minHeight: 460 }} />
                   <div>
                     <h1 className="sr-only" data-testid="actualites-page-title">
-                      Actualités anime, manga
+                      Actus anime, manga
                     </h1>
                   </div>
                 </div>
@@ -1299,7 +1299,7 @@ function Actualites() {
                 ))}
               </div>
               <div ref={loadMoreRef} className="flex flex-wrap items-center justify-center gap-3 pt-6 pb-4">
-                {loadingMore && <div className="text-white/60 text-sm">Chargement des actualités suivantes...</div>}
+                {loadingMore && <div className="text-white/60 text-sm">Chargement des actus suivantes...</div>}
               </div>
               {false && (
                 <div className="flex flex-wrap items-center justify-between gap-3 pt-2">

@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 
 /**
- * Anime Moments — clickable RGB orb over an animated 3D background.
+ * Moments Anime — clickable RGB orb over an animated 3D background.
  * Fully self-contained: rotation, pause, speed, prev/next shape controls.
  */
 const SHAPES = [
