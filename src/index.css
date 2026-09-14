@@ -4446,6 +4446,7 @@ body[data-panel-tint="on"] .glass3d-surface a:not(.glass3d-plain):not([style*="b
 
 /* ===== Logo : badge pins bombé, verre épais et clair (effet loupe) ===== */
 .nav-logo-pin {
+  isolation: isolate;
   background:
     linear-gradient(180deg, rgba(255,255,255,0.30), rgba(255,255,255,0.06) 45%, rgba(255,255,255,0.18) 100%);
   border: 1px solid rgba(255,255,255,0.75);
@@ -4461,6 +4462,33 @@ body[data-panel-tint="on"] .glass3d-surface a:not(.glass3d-plain):not([style*="b
     0 10px 20px rgba(0,0,0,0.55),
     0 18px 34px rgba(0,0,0,0.35),
     0 0 22px color-mix(in srgb, var(--nav-theme-accent, #00ff9d) 30%, transparent);
+}
+/* anneau néon en rotation lente, placé sous le dôme de verre immobile */
+.nav-logo-pin::before {
+  content: "";
+  position: absolute;
+  inset: -4px;
+  z-index: -1;
+  border-radius: 999px;
+  pointer-events: none;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg 42deg,
+    var(--nav-theme-accent, #00ff9d) 78deg,
+    var(--theme-secondary, #22d3ee) 132deg,
+    transparent 178deg 258deg,
+    var(--nav-theme-accent, #00ff9d) 304deg,
+    transparent 360deg
+  );
+  filter: blur(2px) saturate(1.35);
+  box-shadow:
+    0 0 8px var(--nav-theme-accent, #00ff9d),
+    0 0 18px color-mix(in srgb, var(--nav-theme-accent, #00ff9d) 72%, transparent),
+    0 0 28px color-mix(in srgb, var(--theme-secondary, #22d3ee) 42%, transparent);
+  animation: nav-logo-neon-orbit 12s linear infinite;
+}
+@keyframes nav-logo-neon-orbit {
+  to { transform: rotate(360deg); }
 }
 /* le logo remplit toute la bulle et se bombe comme sous une lentille */
 .nav-logo-pin > img {
@@ -4494,6 +4522,9 @@ body[data-panel-tint="on"] .glass3d-surface a:not(.glass3d-plain):not([style*="b
   pointer-events: none;
   background: linear-gradient(180deg, rgba(255,255,255,0.80), rgba(255,255,255,0.14) 58%, transparent);
   filter: blur(1px);
+}
+@media (prefers-reduced-motion: reduce) {
+  .nav-logo-pin::before { animation: none; }
 }
 
 /* ===== LovaBot : orbe transparent animé ===== */
