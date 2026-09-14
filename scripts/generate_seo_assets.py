@@ -29,7 +29,7 @@ PAGES = [
     {'path': '/', 'title': 'Anime.Moments.officiel : Lovanet Plateforme officielle', 'description': 'Plateforme officielle anime, AnimeMoments, Animer officiel : vidéos YouTube, TikTok, Prime Video, catalogue et boutique manga.', 'priority': '1.0', 'changefreq': 'daily'},
     {'path': '/decouvrir', 'title': 'Univers Lovanet', 'description': 'Découvrir l’univers Lovanet, les vidéos, produits, catalogues anime et liens officiels.', 'priority': '0.8', 'changefreq': 'weekly'},
     {'path': '/shop', 'title': 'Boutique Lovanet anime manga', 'description': 'Posters, collectors, vêtements, sneakers, musique, manga et objets anime Anime.Moments.officiel.', 'priority': '0.95', 'changefreq': 'daily'},
-    {'path': '/anime-catalog', 'title': 'Catalogue Anime 1500+ animés', 'description': 'Catalogue anime/manga avec miniatures, bandes-annonces, genres, cartes et carrousel circulaire.', 'priority': '0.95', 'changefreq': 'daily'},
+    {'path': '/anime-catalog', 'title': 'Sélection Anime 1500+ animés', 'description': 'Sélection anime/manga avec miniatures, bandes-annonces, genres, cartes et carrousel circulaire.', 'priority': '0.95', 'changefreq': 'daily'},
     {'path': '/actualites', 'title': 'Actualités anime Lovanet', 'description': 'Actualités Anime.Moments.officiel, nouvelles vidéos, sorties manga, produits et catalogue anime.', 'priority': '0.9', 'changefreq': 'hourly'},
     {'path': '/anime-countdown', 'title': 'Anime à venir', 'description': 'Countdown live des sorties, épisodes, vidéos et événements anime à venir.', 'priority': '0.85', 'changefreq': 'daily'},
     {'path': '/chaine-youtube', 'title': 'YouTube AnimeMoments officiel', 'description': 'Chaîne YouTube officielle Anime.Moments.officiel avec vidéos, shorts et trailers anime.', 'priority': '0.9', 'changefreq': 'hourly'},
@@ -292,7 +292,7 @@ def write_sitemaps(products: list[dict], videos: list[dict], catalog: list[dict]
             im = ET.SubElement(u, 'image:image')
             ET.SubElement(im, 'image:loc').text = image
             ET.SubElement(im, 'image:title').text = str(anime.get('title') or f'Anime {anime_id}')[:120]
-            ET.SubElement(im, 'image:caption').text = str(anime.get('summary') or 'Catalogue anime Lovanet')[:240]
+            ET.SubElement(im, 'image:caption').text = str(anime.get('summary') or 'Sélection anime Lovanet')[:240]
         write_urlset_file(images_name, images)
 
         video_sm = sitemap_urlset(video_ns)

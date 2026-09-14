@@ -9,7 +9,7 @@ type Suggestion = { to: string; label: string; emoji: string };
 
 const BASE: Suggestion[] = [
   { to: "/", label: "Accueil", emoji: "🏠" },
-  { to: "/anime-catalog", label: "Catalogue", emoji: "📺" },
+  { to: "/anime-catalog", label: "Sélection", emoji: "📺" },
   { to: "/prime-video", label: "Prime Vidéo", emoji: "🎬" },
   { to: "/chaine-youtube", label: "YouTube", emoji: "▶️" },
   { to: "/tiktok", label: "TikTok", emoji: "🎵" },

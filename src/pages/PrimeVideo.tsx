@@ -1142,7 +1142,7 @@ const PrimeVideo = () => {
                   </div>
 
                   <div className="flex flex-wrap gap-1" data-testid={`prime-card-tags-${anime.id}`}>
-                    <span className="rounded-full border border-white/10 bg-[rgba(255,255,255,0.06)] px-1.5 py-1 text-[8px] opacity-90">{anime.year || "Catalogue"}</span>
+                    <span className="rounded-full border border-white/10 bg-[rgba(255,255,255,0.06)] px-1.5 py-1 text-[8px] opacity-90">{anime.year || "Sélection"}</span>
                     {anime.episodes && <span className="rounded-full border border-white/10 bg-[rgba(255,255,255,0.06)] px-1.5 py-1 text-[8px] opacity-90">{anime.episodes} ép.</span>}
                     {smartBadges(anime).slice(0,1).map((b) => <span key={b} className="rounded-full border border-sky-400/20 bg-[rgba(56,189,248,0.1)] text-sky-200 px-1.5 py-1 text-[8px]">{b}</span>)}
                   </div>

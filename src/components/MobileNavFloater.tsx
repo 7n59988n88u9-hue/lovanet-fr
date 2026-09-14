@@ -17,7 +17,7 @@ interface QuickSuggestion {
 
 const contextualSuggestions: Record<string, QuickSuggestion[]> = {
   default: [
-    { to: "/anime-catalog", label: "Catalogue", emoji: "📺", type: "quick-link" },
+    { to: "/anime-catalog", label: "Sélection", emoji: "📺", type: "quick-link" },
     { to: "/actualites", label: "News", emoji: "📰", type: "trending" },
     { to: "/univers", label: "Univers", emoji: "🌍", type: "recommended" },
     { to: "/leaderboard", label: "Podium", emoji: "🏆", type: "trending" },
@@ -38,7 +38,7 @@ const contextualSuggestions: Record<string, QuickSuggestion[]> = {
     { to: "/", label: "Accueil", emoji: "🏠", type: "quick-link" },
   ],
   "/actualites": [
-    { to: "/anime-catalog", label: "Catalogue", emoji: "📺", type: "recommended" },
+    { to: "/anime-catalog", label: "Sélection", emoji: "📺", type: "recommended" },
     { to: "/univers", label: "Univers", emoji: "🎪", type: "context" },
     { to: "/leaderboard", label: "Trending", emoji: "🔥", type: "trending" },
   ],

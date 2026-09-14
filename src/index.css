@@ -3879,7 +3879,7 @@ body,
 }
 
 /* Neutralisation du thème sur les pastilles plateformes (verre translucide identique
-   au bouton "Catalogue premium") + titre placeholder et icônes en blanc franc. */
+   au bouton "Sélection premium") + titre placeholder et icônes en blanc franc. */
 [data-testid="home-platforms-pill-row"] a > div,
 [data-testid="home-platforms-heading-placeholder"] {
   background: linear-gradient(180deg, rgba(255,255,255,0.10), rgba(255,255,255,0.03)) !important;
@@ -3920,7 +3920,7 @@ body,
 
 /* ============================================================
    EXCLUSION THEME — Boutons plateformes page portail
-   Aucun fond bleu/teinté issu du thème sur "Catalogue premium",
+   Aucun fond bleu/teinté issu du thème sur "Sélection premium",
    le placeholder de titre et les pastilles plateformes.
    ============================================================ */
 [data-testid="home-platforms-section"] [data-testid="home-platforms-heading-placeholder"],

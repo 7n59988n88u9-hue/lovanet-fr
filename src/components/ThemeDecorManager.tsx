@@ -202,7 +202,7 @@ export function ThemeDecorManager() {
         <div className="w-[320px] rounded-[1.75rem] border border-white/10 bg-black/95 p-4 shadow-[0_20px_80px_rgba(0,0,0,0.55)] backdrop-blur-3xl">
           <div className="flex items-center justify-between gap-3 mb-3">
             <div>
-              <div className="text-xs uppercase tracking-[0.3em] text-white/50">Catalogue</div>
+              <div className="text-xs uppercase tracking-[0.3em] text-white/50">Sélection</div>
               <div className="text-sm font-semibold text-white">Décors interactifs</div>
             </div>
             <div className="rounded-full bg-white/5 px-3 py-1 text-[11px] uppercase text-white/60">{disableAnimations ? "Économie" : "Animation"}</div>

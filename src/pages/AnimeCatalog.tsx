@@ -80,13 +80,13 @@ const PRIMARY_SITE = getSiteOrigin();
 const FAVORITES_STORAGE_KEY = "lovanet.catalog.favorites.v2";
 
 function mediaTitle(media: Media | null | undefined) {
-  if (!media) return "Catalogue Anime Lovanet";
+  if (!media) return "Sélection Anime Lovanet";
   return media.title.english || media.title.romaji || media.title.native || `Anime ${media.id}`;
 }
 
 function mediaDescription(media: Media | null | undefined) {
   const raw = String(
-    media?.description || "Catalogue anime manga avec miniatures, bandes-annonces, synopsis et cartes indexables.",
+    media?.description || "Sélection anime manga avec miniatures, bandes-annonces, synopsis et cartes indexables.",
   );
   return raw.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim().slice(0, 240);
 }
@@ -1007,7 +1007,7 @@ export default function AnimeCatalog() {
           </div>
           <div class="pip-meta">
             <p class="pip-title">${mediaTitle(activePlayer)}</p>
-            <p class="pip-sub">${activePlayer.format || "Anime"} · ${activePlayer.seasonYear || "Catalogue Lovanet"}</p>
+            <p class="pip-sub">${activePlayer.format || "Anime"} · ${activePlayer.seasonYear || "Sélection Lovanet"}</p>
           </div>
         `;
         pipWindow.document.body.appendChild(shell);
@@ -1128,10 +1128,10 @@ export default function AnimeCatalog() {
     };
   }, []);
 
-  const seoTitle = selectedSeoMedia ? `${mediaTitle(selectedSeoMedia)} · Lecteur catalogue anime Lovanet` : "Catalogue Anime Lovanet";
+  const seoTitle = selectedSeoMedia ? `${mediaTitle(selectedSeoMedia)} · Lecteur Sélection anime Lovanet` : "Sélection Anime Lovanet";
   const seoDescription = selectedSeoMedia
     ? mediaDescription(selectedSeoMedia)
-    : "Catalogue anime/manga Lovanet avec lecteur géant, lecture auto, favoris persistants et fiches vidéo indexables.";
+    : "Sélection anime/manga Lovanet avec lecteur géant, lecture auto, favoris persistants et fiches vidéo indexables.";
   const seoCanonical = selectedSeoMedia ? `${PRIMARY_SITE}/anime-catalog?anime=${selectedSeoMedia.id}` : `${PRIMARY_SITE}/anime-catalog`;
 
   return (
@@ -1411,7 +1411,7 @@ export default function AnimeCatalog() {
                             {activePlayer.format || "Anime"}
                           </Badge>
                           <Badge variant="outline" className="rounded-full border-[var(--theme-border-soft)] bg-[rgba(255,255,255,0.03)] px-3 py-1 text-white/80" data-testid="catalog-player-year-badge">
-                            <CalendarRange className="mr-1 h-3.5 w-3.5" /> {activePlayer.seasonYear || "Catalogue"}
+                            <CalendarRange className="mr-1 h-3.5 w-3.5" /> {activePlayer.seasonYear || "Sélection"}
                           </Badge>
                           {typeof activePlayer.averageScore === "number" && (
                             <Badge variant="outline" className="rounded-full border-[var(--theme-border-soft)] bg-[rgba(255,255,255,0.03)] px-3 py-1 text-white/82" data-testid="catalog-player-score-badge">
@@ -1588,7 +1588,7 @@ export default function AnimeCatalog() {
                         </div>
                         <div className="min-w-0 flex-1">
                           <p className="line-clamp-1 text-sm font-semibold">{showTranslatedCards ? translatedMediaTitle(media) : mediaTitle(media)}</p>
-                          <p className="mt-1 text-xs opacity-75">{media.format || "Anime"} · {media.seasonYear || "Catalogue"}</p>
+                          <p className="mt-1 text-xs opacity-75">{media.format || "Anime"} · {media.seasonYear || "Sélection"}</p>
                         </div>
                       </button>
                     );
@@ -1888,7 +1888,7 @@ export default function AnimeCatalog() {
                         </div>
 
                         <div className="flex flex-wrap gap-1" data-testid={`catalog-card-tags-${media.id}`}>
-                          <span className="rounded-full border border-white/10 bg-[rgba(255,255,255,0.06)] px-1.5 py-1 text-[8px] opacity-90">{media.seasonYear || "Catalogue"}</span>
+                          <span className="rounded-full border border-white/10 bg-[rgba(255,255,255,0.06)] px-1.5 py-1 text-[8px] opacity-90">{media.seasonYear || "Sélection"}</span>
                           <span className="rounded-full border border-white/10 bg-[rgba(255,255,255,0.06)] px-1.5 py-1 text-[8px] opacity-90">{media.episodes ? `${media.episodes} ép.` : "À confirmer"}</span>
                           {media.status && <span className="rounded-full border border-white/10 bg-[rgba(255,255,255,0.06)] px-1.5 py-1 text-[8px] opacity-90">{media.status}</span>}
                         </div>

@@ -193,7 +193,7 @@ export default function SyncDashboard() {
             onClick={() => setActiveTab("catalog")} 
             className={`w-full flex items-center gap-3 px-4 py-3 rounded-lg transition-colors ${activeTab === "catalog" ? "bg-primary text-white" : "hover:bg-white/5"}`}
           >
-            <Edit size={18} /> Catalogue Animes
+            <Edit size={18} /> Sélection Animes
           </button>
           <button 
             onClick={() => setActiveTab("system")} 

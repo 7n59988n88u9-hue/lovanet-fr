@@ -32,7 +32,7 @@ const GROUPS: { id: string; label: string; items: Item[] }[] = [
     label: "Accès rapide",
     items: [
       { to: "/", label: "Accueil", icon: Home },
-      { to: "/anime-catalog", label: "Catalogue", icon: Film },
+      { to: "/anime-catalog", label: "Sélection", icon: Film },
       { to: "/ai-hub", label: "AI", icon: Bot },
       { to: "/prime-video", label: "Prime Vidéo", icon: Play },
       { to: "/shop", label: "Magasin", icon: ShoppingBag },

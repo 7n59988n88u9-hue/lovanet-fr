@@ -22,12 +22,12 @@ const trendingTopics: TrendingTopic[] = [
 
 const contextualChips: Record<string, TrendingTopic[]> = {
   default: [
-    { id: "catalog", label: "Catalogue", emoji: "📺", to: "/anime-catalog", color: "from-purple-500/20 to-pink-600/20" },
+    { id: "catalog", label: "Sélection", emoji: "📺", to: "/anime-catalog", color: "from-purple-500/20 to-pink-600/20" },
     { id: "trending", label: "Top 10", emoji: "🏆", to: "/leaderboard", color: "from-amber-500/20 to-orange-600/20" },
     { id: "breaking", label: "News", emoji: "📰", to: "/actualites", color: "from-blue-500/20 to-cyan-600/20" },
   ],
   "/anime-moments": [
-    { id: "related", label: "Catalogue", emoji: "📺", to: "/anime-catalog" },
+    { id: "related", label: "Sélection", emoji: "📺", to: "/anime-catalog" },
     { id: "upcoming", label: "Prochainement", emoji: "⏰", to: "/anime-countdown" },
     { id: "trending", label: "Tendances", emoji: "🔥", to: "/leaderboard" },
   ],

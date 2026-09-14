@@ -59,7 +59,7 @@ const Discover = () => {
     { to: "/tiktok", label: "Anime.Moments.officiel", tagline: "TikTok · shorts viraux", desc: "Shorts verticaux, edits & moments cultes", icon: Music2, grad: "from-fuchsia-500/40 via-cyan-400/20 to-transparent", accent: "#e879f9", emoji: "🎵" },
     { to: "/prime-video", label: "Prime Video", tagline: "Séances premium", desc: "Lecture cinéma en pleine page", icon: Play, grad: "from-sky-500/40 via-blue-500/20 to-transparent", accent: "#38bdf8", emoji: "🎬" },
     { to: "/anime-countdown", label: "Prochainement", tagline: "Countdown live", desc: "Prochaines sorties anime en direct", icon: Calendar, grad: "from-amber-500/40 via-orange-500/20 to-transparent", accent: "#fbbf24", emoji: "⏳" },
-    { to: "/anime-catalog", label: "Catalogue", tagline: "1500+ animés", desc: "Fiches, trailers, synopsis complets", icon: Sparkles, grad: "from-violet-500/40 via-indigo-500/20 to-transparent", accent: "#a78bfa", emoji: "📚" },
+    { to: "/anime-catalog", label: "Sélection", tagline: "1500+ animés", desc: "Fiches, trailers, synopsis complets", icon: Sparkles, grad: "from-violet-500/40 via-indigo-500/20 to-transparent", accent: "#a78bfa", emoji: "📚" },
     { to: "/anime-moments", label: "Moments Anime", tagline: "Expérience premium", desc: "La page originale avec hologrammes et carrousel vivant", icon: Film, grad: "from-emerald-500/40 via-teal-500/20 to-transparent", accent: "#34d399", emoji: "🌌" },
     { to: "/shop", label: "Shop", tagline: "Collector officiel", desc: `${SHOP_PRODUCTS.length} pièces exclusives · édition limitée`, icon: ShoppingBag, grad: "from-pink-500/40 via-rose-500/20 to-transparent", accent: "#f472b6", emoji: "🛍️" },
   ];
@@ -67,7 +67,7 @@ const Discover = () => {
   const itemListLd = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: "Catalogue AnimemomentsAnimeofficiel",
+    name: "Sélection AnimemomentsAnimeofficiel",
     itemListElement: SHOP_PRODUCTS.slice(0, 76).map((p, i) => ({
       "@type": "ListItem",
       position: i + 1,
@@ -104,7 +104,7 @@ const Discover = () => {
   const catalogItemListLd = (chunk: typeof catalogSeo, offset: number) => ({
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: `Catalogue Lovanet — animés ${offset + 1}–${offset + chunk.length}`,
+    name: `Sélection Lovanet — animés ${offset + 1}–${offset + chunk.length}`,
     itemListElement: chunk.map((it, i) => ({
       "@type": "ListItem",
       position: offset + i + 1,

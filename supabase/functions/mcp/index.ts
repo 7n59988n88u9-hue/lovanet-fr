@@ -280,7 +280,7 @@ var LINES = [
     tags: ["A2", "A1", "50x70", "Holo", "Mat premium", "Edition limitee"],
     base: 18,
     range: 42,
-    desc: (n, t, s) => `${n} \u2014 impression giclee HD, papier 250g mat, finition ${s.toLowerCase()}. Univers ${t}, signe AnimemomentsAnimeofficiel. Tube renforce, expedition suivie 3-7j.`
+    desc: (n, t, s) => `${n} \u2014 impression giclee HD, papier 250g mat, finition ${s.toLowerCase()}. Monde ${t}, signe AnimemomentsAnimeofficiel. Tube renforce, expedition suivie 3-7j.`
   },
   {
     category: "collector",
@@ -388,7 +388,7 @@ function generateProducts(count = 1500) {
       brand: "AnimemomentsAnimeofficiel",
       description: line.desc(name, theme, style),
       bullets: [
-        `Univers ${theme} \xB7 style ${style}`,
+        `Monde ${theme} \xB7 style ${style}`,
         `Finition premium, contr\xF4le qualit\xE9 en atelier`,
         `Emballage protecteur & suivi de colis`,
         `Retour offert sous 14 jours`

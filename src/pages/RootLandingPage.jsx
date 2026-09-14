@@ -26,7 +26,7 @@ const rotatingPortalDestinations = [
   { to: "/shop", label: "Magasin", icon: ShoppingBag },
   { to: "/prime-video", label: "Prime Vidéo", icon: Play },
   { to: "/tiktok", label: "TikTok", icon: Play },
-  { to: "/anime-catalog", label: "Catalogue", icon: Star },
+  { to: "/anime-catalog", label: "Sélection", icon: Star },
   { to: "/anime-countdown", label: "Prochainement", icon: Play },
   { to: "/lecteurs-video", label: "Lecteurs vidéo", icon: Film },
   { to: "/contact", label: "Contact", icon: Newspaper },
@@ -57,7 +57,7 @@ const portalCards = [
 const platformCards = [
   { title: "Prime Vidéo", testId: "home-platform-card-prime", to: "/prime-video" },
   { title: "", testId: "home-platform-card-tiktok", to: "/tiktok" },
-  { title: "Catalogue", testId: "home-platform-card-catalogue", to: "/anime-catalog" },
+  { title: "Sélection", testId: "home-platform-card-catalogue", to: "/anime-catalog" },
   { title: "Prochainement", testId: "home-platform-card-upcoming", to: "/anime-countdown" },
 ];
 
@@ -167,7 +167,7 @@ export default function RootLandingPage() {
               trailerId: String(item.trailerId || "").trim(),
               genres: Array.isArray(item.genres) ? item.genres.slice(0, 3) : [],
               href: `/anime-catalog?anime=${item.id}&trailer=${String(item.trailerId || "").trim()}&autoplay=1`,
-              year: item.seasonYear || item.year || "Catalogue",
+              year: item.seasonYear || item.year || "Sélection",
             })),
         );
         setCatalogPreviewPool(normalized);
@@ -509,7 +509,7 @@ export default function RootLandingPage() {
                                 </div>
                                 <div className="hero-premium-lower-copy">
                                   <p className="hero-premium-lower-title">{item.title}</p>
-                                  <p className="hero-premium-lower-description">{item.genres.join(" • ") || "Catalogue premium"}</p>
+                                  <p className="hero-premium-lower-description">{item.genres.join(" • ") || "Sélection premium"}</p>
                                 </div>
                               </Link>
 

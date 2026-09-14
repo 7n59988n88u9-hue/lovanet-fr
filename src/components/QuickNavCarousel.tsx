@@ -20,7 +20,7 @@ type QuickNavItem = {
 
 const DEFAULT_ITEMS: QuickNavItem[] = [
   { id: "home", title: "Accueil", to: "/anime-moments", color: "linear-gradient(45deg, #22d3ee, #6366f1)" },
-  { id: "catalog", title: "Catalogue", to: "/anime-catalog", color: "linear-gradient(45deg, #fbbf24, #ef4444)" },
+  { id: "catalog", title: "Sélection", to: "/anime-catalog", color: "linear-gradient(45deg, #fbbf24, #ef4444)" },
   { id: "ai", title: "AI", to: "/ai-hub", color: "linear-gradient(45deg, #00ff9d, #22d3ee)" },
   { id: "shop", title: "Magasin", to: "/shop", color: "linear-gradient(45deg, #f472b6, #9333ea)" },
   { id: "prime", title: "Prime Vidéo", to: "/prime-video", color: "linear-gradient(45deg, #60a5fa, #1d4ed8)" },
