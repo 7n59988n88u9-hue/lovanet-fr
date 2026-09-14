@@ -242,12 +242,8 @@ export const Navbar = () => {
       aria-label="Lovanet — Portail"
       data-testid="header-home-logo-link"
       onClick={() => setOpen(false)}
-      style={{ perspective: "1000px" }}
     >
-      <motion.span 
-        whileHover={{ rotateY: 180, scale: 1.1, rotateX: 10 }}
-        whileTap={{ scale: 0.9 }}
-        transition={{ type: "spring", stiffness: 200, damping: 10 }}
+      <span
         className="nav-logo-pin relative inline-flex h-11 w-11 items-center justify-center rounded-full p-[3px] sm:h-12 sm:w-12"
       >
         <img
@@ -256,7 +252,7 @@ export const Navbar = () => {
           className="relative z-10 h-full w-full rounded-full object-cover object-center drop-shadow-[0_3px_6px_rgba(0,0,0,0.5)]"
         />
         <span className="nav-logo-pin-gloss" aria-hidden="true" />
-      </motion.span>
+      </span>
     </Link>
   );
 
