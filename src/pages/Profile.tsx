@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "@/contexts/AuthContext";
-import { Navbar } from "@/components/Navbar";
 import NeonFooterBar from "@/components/NeonFooterBar";
 import { LocalizedHead } from "@/components/LocalizedHead";
 import { Button } from "@/components/ui/button";
@@ -102,9 +101,6 @@ export default function Profile() {
 
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden font-sans">
-      <Navbar />
-      <div className="h-16" />
-
       {/* IDEA 1: Bannière animée personnalisable */}
       <div className="relative h-[250px] md:h-[350px] w-full overflow-hidden">
         <img 

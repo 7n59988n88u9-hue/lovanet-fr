@@ -9,7 +9,6 @@ import { Helmet } from "react-helmet-async";
 import { buildYouTubeEmbedUrl } from "@/lib/youtubeEmbed";
 import NeonFooterBar from "@/components/NeonFooterBar";
 import MangaNeonBar from "@/components/MangaNeonBar";
-import { Navbar } from "@/components/Navbar";
 import BlisterFrame from "@/components/BlisterFrame";
 import YouTubeEmbed from "@/components/YouTubeEmbed";
 import { TranslationToggleButton } from "@/components/TranslationToggleButton";
@@ -1180,9 +1179,6 @@ export default function AnimeCatalog() {
       </Helmet>
 
       <main className="page-nav-glass catalogue-monochrome actualites-monochrome min-h-screen overflow-hidden text-foreground" style={{ background: "transparent" }}>
-        <Navbar />
-        <div className="h-12" />
-
         <section className="px-4 pb-5 pt-4 md:px-8 xl:px-10" data-testid="catalog-premium-player-section">
           <div className="mx-auto max-w-[1120px] space-y-6">
             <header className="theme-panel-surface glass3d-panel glass3d-surface relative overflow-hidden rounded-[2rem] border border-[var(--theme-border-soft)] p-5 sm:p-6 lg:p-8" data-testid="catalog-premium-hero">

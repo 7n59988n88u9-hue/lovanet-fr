@@ -37,6 +37,7 @@ import { UserProfileWidget } from "@/components/UserProfileWidget";
 import { ThemeSwitcher } from "@/components/ThemeSwitcher";
 import { MobileNavFloater } from "@/components/MobileNavFloater";
 import { NavSuggestionsBar } from "@/components/NavSuggestionsBar";
+import QuickNavCarousel, { OPEN_QUICKNAV_EVENT, TOGGLE_QUICKNAV_EVENT } from "@/components/QuickNavCarousel";
 import DragScroller from "@/components/DragScroller";
 import MobileMenuMiniWindow from "@/components/MobileMenuMiniWindow";
 const navTestIds: Record<string, string> = {
@@ -256,8 +257,23 @@ export const Navbar = () => {
                 {renderLogo()}
               </div>
 
+              <div className="ml-3 hidden md:flex">
+                <button
+                  type="button"
+                  onClick={() => {
+                    window.dispatchEvent(new Event(TOGGLE_QUICKNAV_EVENT));
+                    navigate("/anime-catalog");
+                  }}
+                  className="nav-theme-chip inline-flex h-10 w-10 items-center justify-center rounded-full"
+                  aria-label="Afficher le carrousel de navigation rapide"
+                >
+                  <Compass className="h-4 w-4" />
+                </button>
+              </div>
+
               {/* Dynamic suggestions bar — fills the empty space between logo and cart on mobile */}
               <NavSuggestionsBar />
+              <QuickNavCarousel />
 
               <div className="hidden items-center gap-2 md:flex" onMouseEnter={cancelClose}>
                 <button
@@ -268,6 +284,7 @@ export const Navbar = () => {
                   onClick={() => {
                     cancelClose();
                     setMegaOpen(true);
+                    window.dispatchEvent(new CustomEvent(OPEN_QUICKNAV_EVENT));
                   }}
                   onMouseEnter={() => {
                     cancelClose();
