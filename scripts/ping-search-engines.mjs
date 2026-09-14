@@ -4,7 +4,7 @@
 // key URLs via the Lovable connector gateway. Safe to run anytime — never
 // fails the deploy: any provider error is logged and the process exits 0.
 
-const SITE = "https://lovanet.fr";
+const SITE = "https://ree3franc.com";
 const SITEMAP = `${SITE}/sitemap-index.xml`;
 const KEY_URLS = [
   "/",

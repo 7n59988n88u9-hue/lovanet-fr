@@ -41,14 +41,14 @@ Allow: /
 User-agent: Twitterbot
 Allow: /
 
-Host: lovanet.fr
+Host: ree3franc.com
 
 # XML sitemaps
-Sitemap: https://lovanet.fr/sitemap.xml
-Sitemap: https://lovanet.fr/sitemap-pages.xml
-Sitemap: https://lovanet.fr/sitemap-locales.xml
-Sitemap: https://animemomentsofficiel.fr/sitemap.xml
-Sitemap: https://animeofficiel.fr/sitemap.xml
-Sitemap: https://lovanet.fr/sitemap-index.xml
-Sitemap: https://lovanet.fr/sitemap-i18n.xml
-Sitemap: https://lovanet.fr/sitemap-actualites.xml
+Sitemap: https://ree3franc.com/sitemap.xml
+Sitemap: https://ree3franc.com/sitemap-pages.xml
+Sitemap: https://ree3franc.com/sitemap-locales.xml
+Sitemap: https://ree3franc.com/sitemap.xml
+Sitemap: https://ree3franc.com/sitemap.xml
+Sitemap: https://ree3franc.com/sitemap-index.xml
+Sitemap: https://ree3franc.com/sitemap-i18n.xml
+Sitemap: https://ree3franc.com/sitemap-actualites.xml

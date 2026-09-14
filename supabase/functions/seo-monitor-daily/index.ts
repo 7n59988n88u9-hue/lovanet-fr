@@ -3,7 +3,7 @@
 // and coverage of localized /xx/… prefixes. Called by pg_cron once a day.
 // Console output is captured in edge function logs.
 
-const SITE = "https://lovanet.fr/";
+const SITE = "https://ree3franc.com/";
 const BASE = "https://connector-gateway.lovable.dev/google_search_console";
 
 const COUNTRY_TO_LOCALE: Record<string, string> = {
