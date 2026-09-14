@@ -6,7 +6,7 @@ const pageStructuredData = {
   "@type": "WebPage",
   name: "Lovanet : accueil anime manga officiel",
   description: "Accueil Lovanet pour explorer Moments Anime, les vidéos, les actus et la magasin collector.",
-  url: "https://lovanet.fr/",
+  url: "https://ree3franc.com/",
 };
 
 export default function RootLandingPage() {

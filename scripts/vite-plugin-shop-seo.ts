@@ -6,7 +6,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
 const PUB = resolve(ROOT, "public");
 const PROD_DIR = resolve(PUB, "products");
-const BASE_URL = "https://lovanet.fr";
+const BASE_URL = "https://ree3franc.com";
 
 const PALETTES: [string, string, string][] = [
   ["#ff2e93", "#7b2dff", "#00e0ff"],

@@ -91,7 +91,7 @@ export default function Login() {
               </div>
             </div>
             <div className="flex items-center gap-2">
-              <button title="Aide" onClick={() => alert('Besoin d\'aide pour vous connecter ? Contactez support@lovanet.fr')} className="inline-flex items-center justify-center h-8 w-8 rounded-md bg-black/10 hover:bg-black/20 text-white/90" aria-label="Aide connexion">
+              <button title="Aide" onClick={() => alert('Besoin d\'aide pour vous connecter ? Contactez support@ree3franc.com')} className="inline-flex items-center justify-center h-8 w-8 rounded-md bg-black/10 hover:bg-black/20 text-white/90" aria-label="Aide connexion">
                 <span className="text-sm font-bold">?</span>
               </button>
               <button onClick={() => setCompact((c) => !c)} className="inline-flex items-center justify-center h-8 w-8 rounded-md bg-black/20 hover:bg-black/30 text-white/90" aria-label="Réduire/ouvrir panneau">
