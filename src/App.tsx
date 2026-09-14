@@ -35,7 +35,6 @@ import { AuthProvider } from "./contexts/AuthContext";
 import { GoogleOAuthProvider } from "@react-oauth/google";
 import AuthCallback from "./pages/AuthCallback";
 import { Onboarding3D } from "./components/Onboarding3D";
-import { InstallAppPrompt } from "./components/InstallAppPrompt";
 import { LaunchFormatPicker, getLaunchFormat } from "./components/LaunchFormatPicker";
 import { AiHub } from "./pages/AiHub";
 
@@ -202,7 +201,7 @@ const AppShell = () => {
       )}
       {!isHubPreviewRoute && <CartDrawer />}
       {!isHubPreviewRoute && <GoogleTranslate />}
-          {!isHubPreviewRoute && <InstallAppPrompt />}
+          
           {!isHubPreviewRoute && <LaunchFormatPicker />}
         </CartProvider>
       </GamificationProvider>
