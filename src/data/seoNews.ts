@@ -6,7 +6,7 @@ const RAW_SEO_NEWS = [
   {
     "id": "video-attack-on-titan-1",
     "slug": "video-attack-on-titan-1",
-    "url": "https://lovanet.fr/actualites/video-attack-on-titan-1",
+    "url": "https://ree3franc.com/actualites/video-attack-on-titan-1",
     "title": "Attack on Titan",
     "description": "Several hundred years ago, humans were nearly exterminated by titans. Titans are typically several stories tall, seem to have no intelligence, devour human beings and, worst of all, seem to do it for the pleasure rather than as a food sourc",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/16498-8jpFCOcDmneX.jpg",
@@ -27,7 +27,7 @@ const RAW_SEO_NEWS = [
   {
     "id": "video-demon-slayer-kimetsu-no-yaiba-2",
     "slug": "video-demon-slayer-kimetsu-no-yaiba-2",
-    "url": "https://lovanet.fr/actualites/video-demon-slayer-kimetsu-no-yaiba-2",
+    "url": "https://ree3franc.com/actualites/video-demon-slayer-kimetsu-no-yaiba-2",
     "title": "Demon Slayer: Kimetsu no Yaiba",
     "description": "It is the Taisho Period in Japan. Tanjiro, a kindhearted boy who sells charcoal for a living, finds his family slaughtered by a demon. To make matters worse, his younger sister Nezuko, the sole survivor, has been transformed into a demon he",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/101922-33MtJGsUSxga.jpg",
@@ -48,7 +48,7 @@ const RAW_SEO_NEWS = [
   {
     "id": "video-jujutsu-kaisen-3",
     "slug": "video-jujutsu-kaisen-3",
-    "url": "https://lovanet.fr/actualites/video-jujutsu-kaisen-3",
+    "url": "https://ree3franc.com/actualites/video-jujutsu-kaisen-3",
     "title": "JUJUTSU KAISEN",
     "description": "A boy fights... for \"the right death.\" Hardship, regret, shame: the negative feelings that humans feel become Curses that lurk in our everyday lives. The Curses run rampant throughout the world, capable of leading people to terrible misfort",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/113415-jQBSkxWAAk83.jpg",
@@ -69,7 +69,7 @@ const RAW_SEO_NEWS = [
   {
     "id": "video-death-note-4",
     "slug": "video-death-note-4",
-    "url": "https://lovanet.fr/actualites/video-death-note-4",
+    "url": "https://ree3franc.com/actualites/video-death-note-4",
     "title": "Death Note",
     "description": "Light Yagami is a genius high school student who is about to learn about life through a book of death. When a bored shinigami, a God of Death, named Ryuk drops a black notepad called a Death Note, Light receives power over life and death wi",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/1535.jpg",
@@ -90,7 +90,7 @@ const RAW_SEO_NEWS = [
   {
     "id": "video-my-hero-academia-5",
     "slug": "video-my-hero-academia-5",
-    "url": "https://lovanet.fr/actualites/video-my-hero-academia-5",
+    "url": "https://ree3franc.com/actualites/video-my-hero-academia-5",
     "title": "My Hero Academia",
     "description": "What would the world be like if 80 percent of the population manifested extraordinary superpowers called “Quirks” at age four? Heroes and villains would be battling it out everywhere! Becoming a hero would mean learning to use your power, b",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/21459-yeVkolGKdGUV.jpg",
@@ -111,7 +111,7 @@ const RAW_SEO_NEWS = [
   {
     "id": "video-hunter-x-hunter-2011-6",
     "slug": "video-hunter-x-hunter-2011-6",
-    "url": "https://lovanet.fr/actualites/video-hunter-x-hunter-2011-6",
+    "url": "https://ree3franc.com/actualites/video-hunter-x-hunter-2011-6",
     "title": "Hunter x Hunter (2011)",
     "description": "A new adaption of the manga of the same name by Togashi Yoshihiro. A Hunter is one who travels the world doing all sorts of dangerous tasks. From capturing criminals to searching deep within uncharted lands for any lost treasures. Gon is a ",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/11061-8WkkTZ6duKpq.jpg",
@@ -132,7 +132,7 @@ const RAW_SEO_NEWS = [
   {
     "id": "video-one-punch-man-7",
     "slug": "video-one-punch-man-7",
-    "url": "https://lovanet.fr/actualites/video-one-punch-man-7",
+    "url": "https://ree3franc.com/actualites/video-one-punch-man-7",
     "title": "One-Punch Man",
     "description": "Saitama has a rather peculiar hobby, being a superhero, but despite his heroic deeds and superhuman abilities, a shadow looms over his life. He's become much too powerful, to the point that every opponent ends up defeated with a single punc",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/21087-sHb9zUZFsHe1.jpg",
@@ -153,7 +153,7 @@ const RAW_SEO_NEWS = [
   {
     "id": "video-tokyo-ghoul-8",
     "slug": "video-tokyo-ghoul-8",
-    "url": "https://lovanet.fr/actualites/video-tokyo-ghoul-8",
+    "url": "https://ree3franc.com/actualites/video-tokyo-ghoul-8",
     "title": "Tokyo Ghoul",
     "description": "The suspense horror/dark fantasy story is set in Tokyo, which is haunted by mysterious \"ghouls\" who are devouring humans. People are gripped by the fear of these ghouls whose identities are masked in mystery. An ordinary college student nam",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/20605-RCJ7M71zLmrh.jpg",
@@ -174,7 +174,7 @@ const RAW_SEO_NEWS = [
   {
     "id": "video-attack-on-titan-season-2-9",
     "slug": "video-attack-on-titan-season-2-9",
-    "url": "https://lovanet.fr/actualites/video-attack-on-titan-season-2-9",
+    "url": "https://ree3franc.com/actualites/video-attack-on-titan-season-2-9",
     "title": "Attack on Titan Season 2",
     "description": "Eren Jaeger swore to wipe out every last Titan, but in a battle for his life he wound up becoming the thing he hates most. With his new powers, he fights for humanity's freedom facing the monsters that threaten his home. After a bittersweet",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/20958-Y7eQdz9VENBD.jpg",
@@ -195,7 +195,7 @@ const RAW_SEO_NEWS = [
   {
     "id": "video-naruto-10",
     "slug": "video-naruto-10",
-    "url": "https://lovanet.fr/actualites/video-naruto-10",
+    "url": "https://ree3franc.com/actualites/video-naruto-10",
     "title": "Naruto",
     "description": "Naruto Uzumaki, a hyperactive and knuckle-headed ninja, lives in Konohagakure, the Hidden Leaf village. Moments prior to his birth, a huge demon known as the Kyuubi, the Nine-tailed Fox, attacked Konohagakure and wreaked havoc. In order to ",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/20-HHxhPj5JD13a.jpg",
@@ -216,7 +216,7 @@ const RAW_SEO_NEWS = [
   {
     "id": "video-sword-art-online-11",
     "slug": "video-sword-art-online-11",
-    "url": "https://lovanet.fr/actualites/video-sword-art-online-11",
+    "url": "https://ree3franc.com/actualites/video-sword-art-online-11",
     "title": "Sword Art Online",
     "description": "In the near future, a Virtual Reality Massive Multiplayer Online Role-Playing Game (VRMMORPG) called Sword Art Online has been released where players control their avatars with their bodies using a piece of technology called Nerve Gear. One",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/11757-TlEEV9weG4Ag.jpg",
@@ -237,7 +237,7 @@ const RAW_SEO_NEWS = [
   {
     "id": "video-your-name-12",
     "slug": "video-your-name-12",
-    "url": "https://lovanet.fr/actualites/video-your-name-12",
+    "url": "https://ree3franc.com/actualites/video-your-name-12",
     "title": "Your Name.",
     "description": "Mitsuha Miyamizu, a high school girl, yearns to live the life of a boy in the bustling city of Tokyo—a dream that stands in stark contrast to her present life in the countryside. Meanwhile in the city, Taki Tachibana lives a busy life as a ",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/21519-1ayMXgNlmByb.jpg",
@@ -258,7 +258,7 @@ const RAW_SEO_NEWS = [
   {
     "id": "product-produit-anime-manga-lovanet-am-001-13",
     "slug": "product-produit-anime-manga-lovanet-am-001-13",
-    "url": "https://lovanet.fr/actualites/product-produit-anime-manga-lovanet-am-001-13",
+    "url": "https://ree3franc.com/actualites/product-produit-anime-manga-lovanet-am-001-13",
     "title": "Produit anime manga Lovanet AM-001",
     "description": "Produit officiel Anime.Moments.officiel disponible dans la magasin Lovanet.",
     "image": "/products/am-001.svg",
@@ -279,7 +279,7 @@ const RAW_SEO_NEWS = [
   {
     "id": "product-produit-anime-manga-lovanet-am-002-14",
     "slug": "product-produit-anime-manga-lovanet-am-002-14",
-    "url": "https://lovanet.fr/actualites/product-produit-anime-manga-lovanet-am-002-14",
+    "url": "https://ree3franc.com/actualites/product-produit-anime-manga-lovanet-am-002-14",
     "title": "Produit anime manga Lovanet AM-002",
     "description": "Produit officiel Anime.Moments.officiel disponible dans la magasin Lovanet.",
     "image": "/products/am-002.svg",
@@ -300,7 +300,7 @@ const RAW_SEO_NEWS = [
   {
     "id": "product-produit-anime-manga-lovanet-am-003-15",
     "slug": "product-produit-anime-manga-lovanet-am-003-15",
-    "url": "https://lovanet.fr/actualites/product-produit-anime-manga-lovanet-am-003-15",
+    "url": "https://ree3franc.com/actualites/product-produit-anime-manga-lovanet-am-003-15",
     "title": "Produit anime manga Lovanet AM-003",
     "description": "Produit officiel Anime.Moments.officiel disponible dans la magasin Lovanet.",
     "image": "/products/am-003.svg",
@@ -321,7 +321,7 @@ const RAW_SEO_NEWS = [
   {
     "id": "product-produit-anime-manga-lovanet-am-004-16",
     "slug": "product-produit-anime-manga-lovanet-am-004-16",
-    "url": "https://lovanet.fr/actualites/product-produit-anime-manga-lovanet-am-004-16",
+    "url": "https://ree3franc.com/actualites/product-produit-anime-manga-lovanet-am-004-16",
     "title": "Produit anime manga Lovanet AM-004",
     "description": "Produit officiel Anime.Moments.officiel disponible dans la magasin Lovanet.",
     "image": "/products/am-004.svg",
@@ -342,7 +342,7 @@ const RAW_SEO_NEWS = [
   {
     "id": "product-produit-anime-manga-lovanet-am-005-17",
     "slug": "product-produit-anime-manga-lovanet-am-005-17",
-    "url": "https://lovanet.fr/actualites/product-produit-anime-manga-lovanet-am-005-17",
+    "url": "https://ree3franc.com/actualites/product-produit-anime-manga-lovanet-am-005-17",
     "title": "Produit anime manga Lovanet AM-005",
     "description": "Produit officiel Anime.Moments.officiel disponible dans la magasin Lovanet.",
     "image": "/products/am-005.svg",
@@ -363,7 +363,7 @@ const RAW_SEO_NEWS = [
   {
     "id": "product-produit-anime-manga-lovanet-am-006-18",
     "slug": "product-produit-anime-manga-lovanet-am-006-18",
-    "url": "https://lovanet.fr/actualites/product-produit-anime-manga-lovanet-am-006-18",
+    "url": "https://ree3franc.com/actualites/product-produit-anime-manga-lovanet-am-006-18",
     "title": "Produit anime manga Lovanet AM-006",
     "description": "Produit officiel Anime.Moments.officiel disponible dans la magasin Lovanet.",
     "image": "/products/am-006.svg",
@@ -384,7 +384,7 @@ const RAW_SEO_NEWS = [
   {
     "id": "product-produit-anime-manga-lovanet-am-007-19",
     "slug": "product-produit-anime-manga-lovanet-am-007-19",
-    "url": "https://lovanet.fr/actualites/product-produit-anime-manga-lovanet-am-007-19",
+    "url": "https://ree3franc.com/actualites/product-produit-anime-manga-lovanet-am-007-19",
     "title": "Produit anime manga Lovanet AM-007",
     "description": "Produit officiel Anime.Moments.officiel disponible dans la magasin Lovanet.",
     "image": "/products/am-007.svg",
@@ -405,7 +405,7 @@ const RAW_SEO_NEWS = [
   {
     "id": "product-produit-anime-manga-lovanet-am-008-20",
     "slug": "product-produit-anime-manga-lovanet-am-008-20",
-    "url": "https://lovanet.fr/actualites/product-produit-anime-manga-lovanet-am-008-20",
+    "url": "https://ree3franc.com/actualites/product-produit-anime-manga-lovanet-am-008-20",
     "title": "Produit anime manga Lovanet AM-008",
     "description": "Produit officiel Anime.Moments.officiel disponible dans la magasin Lovanet.",
     "image": "/products/am-008.svg",
@@ -426,7 +426,7 @@ const RAW_SEO_NEWS = [
   {
     "id": "catalog-attack-on-titan-21",
     "slug": "catalog-attack-on-titan-21",
-    "url": "https://lovanet.fr/actualites/catalog-attack-on-titan-21",
+    "url": "https://ree3franc.com/actualites/catalog-attack-on-titan-21",
     "title": "Attack on Titan",
     "description": "Several hundred years ago, humans were nearly exterminated by titans. Titans are typically several stories tall, seem to have no intelligence, devour human beings and, worst of all, seem to do it for the pleasure rather than as a food sourc",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/16498-8jpFCOcDmneX.jpg",
@@ -447,7 +447,7 @@ const RAW_SEO_NEWS = [
   {
     "id": "catalog-demon-slayer-kimetsu-no-yaiba-22",
     "slug": "catalog-demon-slayer-kimetsu-no-yaiba-22",
-    "url": "https://lovanet.fr/actualites/catalog-demon-slayer-kimetsu-no-yaiba-22",
+    "url": "https://ree3franc.com/actualites/catalog-demon-slayer-kimetsu-no-yaiba-22",
     "title": "Demon Slayer: Kimetsu no Yaiba",
     "description": "It is the Taisho Period in Japan. Tanjiro, a kindhearted boy who sells charcoal for a living, finds his family slaughtered by a demon. To make matters worse, his younger sister Nezuko, the sole survivor, has been transformed into a demon he",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/101922-33MtJGsUSxga.jpg",
@@ -468,7 +468,7 @@ const RAW_SEO_NEWS = [
   {
     "id": "catalog-jujutsu-kaisen-23",
     "slug": "catalog-jujutsu-kaisen-23",
-    "url": "https://lovanet.fr/actualites/catalog-jujutsu-kaisen-23",
+    "url": "https://ree3franc.com/actualites/catalog-jujutsu-kaisen-23",
     "title": "JUJUTSU KAISEN",
     "description": "A boy fights... for \"the right death.\" Hardship, regret, shame: the negative feelings that humans feel become Curses that lurk in our everyday lives. The Curses run rampant throughout the world, capable of leading people to terrible misfort",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/113415-jQBSkxWAAk83.jpg",
@@ -489,7 +489,7 @@ const RAW_SEO_NEWS = [
   {
     "id": "catalog-death-note-24",
     "slug": "catalog-death-note-24",
-    "url": "https://lovanet.fr/actualites/catalog-death-note-24",
+    "url": "https://ree3franc.com/actualites/catalog-death-note-24",
     "title": "Death Note",
     "description": "Light Yagami is a genius high school student who is about to learn about life through a book of death. When a bored shinigami, a God of Death, named Ryuk drops a black notepad called a Death Note, Light receives power over life and death wi",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/1535.jpg",
@@ -510,7 +510,7 @@ const RAW_SEO_NEWS = [
   {
     "id": "catalog-my-hero-academia-25",
     "slug": "catalog-my-hero-academia-25",
-    "url": "https://lovanet.fr/actualites/catalog-my-hero-academia-25",
+    "url": "https://ree3franc.com/actualites/catalog-my-hero-academia-25",
     "title": "My Hero Academia",
     "description": "What would the world be like if 80 percent of the population manifested extraordinary superpowers called “Quirks” at age four? Heroes and villains would be battling it out everywhere! Becoming a hero would mean learning to use your power, b",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/21459-yeVkolGKdGUV.jpg",
@@ -531,7 +531,7 @@ const RAW_SEO_NEWS = [
   {
     "id": "catalog-hunter-x-hunter-2011-26",
     "slug": "catalog-hunter-x-hunter-2011-26",
-    "url": "https://lovanet.fr/actualites/catalog-hunter-x-hunter-2011-26",
+    "url": "https://ree3franc.com/actualites/catalog-hunter-x-hunter-2011-26",
     "title": "Hunter x Hunter (2011)",
     "description": "A new adaption of the manga of the same name by Togashi Yoshihiro. A Hunter is one who travels the world doing all sorts of dangerous tasks. From capturing criminals to searching deep within uncharted lands for any lost treasures. Gon is a ",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/11061-8WkkTZ6duKpq.jpg",
@@ -552,7 +552,7 @@ const RAW_SEO_NEWS = [
   {
     "id": "catalog-one-punch-man-27",
     "slug": "catalog-one-punch-man-27",
-    "url": "https://lovanet.fr/actualites/catalog-one-punch-man-27",
+    "url": "https://ree3franc.com/actualites/catalog-one-punch-man-27",
     "title": "One-Punch Man",
     "description": "Saitama has a rather peculiar hobby, being a superhero, but despite his heroic deeds and superhuman abilities, a shadow looms over his life. He's become much too powerful, to the point that every opponent ends up defeated with a single punc",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/21087-sHb9zUZFsHe1.jpg",
@@ -573,7 +573,7 @@ const RAW_SEO_NEWS = [
   {
     "id": "catalog-one-piece-28",
     "slug": "catalog-one-piece-28",
-    "url": "https://lovanet.fr/actualites/catalog-one-piece-28",
+    "url": "https://ree3franc.com/actualites/catalog-one-piece-28",
     "title": "ONE PIECE",
     "description": "Gold Roger was known as the Pirate King, the strongest and most infamous being to have sailed the Grand Line. The capture and death of Roger by the World Government brought a change throughout the world. His last words before his death reve",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/21-wf37VakJmZqs.jpg",
@@ -594,7 +594,7 @@ const RAW_SEO_NEWS = [
   {
     "id": "catalog-tokyo-ghoul-29",
     "slug": "catalog-tokyo-ghoul-29",
-    "url": "https://lovanet.fr/actualites/catalog-tokyo-ghoul-29",
+    "url": "https://ree3franc.com/actualites/catalog-tokyo-ghoul-29",
     "title": "Tokyo Ghoul",
     "description": "The suspense horror/dark fantasy story is set in Tokyo, which is haunted by mysterious \"ghouls\" who are devouring humans. People are gripped by the fear of these ghouls whose identities are masked in mystery. An ordinary college student nam",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/20605-RCJ7M71zLmrh.jpg",
@@ -615,7 +615,7 @@ const RAW_SEO_NEWS = [
   {
     "id": "catalog-attack-on-titan-season-2-30",
     "slug": "catalog-attack-on-titan-season-2-30",
-    "url": "https://lovanet.fr/actualites/catalog-attack-on-titan-season-2-30",
+    "url": "https://ree3franc.com/actualites/catalog-attack-on-titan-season-2-30",
     "title": "Attack on Titan Season 2",
     "description": "Eren Jaeger swore to wipe out every last Titan, but in a battle for his life he wound up becoming the thing he hates most. With his new powers, he fights for humanity's freedom facing the monsters that threaten his home. After a bittersweet",
     "image": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/20958-Y7eQdz9VENBD.jpg",

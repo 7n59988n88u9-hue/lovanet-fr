@@ -17,7 +17,7 @@ createRoot(document.getElementById("root")!).render(
   </HelmetProvider>,
 );
 
-const APP_BUILD_VERSION = "2026.09.14.navigation-pwa-v15";
+const APP_BUILD_VERSION = "2026.09.14.ree3franc-domain-v16";
 const APP_BUILD_STORAGE_KEY = "lovanet_app_build_version";
 const LAUNCH_FORMAT_KEY = "lovanet.launch.format.v1";
 const VIDEO_PREF_KEY = "site_disable_videos";
@@ -126,7 +126,7 @@ const enforceCurrentBuild = async () => {
 
 // Ensure old service workers and caches are unregistered to avoid stale preview assets.
 const LOVANET_RELOAD_FLAG = "lovanet_sw_unregistered";
-const LOVANET_RELOAD_VERSION = "16"; // force la purge et le renouvellement de la PWA
+const LOVANET_RELOAD_VERSION = "17"; // force la purge et le renouvellement de la PWA
 
 const forceLovanetReload = () => {
   if (typeof window === "undefined") return;

@@ -6,7 +6,7 @@
 import { writeFileSync, existsSync, rmSync } from "node:fs";
 import { resolve } from "node:path";
 
-const BASE_URL = "https://lovanet.fr";
+const BASE_URL = "https://ree3franc.com";
 const TARGET = 1500;
 const PER_PAGE = 50;
 const OUT_JSON = resolve("public/catalog-seo.json");

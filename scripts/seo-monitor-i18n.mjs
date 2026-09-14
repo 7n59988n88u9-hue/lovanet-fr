@@ -8,7 +8,7 @@
 // Requires the same LOVABLE_API_KEY + GOOGLE_SEARCH_CONSOLE_API_KEY env
 // vars as ping-search-engines.mjs. Non-fatal: exits 0 on transient errors.
 
-const SITE = "https://lovanet.fr/";
+const SITE = "https://ree3franc.com/";
 const BASE = "https://connector-gateway.lovable.dev/google_search_console";
 
 // Map ISO-3166-1 alpha-3 country codes returned by GSC to our hreflang codes.
@@ -101,11 +101,11 @@ async function main() {
   if (perPage) {
     const rows = (perPage.rows ?? [])
       .map((r) => ({ page: r.keys[0], impressions: r.impressions, clicks: r.clicks }))
-      .filter((r) => r.page.startsWith("https://lovanet.fr/"))
+      .filter((r) => r.page.startsWith("https://ree3franc.com/"))
       .sort((a, b) => b.impressions - a.impressions)
       .slice(0, 15);
     for (const r of rows) {
-      const path = r.page.replace("https://lovanet.fr", "");
+      const path = r.page.replace("https://ree3franc.com", "");
       const prefix = path.split("/").filter(Boolean)[0];
       const isLocalized = ["en","es","de","it","pt","ja","zh"].includes(prefix);
       console.log(`${isLocalized ? "🌐" : "  "} ${path.padEnd(40)} imp=${r.impressions} clicks=${r.clicks}`);

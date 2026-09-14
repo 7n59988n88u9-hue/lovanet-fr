@@ -1,4 +1,4 @@
-const FALLBACK_SITE_ORIGIN = "https://animemomentsofficiel.fr";
+const FALLBACK_SITE_ORIGIN = "https://ree3franc.com";
 
 const isPreviewLikeHost = (host: string) =>
   host === "localhost" ||

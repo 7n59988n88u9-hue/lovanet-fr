@@ -5,7 +5,7 @@
 import { writeFileSync } from "fs";
 import { resolve } from "path";
 
-const BASE_URL = "https://lovanet.fr";
+const BASE_URL = "https://ree3franc.com";
 const DEFAULT_LOCALE = "fr";
 const LOCALES = ["fr", "en", "es", "de", "it", "pt", "ja", "zh"] as const;
 

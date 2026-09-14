@@ -1,4 +1,4 @@
-const SITE = "https://lovanet.fr/";
+const SITE = "https://ree3franc.com/";
 const BASE = "https://connector-gateway.lovable.dev/google_search_console";
 const H = {
   Authorization: `Bearer ${process.env.LOVABLE_API_KEY}`,
@@ -9,8 +9,8 @@ const LOCALES = ["fr","en","es","de","it","pt","ja","zh"];
 const ROUTES = ["/","/shop","/anime-catalog","/anime-countdown","/decouvrir","/chaine-youtube","/prime-video","/tiktok"];
 
 function url(loc, r) {
-  if (loc === "fr") return `https://lovanet.fr${r}`;
-  return `https://lovanet.fr/${loc}${r === "/" ? "" : r}`;
+  if (loc === "fr") return `https://ree3franc.com${r}`;
+  return `https://ree3franc.com/${loc}${r === "/" ? "" : r}`;
 }
 
 const results = [];

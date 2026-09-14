@@ -21,7 +21,7 @@ const OG_LOCALE: Record<Locale, string> = {
 
 type Meta = { title: string; description: string };
 
-const SITE = "https://lovanet.fr";
+const SITE = "https://ree3franc.com";
 
 function localizedPath(route: string, locale: Locale) {
   const suffix = route === "/" ? "" : route;
@@ -63,7 +63,7 @@ function renderHead(locale: Locale, route: string, meta: Meta): string {
       description: meta.description,
       url: canonical,
       inLanguage: locale,
-      isPartOf: { "@type": "WebSite", "@id": "https://lovanet.fr/#website" },
+      isPartOf: { "@type": "WebSite", "@id": "https://ree3franc.com/#website" },
     })}</script>`,
   ].join("\n    ");
 }
@@ -114,7 +114,7 @@ function rewriteHead(html: string, locale: Locale, route: string, meta: Meta): s
       description: meta.description,
       url: canonical,
       inLanguage: locale,
-      isPartOf: { "@type": "WebSite", "@id": "https://lovanet.fr/#website" },
+      isPartOf: { "@type": "WebSite", "@id": "https://ree3franc.com/#website" },
     })}</script>`,
   ].join("\n    ");
   out = out.replace("</head>", `    ${injected}\n  </head>`);
