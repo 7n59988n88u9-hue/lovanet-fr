@@ -1,6 +1,6 @@
 // Service worker Lovanet — sans precache figé (evite les versions obsoletes).
 // Version: bump pour forcer une purge complete des anciens caches.
-const SW_VERSION = "2026-09-14-v9";
+const SW_VERSION = "2026-09-14-v10-navigation";
 const RUNTIME_CACHE = `lovanet-runtime-${SW_VERSION}`;
 
 importScripts("/push-sw.js");

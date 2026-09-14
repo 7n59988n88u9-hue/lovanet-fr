@@ -7,6 +7,8 @@ import { supabase } from "@/integrations/supabase/client";
 import DragScroller from "@/components/DragScroller";
 
 export const OPEN_QUICKNAV_EVENT = "lovanet:open-quicknav";
+export const TOGGLE_QUICKNAV_EVENT = "lovanet:toggle-quicknav";
+const CLOSE_INSTALL_PROMPT_EVENT = "lovanet:close-install-prompt";
 const MAIN_KEY = "lovanet.quicknav.main.collapsed";
 const MINI_KEY = "lovanet.quicknav.mini.collapsed";
 const POS_KEY = "lovanet.quicknav.position";
@@ -112,6 +114,27 @@ export default function QuickNavCarousel({ items = DEFAULT_ITEMS, onClose }: { i
   }, []);
 
   useEffect(() => {
+    const openLeft = () => {
+      setRightOpen(false);
+      setMainCollapsed(false);
+      bringOpenPanelIntoView();
+      setLeftOpen(true);
+    };
+    const toggleLeftFromEvent = () => {
+      setRightOpen(false);
+      setMainCollapsed(false);
+      bringOpenPanelIntoView();
+      setLeftOpen((value) => !value);
+    };
+    window.addEventListener(OPEN_QUICKNAV_EVENT, openLeft);
+    window.addEventListener(TOGGLE_QUICKNAV_EVENT, toggleLeftFromEvent);
+    return () => {
+      window.removeEventListener(OPEN_QUICKNAV_EVENT, openLeft);
+      window.removeEventListener(TOGGLE_QUICKNAV_EVENT, toggleLeftFromEvent);
+    };
+  }, []);
+
+  useEffect(() => {
     if (!leftOpen && !rightOpen) return;
     const timer = window.setTimeout(() => {
       setLeftOpen(false);
@@ -153,6 +176,21 @@ export default function QuickNavCarousel({ items = DEFAULT_ITEMS, onClose }: { i
       x: Math.min(Math.max(margin, x), maxX),
       y: Math.min(Math.max(margin, y), maxY),
     };
+  };
+
+  const bringOpenPanelIntoView = () => {
+    if (typeof window === "undefined") return;
+    setDockPos((previous) => {
+      if (!previous.dragged) return previous;
+      const margin = 8;
+      const estimatedWidth = Math.min(window.innerWidth * 0.94, 384);
+      const estimatedHeight = Math.min(window.innerHeight - 32, 660);
+      return {
+        x: Math.min(Math.max(margin, previous.x), Math.max(margin, window.innerWidth - estimatedWidth - margin)),
+        y: Math.min(Math.max(margin, previous.y), Math.max(margin, window.innerHeight - estimatedHeight - margin)),
+        dragged: true,
+      };
+    });
   };
 
   useEffect(() => {
@@ -279,6 +317,7 @@ export default function QuickNavCarousel({ items = DEFAULT_ITEMS, onClose }: { i
   };
 
   const toggleLeft = () => {
+    window.dispatchEvent(new Event(CLOSE_INSTALL_PROMPT_EVENT));
     if (leftOpen) {
       closeLeft();
       return;
@@ -286,11 +325,15 @@ export default function QuickNavCarousel({ items = DEFAULT_ITEMS, onClose }: { i
     // La languette gauche correspond au menu complet : toujours révéler
     // immédiatement le carrousel principal, même s'il était mémorisé replié.
     setMainCollapsed(false);
+    setRightOpen(false);
+    bringOpenPanelIntoView();
     setLeftOpen(true);
   };
 
   const toggleRight = () => {
+    window.dispatchEvent(new Event(CLOSE_INSTALL_PROMPT_EVENT));
     if (!rightOpen) {
+      setLeftOpen(false);
       setRightRollPhase(0);
       setRightOpen(true);
       return;

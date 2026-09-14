@@ -101,11 +101,14 @@ export const InstallAppPrompt = () => {
       } catch { /* ignore */ }
     };
     window.addEventListener("appinstalled", onInstalled);
+    const closeForNavigation = () => setOpen(false);
+    window.addEventListener("lovanet:close-install-prompt", closeForNavigation);
 
     return () => {
       window.removeEventListener("lovanet:installready", onReady);
       window.removeEventListener("beforeinstallprompt", onPrompt);
       window.removeEventListener("appinstalled", onInstalled);
+      window.removeEventListener("lovanet:close-install-prompt", closeForNavigation);
       window.clearTimeout(autoTimer);
     };
   }, []);
