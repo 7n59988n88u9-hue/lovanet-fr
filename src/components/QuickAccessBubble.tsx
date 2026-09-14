@@ -56,7 +56,7 @@ const GROUPS: { id: string; label: string; items: Item[] }[] = [
       { to: "/actualites", label: "Actus", icon: Sparkles },
       { to: "/leaderboard", label: "Podium", icon: Trophy },
       { to: "/profile", label: "Profil", icon: User },
-      { to: "/contact", label: "Contact", icon: Mail },
+      { to: "/contact", label: "Nous écrire", icon: Mail },
     ],
   },
 ];

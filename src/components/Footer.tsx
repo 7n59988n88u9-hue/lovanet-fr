@@ -15,9 +15,9 @@ const allDestinations = [
   { to: "/anime-catalog", label: "Sélection", icon: Film },
   { to: "/ai-hub", label: "Studio IA", icon: Bot },
   { to: "/univers", label: "Monde", icon: Compass },
-  { to: "/actualites", label: "News", icon: Newspaper },
+  { to: "/actualites", label: "Actus", icon: Newspaper },
   { to: "/shop", label: "Magasin", icon: ShoppingBag },
-  { to: "/contact", label: "Contact", icon: Mail },
+  { to: "/contact", label: "Nous écrire", icon: Mail },
   { to: "/leaderboard", label: "Podium", icon: Trophy },
 ];
 
