@@ -143,7 +143,6 @@ export const Navbar = () => {
     if (typeof window === "undefined") return "carousel";
     return localStorage.getItem("lovanet.mnav.layout") === "list" ? "list" : "carousel";
   });
-  const [megaOpen, setMegaOpen] = useState(false);
   const [menuRotationIndex, setMenuRotationIndex] = useState(0);
   const [floatingMenuOpen, setFloatingMenuOpen] = useState(false);
 
@@ -172,8 +171,6 @@ export const Navbar = () => {
 
   const mobileMinimize = () => { setOpen(false); setMinimized(true); };
   const mobileExpand = () => { setMinimized(false); setOpen(true); };
-  const megaRef = useRef<HTMLDivElement>(null);
-  const closeTimer = useRef<number | null>(null);
   const { count, setOpen: setCartOpen } = useCart();
   const { pathname } = useLocation();
   const navigate = useNavigate();
@@ -192,22 +189,9 @@ export const Navbar = () => {
       .slice(0, 4);
   }, [rotatingCta, rotatingNavItems]);
 
-  const scheduleClose = () => {
-    if (closeTimer.current) window.clearTimeout(closeTimer.current);
-    closeTimer.current = window.setTimeout(() => setMegaOpen(false), 180);
-  };
-
-  const cancelClose = () => {
-    if (closeTimer.current) {
-      window.clearTimeout(closeTimer.current);
-      closeTimer.current = null;
-    }
-  };
-
   useEffect(() => {
     const onKey = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
-        setMegaOpen(false);
         setOpen(false);
       }
     };
@@ -253,38 +237,13 @@ export const Navbar = () => {
               <span className="nav-cloud nav-cloud-1" aria-hidden="true" />
               <span className="nav-cloud nav-cloud-2" aria-hidden="true" />
               <span className="nav-cloud nav-cloud-3" aria-hidden="true" />
-              <div className="flex items-center gap-2" onMouseEnter={cancelClose}>
+              <div className="flex items-center gap-2">
                 {renderLogo()}
               </div>
 
               {/* Dynamic suggestions bar — fills the empty space between logo and cart on mobile */}
               <NavSuggestionsBar />
               <QuickNavCarousel />
-
-              <div className="hidden items-center gap-2 md:flex" onMouseEnter={cancelClose}>
-                <button
-                  type="button"
-                  aria-haspopup="true"
-                  aria-expanded={megaOpen}
-                  aria-controls="mega-menu-panel"
-                  onClick={() => {
-                    cancelClose();
-                    setMegaOpen(true);
-                  }}
-                  onMouseEnter={() => {
-                    cancelClose();
-                    setMegaOpen(true);
-                  }}
-                  className={cn(
-                    "nav-theme-chip ml-auto inline-flex h-11 w-11 items-center justify-center rounded-full",
-                    megaOpen && "nav-theme-chip-active",
-                  )}
-                  aria-label="Ouvrir le menu"
-                  data-testid="desktop-mega-menu-button"
-                >
-                  <Menu className="h-5 w-5" strokeWidth={2} />
-                </button>
-              </div>
 
 
 
@@ -374,69 +333,6 @@ export const Navbar = () => {
               </motion.button>
             </div>
 
-            {megaOpen && (
-              <div
-                id="mega-menu-panel"
-                ref={megaRef}
-                role="menu"
-                onMouseEnter={cancelClose}
-                className="absolute left-0 right-0 top-full z-[70] mt-3 hidden animate-in fade-in slide-in-from-top-2 duration-300 md:block"
-              >
-                <div className="nav-theme-shell glass3d-panel glass3d-surface relative overflow-hidden rounded-[1.8rem] p-3 sm:p-5 lg:p-6" data-testid="desktop-mega-menu-panel">
-                  <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_14%_16%,color-mix(in_srgb,var(--nav-theme-accent)_18%,transparent),transparent_24%),radial-gradient(circle_at_84%_14%,color-mix(in_srgb,var(--nav-theme-accent-2)_14%,transparent),transparent_22%),linear-gradient(135deg,rgba(255,255,255,0.04),transparent_38%)]" />
-                  <div className="relative space-y-4">
-                    <div className="flex items-center justify-between gap-4">
-                      <div />
-                      <button
-                        type="button"
-                        onClick={() => setMegaOpen(false)}
-                        className="nav-theme-chip inline-flex h-11 w-11 items-center justify-center rounded-full"
-                        aria-label="Fermer le méga-menu"
-                        data-testid="desktop-mega-menu-close-button"
-                      >
-                        <X className="h-4 w-4" />
-                      </button>
-                    </div>
-                    <div className="relative">
-                      <DragScroller className="relative flex gap-4 px-1 py-2">
-                      {megaSections.map((item) => {
-                        const active = isActivePath(item.to);
-                        return (
-                          <Link
-                            key={item.to}
-                            to={item.to}
-                            role="menuitem"
-                            aria-current={active ? "page" : undefined}
-                            data-testid={navTestIds[item.to] ?? undefined}
-                            onClick={() => setMegaOpen(false)}
-                            className={cn(
-                              "relative h-28 flex-shrink-0 overflow-hidden rounded-2xl p-3 text-left transition-transform duration-200 hover:scale-105 focus:scale-105",
-                              item.iconOnly ? "w-28" : "w-56 sm:w-64",
-                              active && "ring-1 ring-white/20",
-                            )}
-                            aria-label={item.iconOnly ? item.label : undefined}
-                            style={{ background: "transparent" }}
-                          >
-                            <span className="absolute inset-0 rounded-2xl bg-black/40 backdrop-blur-md" />
-                            <span className={cn("relative z-10 flex h-full items-center gap-3", item.iconOnly && "justify-center")}>
-                              <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-white/5 text-white/90">
-                                <item.icon className="h-5 w-5" strokeWidth={1.6} />
-                              </span>
-                              {!item.iconOnly && (
-                                <span className="min-w-0 text-white">
-                                  <span className="block text-sm font-semibold">{item.label}</span>
-                                </span>
-                              )}
-                            </span>
-                          </Link>
-                        );
-                      })}
-                      </DragScroller>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            )}
           </div>
         </div>
       </header>
