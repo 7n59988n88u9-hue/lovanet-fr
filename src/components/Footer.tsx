@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
 import { Youtube, ShoppingBag, Newspaper, Compass, Film, PlayCircle, Home, Music2, Clapperboard, Clock } from "lucide-react";
 import footerBannerBackground from "@/assets/footer-banner-background.mp4.asset.json";
+import footerMenuVideo from "@/assets/footer-menu-video.mp4.asset.json";
 
 const FOOTER_SQUARE_VIDEO = "/portal-bottom-square.mp4";
 const FOOTER_BACKDROP_VIDEO = footerBannerBackground.url;
-const FOOTER_BACKDROP_IMAGE = "/media/portal-bottom-background-image.png";
+const FOOTER_MENU_VIDEO = footerMenuVideo.url;
 
 // Unique destinations — no duplicates between nav and content
 const allDestinations = [
@@ -39,40 +40,11 @@ export const Footer = () => {
           data-testid="footer-backdrop-video"
           data-bg-video
         />
-        <img
-          className="pointer-events-none absolute inset-0 z-0 h-full w-full object-cover opacity-80"
-          src={FOOTER_BACKDROP_IMAGE}
-          alt=""
-          aria-hidden="true"
-          data-testid="footer-backdrop-image"
-        />
-        <div className="pointer-events-none absolute inset-0 z-0 bg-[rgba(6,12,22,0.30)] backdrop-blur-[2px]" />
-        <div className="relative z-10 grid gap-8 border-b border-[var(--theme-border-soft)] px-5 py-8 sm:px-7 lg:grid-cols-[1.08fr_0.92fr] lg:px-8 lg:py-10">
-          <div className="space-y-5">
-            <div
-              className="theme-footer-video-shell glass3d-panel relative mx-auto aspect-square w-full max-w-[360px] overflow-hidden rounded-[1.75rem] border border-white/25"
-              style={{ background: "rgba(255,255,255,0.07)", backdropFilter: "blur(22px)" }}
-              data-testid="footer-lovanet-video-shell"
-            >
-              <div className="pointer-events-none absolute inset-0 bg-[rgba(6,12,22,0.28)] backdrop-blur-[2px]" />
-              <video
-                className="relative z-10 h-full w-full bg-transparent object-contain object-center"
-                src={FOOTER_SQUARE_VIDEO}
-                autoPlay
-                muted
-                loop
-                playsInline
-                preload="auto"
-                data-testid="footer-lovanet-video"
-                data-bg-video
-              />
-              <div className="pointer-events-none absolute inset-0 opacity-20 mix-blend-screen bg-[linear-gradient(110deg,transparent_16%,rgba(255,255,255,0.16)_28%,transparent_42%,transparent_64%,rgba(255,255,255,0.12)_74%,transparent_88%)] animate-[shimmer_9s_linear_infinite]" />
-            </div>
-          </div>
-
+        <div className="pointer-events-none absolute inset-0 z-0 bg-[rgba(255,255,255,0.12)]" />
+        <div className="relative z-10 border-b border-[var(--theme-border-soft)] px-5 py-8 sm:px-7 lg:px-8 lg:py-10">
           {/* Premium unified navigation hub — no duplicates */}
           <div className="flex flex-col gap-3">
-            <div className="grid grid-cols-2 gap-2">
+            <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-5">
               {allDestinations.map((item) => (
                 <Link
                   key={item.to}
@@ -86,6 +58,40 @@ export const Footer = () => {
                   <span className="text-xs font-bold text-white drop-shadow-sm">{item.label}</span>
                 </Link>
               ))}
+            </div>
+          </div>
+
+          <div className="mt-7 flex justify-end pr-1 sm:pr-4" data-testid="footer-video-cluster">
+            <div className="relative w-full max-w-[500px] pb-3 pl-5 sm:pl-10">
+              <div
+                className="theme-footer-video-shell glass3d-panel relative z-20 aspect-video w-[64%] overflow-hidden rounded-xl border border-white/35 bg-white/10 shadow-2xl"
+                data-testid="footer-lovanet-video-shell"
+              >
+                <video
+                  className="h-full w-full bg-transparent object-cover object-center"
+                  src={FOOTER_SQUARE_VIDEO}
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  preload="auto"
+                  data-testid="footer-lovanet-video"
+                  data-bg-video
+                />
+              </div>
+              <div className="glass3d-panel absolute bottom-0 right-0 z-10 aspect-video w-[64%] overflow-hidden rounded-xl border border-white/30 bg-white/10 shadow-xl">
+                <video
+                  className="h-full w-full bg-transparent object-cover object-center"
+                  src={FOOTER_MENU_VIDEO}
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  preload="auto"
+                  data-testid="footer-menu-video"
+                  data-bg-video
+                />
+              </div>
             </div>
           </div>
         </div>
