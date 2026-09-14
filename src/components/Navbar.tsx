@@ -143,7 +143,6 @@ export const Navbar = () => {
     if (typeof window === "undefined") return "carousel";
     return localStorage.getItem("lovanet.mnav.layout") === "list" ? "list" : "carousel";
   });
-  const [megaOpen, setMegaOpen] = useState(false);
   const [menuRotationIndex, setMenuRotationIndex] = useState(0);
   const [floatingMenuOpen, setFloatingMenuOpen] = useState(false);
 
