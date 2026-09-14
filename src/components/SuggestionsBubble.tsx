@@ -10,11 +10,11 @@ type Suggestion = { to: string; label: string; emoji: string };
 const BASE: Suggestion[] = [
   { to: "/", label: "Accueil", emoji: "🏠" },
   { to: "/anime-catalog", label: "Sélection", emoji: "📺" },
-  { to: "/prime-video", label: "Prime Vidéo", emoji: "🎬" },
+  { to: "/prime-video", label: "Cinéma", emoji: "🎬" },
   { to: "/chaine-youtube", label: "YouTube", emoji: "▶️" },
   { to: "/tiktok", label: "TikTok", emoji: "🎵" },
   { to: "/actualites", label: "Actus", emoji: "📰" },
-  { to: "/univers", label: "Univers", emoji: "🌍" },
+  { to: "/univers", label: "Monde", emoji: "🌍" },
   { to: "/shop", label: "Magasin", emoji: "🛍️" },
   { to: "/leaderboard", label: "Podium", emoji: "🏆" },
 ];

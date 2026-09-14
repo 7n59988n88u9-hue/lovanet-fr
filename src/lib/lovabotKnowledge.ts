@@ -13,7 +13,7 @@ export const SITE_KNOWLEDGE: KnowledgeEntry[] = [
     id: "accueil",
     keywords: ["accueil", "accueil", "home", "page principale", "landing", "demarrer", "commencer"],
     answer:
-      "Le Accueil est la page d'accueil de Lovanet : bannière vidéo, trailers en avant-première et accès rapide vers toutes les plateformes (YouTube, TikTok, Prime Vidéo, Catalogue, Magasin).",
+      "Le Accueil est la page d'accueil de Lovanet : bannière vidéo, trailers en avant-première et accès rapide vers toutes les plateformes (YouTube, TikTok, Cinéma, Catalogue, Magasin).",
     link: { label: "Aller au Accueil", to: "/" },
   },
   {
@@ -41,8 +41,8 @@ export const SITE_KNOWLEDGE: KnowledgeEntry[] = [
     id: "prime",
     keywords: ["prime", "prime video", "amazon", "streaming", "vod"],
     answer:
-      "Prime Vidéo présente le catalogue de trailers et fiches avec lecteur multi-doublage (VO / VF / VOSTFR) et sous-titres.",
-    link: { label: "Ouvrir Prime Vidéo", to: "/prime-video" },
+      "Cinéma présente le catalogue de trailers et fiches avec lecteur multi-doublage (VO / VF / VOSTFR) et sous-titres.",
+    link: { label: "Ouvrir Cinéma", to: "/prime-video" },
   },
   {
     id: "shop",

@@ -4681,7 +4681,7 @@ body[data-panel-tint="on"] .glass3d-surface a:not(.glass3d-plain):not([style*="b
 }
 
 /* ============================================================
-   Pages Prime Vidéo & Catalogue : style identique à la barre de
+   Pages Cinéma & Catalogue : style identique à la barre de
    menu (verre transparent 3D interactif) + suppression du bleu.
    ============================================================ */
 .page-nav-glass [class*="text-sky-"],

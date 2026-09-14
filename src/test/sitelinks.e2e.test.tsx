@@ -10,11 +10,11 @@ import { Footer } from "@/components/Footer";
 const InternalSitelinks: Array<[RegExp, string]> = [
   [/^Lovanet Plateforme officiel →$/i, "/"],
   [/^Catalogue →$/i, "/anime-catalog"],
-  [/^Univers Lovanet →$/i, "/univers"],
+  [/^Monde Lovanet →$/i, "/univers"],
   [/^Magasin →$/i, "/shop"],
   [/^AnimemomentsAnimeofficiel → YouTube$/i, "/chaine-youtube"],
   [/^AnimemomentsAnimeofficiel →$/i, "/chaine-youtube"],
-  [/^Anime\.Moments\.officiel → Prime Video$/i, "/prime-video"],
+  [/^Anime\.Moments\.officiel → Cinéma$/i, "/prime-video"],
   [/^Anime\.Moments\.officiel → TikTok$/i, "/tiktok"],
   [/^À venir →$/i, "/anime-countdown"],
 ];

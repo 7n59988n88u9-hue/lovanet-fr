@@ -21,10 +21,10 @@ import { motion } from "framer-motion";
 
 const rotatingPortalDestinations = [
   { to: "/anime-moments", label: "Moments Anime", icon: Film },
-  { to: "/decouvrir", label: "Univers Lovanet", icon: Compass },
+  { to: "/decouvrir", label: "Monde Lovanet", icon: Compass },
   { to: "/actualites", label: "Actus", icon: Newspaper },
   { to: "/shop", label: "Magasin", icon: ShoppingBag },
-  { to: "/prime-video", label: "Prime Vidéo", icon: Play },
+  { to: "/prime-video", label: "Cinéma", icon: Play },
   { to: "/tiktok", label: "TikTok", icon: Play },
   { to: "/anime-catalog", label: "Sélection", icon: Star },
   { to: "/anime-countdown", label: "Prochainement", icon: Play },
@@ -55,7 +55,7 @@ const portalCards = [
 ];
 
 const platformCards = [
-  { title: "Prime Vidéo", testId: "home-platform-card-prime", to: "/prime-video" },
+  { title: "Cinéma", testId: "home-platform-card-prime", to: "/prime-video" },
   { title: "", testId: "home-platform-card-tiktok", to: "/tiktok" },
   { title: "Sélection", testId: "home-platform-card-catalogue", to: "/anime-catalog" },
   { title: "Prochainement", testId: "home-platform-card-upcoming", to: "/anime-countdown" },

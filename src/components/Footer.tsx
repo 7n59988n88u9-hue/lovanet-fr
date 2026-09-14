@@ -9,10 +9,10 @@ const FOOTER_BACKDROP_IMAGE = "/media/portal-bottom-background-image.png";
 const allDestinations = [
   { to: "/", label: "Accueil", icon: Home, color: "#a78bfa" },
   { to: "/anime-moments", label: "Moments Anime", icon: Film, color: "#f472b6" },
-  { to: "/univers", label: "Univers", icon: Compass, color: "#22d3ee" },
+  { to: "/univers", label: "Monde", icon: Compass, color: "#22d3ee" },
   { to: "/chaine-youtube", label: "YouTube", icon: Youtube, color: "#ef4444" },
   { to: "/tiktok", label: "TikTok", icon: Music2, color: "#ec4899" },
-  { to: "/prime-video", label: "Prime Vidéo", icon: PlayCircle, color: "#3b82f6" },
+  { to: "/prime-video", label: "Cinéma", icon: PlayCircle, color: "#3b82f6" },
   { to: "/lecteurs-video", label: "Lecteurs Vidéo", icon: Clapperboard, color: "#8b5cf6" },
   { to: "/anime-countdown", label: "Prochainement", icon: Clock, color: "#f59e0b" },
   { to: "/actualites", label: "Actus", icon: Newspaper, color: "#10b981" },

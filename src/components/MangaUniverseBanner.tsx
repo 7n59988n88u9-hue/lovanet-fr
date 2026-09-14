@@ -50,7 +50,7 @@ export const MangaUniverseBanner = ({ videoIds }: { videoIds?: string[] } = {}) 
             {(hasVideos && videoIds?.length) ? (
               <ResilientVideoFrame
                 videoId={videoIds![videoIdx]}
-                title="Univers Manga & Anime — bannière animée"
+                title="Monde Manga & Anime — bannière animée"
                 seed={`manga-banner-${videoIds![videoIdx]}`}
                 searchQuery="anime moments officiel manga trailer"
                 poster={mangaBanner}
@@ -76,7 +76,7 @@ export const MangaUniverseBanner = ({ videoIds }: { videoIds?: string[] } = {}) 
         {bgMode === "image" && (
           <img
             src={mangaBanner}
-            alt="Univers Manga & Anime"
+            alt="Monde Manga & Anime"
             width={1920}
             height={640}
             loading="lazy"
@@ -146,7 +146,7 @@ export const MangaUniverseBanner = ({ videoIds }: { videoIds?: string[] } = {}) 
         {/* Content overlay + CTA link */}
         <Link
           to="/chaine-youtube/manga"
-          aria-label="Découvrir l'Univers Manga & Anime"
+          aria-label="Découvrir l'Monde Manga & Anime"
           className="absolute inset-0 flex flex-col md:flex-row items-center justify-between gap-4 p-6 sm:p-10 z-10 focus:outline-none focus:ring-4 focus:ring-primary/60 rounded-3xl"
         >
           <div className="flex items-center gap-3 md:gap-4">
@@ -158,7 +158,7 @@ export const MangaUniverseBanner = ({ videoIds }: { videoIds?: string[] } = {}) 
                 <Sparkles className="w-3 h-3" /> Section dédiée
               </p>
               <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-extrabold leading-tight">
-                Univers Manga &amp; Anime
+                Monde Manga &amp; Anime
               </h2>
             </div>
           </div>
