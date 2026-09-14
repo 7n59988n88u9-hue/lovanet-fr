@@ -171,8 +171,6 @@ export const Navbar = () => {
 
   const mobileMinimize = () => { setOpen(false); setMinimized(true); };
   const mobileExpand = () => { setMinimized(false); setOpen(true); };
-  const megaRef = useRef<HTMLDivElement>(null);
-  const closeTimer = useRef<number | null>(null);
   const { count, setOpen: setCartOpen } = useCart();
   const { pathname } = useLocation();
   const navigate = useNavigate();
@@ -190,18 +188,6 @@ export const Navbar = () => {
       })
       .slice(0, 4);
   }, [rotatingCta, rotatingNavItems]);
-
-  const scheduleClose = () => {
-    if (closeTimer.current) window.clearTimeout(closeTimer.current);
-    closeTimer.current = window.setTimeout(() => setMegaOpen(false), 180);
-  };
-
-  const cancelClose = () => {
-    if (closeTimer.current) {
-      window.clearTimeout(closeTimer.current);
-      closeTimer.current = null;
-    }
-  };
 
   useEffect(() => {
     const onKey = (event: KeyboardEvent) => {
