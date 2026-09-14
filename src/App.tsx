@@ -22,7 +22,7 @@ import OAuthConsent from "./pages/OAuthConsent";
 import SyncDashboard from "./pages/SyncDashboard";
 import Actualites from "./pages/Actualites";
 import HubTrainStationStandalone from "./pages/HubTrainStationStandalone";
-import Podium from "./pages/Podium";
+import Podium from "./pages/Leaderboard";
 import HubFerryStandalone from "./pages/HubFerryStandalone";
 import Profile from "./pages/Profile";
 import Login from "./pages/Login";
