@@ -202,7 +202,7 @@ const AppShell = () => {
       )}
       {!isHubPreviewRoute && <CartDrawer />}
       {!isHubPreviewRoute && <GoogleTranslate />}
-          {!isHubPreviewRoute && <InstallAppPrompt />}
+          
           {!isHubPreviewRoute && <LaunchFormatPicker />}
         </CartProvider>
       </GamificationProvider>
