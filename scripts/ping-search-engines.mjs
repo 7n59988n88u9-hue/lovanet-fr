@@ -12,9 +12,7 @@ const KEY_URLS = [
   "/anime-catalog",
   "/anime-countdown",
   "/decouvrir",
-  "/chaine-youtube",
   "/prime-video",
-  "/tiktok",
 ];
 
 async function bingIndexNow() {
