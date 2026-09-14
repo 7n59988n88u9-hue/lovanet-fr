@@ -4205,7 +4205,7 @@ body[data-panel-tint="on"] .glass3d-surface a:not(.glass3d-plain):not([style*="b
   left: 0.9rem;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 80;
+  z-index: 10060;
   width: min(92vw, 24rem);
   max-height: 82vh;
   overflow: visible;
@@ -5027,6 +5027,11 @@ html[data-nav-carousel="spotlight"] .quicknav-floating a::after {
 .quicknav-floating__edge-toggle:focus-visible {
   border-color: rgba(255,255,255,0.42);
   background: linear-gradient(180deg, rgba(255,255,255,0.24), rgba(255,255,255,0.1));
+}
+
+.quicknav-floating[data-collapsed="false"] .quicknav-floating__edge-toggle:hover,
+.quicknav-floating[data-collapsed="false"] .quicknav-floating__edge-toggle:focus-visible {
+  transform: scale(1.08);
 }
 .quicknav-floating__edge-toggle--left {
   left: -0.15rem;

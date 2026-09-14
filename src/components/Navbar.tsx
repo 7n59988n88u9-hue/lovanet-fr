@@ -37,7 +37,7 @@ import { UserProfileWidget } from "@/components/UserProfileWidget";
 import { ThemeSwitcher } from "@/components/ThemeSwitcher";
 import { MobileNavFloater } from "@/components/MobileNavFloater";
 import { NavSuggestionsBar } from "@/components/NavSuggestionsBar";
-import QuickNavCarousel, { OPEN_QUICKNAV_EVENT } from "@/components/QuickNavCarousel";
+import QuickNavCarousel, { OPEN_QUICKNAV_EVENT, TOGGLE_QUICKNAV_EVENT } from "@/components/QuickNavCarousel";
 import DragScroller from "@/components/DragScroller";
 import MobileMenuMiniWindow from "@/components/MobileMenuMiniWindow";
 const navTestIds: Record<string, string> = {
@@ -261,7 +261,7 @@ export const Navbar = () => {
                 <button
                   type="button"
                   onClick={() => {
-                    window.dispatchEvent(new CustomEvent("quicknav:toggle"));
+                    window.dispatchEvent(new Event(TOGGLE_QUICKNAV_EVENT));
                     navigate("/anime-catalog");
                   }}
                   className="nav-theme-chip inline-flex h-10 w-10 items-center justify-center rounded-full"

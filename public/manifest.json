@@ -1,9 +1,9 @@
 {
   "name": "Lovanet",
   "short_name": "Lovanet",
-  "description": "Lovanet Portail anime, manga, gaming, pop culture japonaise",
+  "description": "Lovanet, accueil anime, manga, gaming et pop culture japonaise",
   "id": "/",
-  "start_url": "/",
+  "start_url": "/?pwa=21",
   "scope": "/",
   "display": "standalone",
   "display_override": [

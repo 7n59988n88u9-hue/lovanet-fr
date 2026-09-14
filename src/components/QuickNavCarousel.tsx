@@ -7,6 +7,8 @@ import { supabase } from "@/integrations/supabase/client";
 import DragScroller from "@/components/DragScroller";
 
 export const OPEN_QUICKNAV_EVENT = "lovanet:open-quicknav";
+export const TOGGLE_QUICKNAV_EVENT = "lovanet:toggle-quicknav";
+const CLOSE_INSTALL_PROMPT_EVENT = "lovanet:close-install-prompt";
 const MAIN_KEY = "lovanet.quicknav.main.collapsed";
 const MINI_KEY = "lovanet.quicknav.mini.collapsed";
 const POS_KEY = "lovanet.quicknav.position";
@@ -108,6 +110,25 @@ export default function QuickNavCarousel({ items = DEFAULT_ITEMS, onClose }: { i
     window.addEventListener("quicknav:close", closeIt as EventListener);
     return () => {
       window.removeEventListener("quicknav:close", closeIt as EventListener);
+    };
+  }, []);
+
+  useEffect(() => {
+    const openLeft = () => {
+      setRightOpen(false);
+      setMainCollapsed(false);
+      setLeftOpen(true);
+    };
+    const toggleLeftFromEvent = () => {
+      setRightOpen(false);
+      setMainCollapsed(false);
+      setLeftOpen((value) => !value);
+    };
+    window.addEventListener(OPEN_QUICKNAV_EVENT, openLeft);
+    window.addEventListener(TOGGLE_QUICKNAV_EVENT, toggleLeftFromEvent);
+    return () => {
+      window.removeEventListener(OPEN_QUICKNAV_EVENT, openLeft);
+      window.removeEventListener(TOGGLE_QUICKNAV_EVENT, toggleLeftFromEvent);
     };
   }, []);
 
@@ -279,6 +300,7 @@ export default function QuickNavCarousel({ items = DEFAULT_ITEMS, onClose }: { i
   };
 
   const toggleLeft = () => {
+    window.dispatchEvent(new Event(CLOSE_INSTALL_PROMPT_EVENT));
     if (leftOpen) {
       closeLeft();
       return;
@@ -286,11 +308,14 @@ export default function QuickNavCarousel({ items = DEFAULT_ITEMS, onClose }: { i
     // La languette gauche correspond au menu complet : toujours révéler
     // immédiatement le carrousel principal, même s'il était mémorisé replié.
     setMainCollapsed(false);
+    setRightOpen(false);
     setLeftOpen(true);
   };
 
   const toggleRight = () => {
+    window.dispatchEvent(new Event(CLOSE_INSTALL_PROMPT_EVENT));
     if (!rightOpen) {
+      setLeftOpen(false);
       setRightRollPhase(0);
       setRightOpen(true);
       return;
